@@ -1,0 +1,40 @@
+
+		<script>
+		$(function(){
+			$.get("/modules/anchors.html", function (data) {$("anchors").append(data);});
+			}
+		);
+		</script>
+
+        <section>
+
+			<!-- Work in progress -->
+
+			<div class="container">
+				<div class="grid grid-gutters large-grid-fit">
+
+					<div class="grid-cell">
+						<div class="section-title">
+							Follow changes in real time! (Refreshes every 30 seconds) - Current work in progress :
+						</div>
+					</div>
+				</div>
+
+				<div class="grid grid-gutters large-grid-fit">
+					<div class="grid-cell">
+						<img id="workinprogress" src="https://www.dropbox.com/s/zhw5dkcx7flvogz/wip.svg?raw=1"/>
+					</div>
+			</div>
+
+			<!-- module scripts -->
+
+			<script src="/javascript/work-in-progress.js" type="text/javascript"></script>
+
+		        </section>
+
+		<section id="anchors">
+			<anchors>
+
+			</anchors>
+		</section>
+

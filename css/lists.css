@@ -1,0 +1,50 @@
+/* Lists */
+/*-----------------------------------------------*/
+ol,
+ul,
+li {
+list-style:none;
+}
+ol {
+}
+ul{
+}
+li {
+}
+li.link {
+background:#aaaaaa;
+}
+li.link a {
+color:#ffffff;
+}
+li.link a:hover {
+color:#35a7cd;
+}
+li.industrial {
+background:#bbbbbb;
+}
+li.industrial a {
+color:#ffffff;
+}
+li.industrial a:hover {
+color:#f2ce30;
+}
+li.graphic {
+background:#cccccc;
+}
+li.graphic a {
+color:#ffffff;
+}
+li.graphic a:hover{
+color:#6967a9;
+}
+
+li.workinprogress {
+background:#dddddd;
+}
+li.workinprogress a {
+color:#ffffff;
+}
+li.workinprogress a:hover{
+color:#fd5a3d;
+}

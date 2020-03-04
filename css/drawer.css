@@ -1,0 +1,68 @@
+/* drawer */
+/*-----------------------------------------------*/
+.drawer * {
+-webkit-transition:all .3s ease;
+-moz-transition:all .3s ease;
+-ms-transition:all .3s ease;
+-o-transition:all .3s ease;
+transition:all .3s ease;
+}
+.drawer {
+background-color:#cccccc;
+width:210px;
+height:100vh;
+position:fixed;
+top:0;
+left:-210px;
+text-overflow:ellipsis;
+z-index:1;
+
+-webkit-transition: left 0.3s ease;
+-moz-transition: left 0.3s ease;
+-ms-transition: left 0.3s ease;
+-o-transition: left 0.3s ease;
+transition: left 0.3s ease;
+}
+body.menu-open .drawer {
+left:0;
+}
+.drawer .drawer-content {
+height:100%;
+overflow:scroll;
+}
+.drawer ul {
+}
+.drawer li {
+}
+.drawer a {
+color:#ffffff;
+display:block;
+margin:0;
+padding:10px;
+
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.drawer a:hover {
+background:transparent;
+color:#666666;
+}
+.drawer ul a {
+}
+.drawer li a {
+}
+.drawer > .label-menu > a,
+.drawer > .label-menu > a:hover {
+background:transparent !important;
+color:#666666 !important;
+}
+.drawer > li:first-child {
+padding:0px;
+}
+.drawer li a:before {
+content:"";
+margin:0;
+}
+.drawer li a:after {
+}

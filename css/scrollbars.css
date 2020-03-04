@@ -1,0 +1,24 @@
+/* Scrollbars */
+/*-----------------------------------------------*/
+html > ::-webkit-scrollbar {
+display: none;
+}
+::-webkit-scrollbar {
+-webkit-appearance:none;
+background-color:transparent;
+height:0px;
+width:0px;
+}
+::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-corner {
+}
+pre:hover::-webkit-scrollbar,
+xmp:hover::-webkit-scrollbar {
+}
+pre:hover::-webkit-scrollbar-thumb,
+xmp:hover::-webkit-scrollbar-thumb {
+}
+pre:hover::-webkit-scrollbar-corner,
+xmp:hover::-webkit-scrollbar-corner {
+}

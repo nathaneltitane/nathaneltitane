@@ -1,0 +1,49 @@
+/* Background */
+/*-----------------------------------------------*/
+.background {
+/*
+background:url("/background/bird.svg"), -webkit-linear-gradient(#dcf4fc 50%, #ffeeaa 50%);
+background:url("/background/bird.svg"), -moz-linear-gradient(#dcf4fc 50%, #ffeeaa 50%);
+background:url("/background/bird.svg"), -ms-linear-gradient(#dcf4fc 50%, #ffeeaa 50%);
+background:url("/background/bird.svg"), -o-linear-gradient(#dcf4fc 50%, #ffeeaa 50%);
+background:url("/background/bird.svg"), linear-gradient(#dcf4fc 50%, #ffeeaa 50%);
+*/
+
+background:url("/background/bird.svg");
+background-color: #000000;
+
+background-repeat:no-repeat;
+background-size:contain;
+
+-webkit-background-position:center;
+-moz-background-position:center;
+-ms-background-position:center;
+-o-background-position:center;
+background-position:center;
+
+width:100vw;
+height:100vh;
+opacity:0;
+position:relative;
+
+animation-name:background-reveal;
+animation-delay:0.5s;
+animation-duration:2s;
+animation-fill-mode:forwards;
+}
+@keyframes background-reveal {
+0%{
+opacity:0;
+}
+100% {
+opacity:1.0;
+}
+}
+@media screen and (max-width:800px) {
+}
+@media screen and (max-width:700px) {
+}
+@media screen and (max-width:600px) {
+}
+@media screen and (max-width:500px) {
+}
