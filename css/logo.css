@@ -1,15 +1,53 @@
 /* Logo */
 /*-----------------------------------------------*/
-.logo {
-background-image:url(); /* Keep empty to prevent preload */
-background-position:center center;
-background-repeat:no-repeat;
-background-size:1.5em;
-height:1.5em;
-width:1.5em;
+.icon {
+background-repeat: no-repeat;
+display:block;
+padding:o;
+}
+.icon-extra-small {
+background-size:12px;
+height:12px;
+width:12px;
+}
+.icon-small {
+background-size:24px;
+height:24px;
+width:24px;
+}
+.icon-medium {
+background-size:32px;
+height:32px;
+width:32px;
+}
+.icon-large {
+background-size:64px;
+height:64px;
+width:64px;
+}
+.icon-extra-large {
+background-size:128px;
+height:128px;
+width:128px;
+}
+.icon-left {
+margin:0px 10px 0px 0px;
+}
+.icon-right {
 margin:0px 0px 0px 10px;
-padding:0;
-position:absolute;
-bottom:5px;
-left:0;
+}
+.logo {
+background-image:url(/assets/logo.svg);
+}
+.logo-black {
+background-image:url(/assets/logo-black.svg);
+}
+.logo-green {
+background-image:url(/assets/logo-green.svg);
+}
+.logo-grey {
+background-image:url(/assets/logo-grey.svg);
+}
+.logo-yellow {
+background-image:url(/assets/logo-yellow.svg);
 }
