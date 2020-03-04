@@ -1,7 +1,7 @@
 /* drawer trigger */
 /*-----------------------------------------------*/
 .drawer-trigger {
-background-color:#bbbbbb;
+background-color:#666666;
 border-radius:0px 32px 32px 32px;
 background-size:contain;
 margin:10px;
@@ -10,12 +10,12 @@ top:0;
 left:calc(210px - 84px);
 z-index:99;
 
-animation-name:drawer-trigger-expand;
+animation-name:drawer-open;
 animation-delay:2.5s;
 animation-duration:4s;
 animation-fill-mode:forwards;
 }
-@keyframes drawer-trigger-expand {
+@keyframes drawer-open {
 0% {
 left:calc(210px - 84px);
 }
@@ -39,7 +39,7 @@ width:100%;
 resize:both;
 }
 .drawer-trigger:hover {
-background-color:#666666;
+background-color:#bbbbbb;
 box-shadow:0px 0px 10px rgba(100,100,100,0.5);
 }
 @media screen and (min-width:800px) {
@@ -47,7 +47,7 @@ box-shadow:0px 0px 10px rgba(100,100,100,0.5);
 height:64px;
 width:64px;
 }
-@keyframes drawer-trigger-expand {
+@keyframes drawer-open {
 0% {
 left:calc(210px - 84px);
 }
@@ -67,7 +67,7 @@ content:"Menu";
 height:64px;
 width:64px;
 }
-@keyframes drawer-trigger-expand {
+@keyframes drawer-open {
 0% {
 left:calc(210px - 84px);
 }
@@ -87,7 +87,7 @@ content:"Menu";
 height:48px;
 width:48px;
 }
-@keyframes drawer-trigger-expand {
+@keyframes drawer-open {
 0% {
 left:calc(210px - 68px);
 }
@@ -108,7 +108,7 @@ font-size:x-small;
 height:32px;
 width:32px;
 }
-@keyframes drawer-trigger-expand {
+@keyframes drawer-open {
 0% {
 left:calc(210px - 52px);
 }
