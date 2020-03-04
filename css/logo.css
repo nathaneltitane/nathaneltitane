@@ -39,15 +39,18 @@ margin:0px 0px 0px 10px;
 .logo {
 background-image:url(/assets/logo.svg);
 }
-.logo-black {
-background-image:url(/assets/logo-black.svg);
+.logo-blue {
+background-image:url(/assets/logo-blue.svg);
 }
 .logo-green {
 background-image:url(/assets/logo-green.svg);
 }
-.logo-grey {
-background-image:url(/assets/logo-grey.svg);
+.logo-purple {
+background-image:url(/assets/logo-purple.svg);
 }
-.logo-yellow {
-background-image:url(/assets/logo-yellow.svg);
+.logo-red {
+background-image:url(/assets/logo-red.svg);
+}
+.logo-teal {
+background-image:url(/assets/logo-teal.svg);
 }
