@@ -20,7 +20,6 @@ $(document).ready(function() {
 
 		$('#loader').removeClass('no-padding');
 		$('#loader').addClass('loader-open');
-		$('#loader').addClass('box-shadow-inset-bottom');
 
 		$('html,body').animate({
 			scrollTop: $('#loader-top').offset().top},
