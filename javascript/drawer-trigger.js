@@ -5,5 +5,6 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		$('body').toggleClass('menu-open');
+		$('.drawer-trigger').fadeToggle();
 	});
 });
