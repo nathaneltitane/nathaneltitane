@@ -1,5 +1,4 @@
 // load more //
-
 $(document).ready(function() {
 	if ($('.container.hidden').length >= 1) {
 		$('#to-top').hide();

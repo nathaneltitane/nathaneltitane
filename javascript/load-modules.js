@@ -1,5 +1,4 @@
 // load modules //
-
 $(function() {
 	$.get("/modules/head.html", function(data) {
 		$("head").append(data);
