@@ -1,7 +1,7 @@
 // drawer trigger //
 $(document).ready(function() {
 	$('.background').click(function(e) {
-		e.preventDefault();
+		//e.preventDefault();
 		$('body').toggleClass('menu-open');
 		$('.drawer-trigger').fadeToggle();
 	});
