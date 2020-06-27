@@ -9,7 +9,8 @@ function parse_data(data) {
 }
 $(document).ready(function() {
 	$('[data-link]').click(function(e) {
-		//e.preventDefault();
+		// disable defaults prevention for href handling
+		// e.preventDefault();
 		var link = $(this).data('link');
 		$('#load-content').fadeOut('slow');
 		get_page_data(link);
