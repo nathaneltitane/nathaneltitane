@@ -11,40 +11,39 @@ ul{
 }
 li {
 }
-li.link {
-background:#aaaaaa;
+ul {
+background: #aaaaaa;
+}
+ul:nth-child(odd)
+background: #bbbbbb;
 }
 li.link a {
-color:#ffffff;
+	color:#ffffff;
 }
 li.link a:hover {
-color:#35a7cd;
+	color:#35a7cd;
 }
-li.industrial {
-background:#bbbbbb;
+li.code a {
+	color:#ffffff;
+}
+li.code a:hover{
+	color:#00a2ae;
 }
 li.industrial a {
-color:#ffffff;
+	color:#ffffff;
 }
 li.industrial a:hover {
-color:#f2ce30;
-}
-li.graphic {
-background:#cccccc;
+	color:#f2ce30;
 }
 li.graphic a {
-color:#ffffff;
+	color:#ffffff;
 }
 li.graphic a:hover{
-color:#6967a9;
+	color:#6967a9;
 }
-
-li.workinprogress {
-background:#dddddd;
+li.mechanical a {
+	color:#ffffff;
 }
-li.workinprogress a {
-color:#ffffff;
-}
-li.workinprogress a:hover{
-color:#fd5a3d;
+li.mechanical a:hover{
+	color:#fd5a3d;
 }
