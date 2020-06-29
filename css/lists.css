@@ -14,7 +14,7 @@ li {
 ul {
 background: #aaaaaa;
 }
-ul:nth-child(odd)
+ul:nth-child(odd) {
 background: #bbbbbb;
 }
 li.link a {
