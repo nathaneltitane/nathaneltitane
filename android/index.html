@@ -1,7 +1,26 @@
 
-		<section>
+		<script>
+		$(function(){
+			$.get("/modules/anchors.html", function (data) {$("anchors").append(data);});
+			}
+		);
+		</script>
 
-			<div class="button title">Android</div>
+        <section>
+
+			<!-- Gallery -->
+
+			<!-- Container -->
+
+			<div class="container">
+				<div class="grid grid-gutters large-grid-fit">
+
+					<div class="grid-cell">
+						<div class="button title">
+							Android
+						</div>
+					</div>
+				</div>
 
 			<div class="container">
 				<div class="grid grid-gutters menu-grid-fit">
@@ -39,4 +58,10 @@
 				</div>
 			</div>
 
+		</section>
+
+		<section id="anchors">
+			<anchors>
+
+			</anchors>
 		</section>
