@@ -1,0 +1,20 @@
+canvas:focus {
+outline:none;
+}
+#model-canvas {
+width:100%;
+display:block;
+}
+#model-canvas {
+height:calc(100vh - 100px - 100px);
+}
+#model-title {
+background:#cccccc;
+height:100px;
+width:100vw;
+}
+@media screen and (max-width:600px) {
+#model-canvas {
+height:calc(100vh - 100px - 100px - 56px);
+}
+}
