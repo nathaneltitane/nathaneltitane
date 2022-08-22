@@ -1,57 +1,18 @@
-/* Logo */
-/*-----------------------------------------------*/
-.icon {
-background-repeat: no-repeat;
-display:block;
-padding:o;
-}
-.icon-extra-small {
-background-size:12px;
-height:12px;
-width:12px;
-}
-.icon-small {
-background-size:24px;
-height:24px;
-width:24px;
-}
-.icon-medium {
-background-size:32px;
-height:32px;
-width:32px;
-}
-.icon-large {
-background-size:64px;
-height:64px;
-width:64px;
-}
-.icon-extra-large {
-background-size:128px;
-height:128px;
-width:128px;
-}
-.icon-left {
-margin:0px 10px 0px 0px;
-}
-.icon-right {
-margin:0px 0px 0px 10px;
-}
-.logo {
-background-image:url();
-margin-top:10px;
-}
 .logo-blue {
-background-image:url(/assets/logo-blue.svg);
+background-image:url(/logo/logo-blue.svg);
 }
 .logo-green {
-background-image:url(/assets/logo-green.svg);
+background-image:url(/logo/logo-green.svg);
+}
+.logo-grey {
+background-image:url(/logo/logo-grey.svg);
 }
 .logo-purple {
-background-image:url(/assets/logo-purple.svg);
+background-image:url(/logo/logo-purple.svg);
 }
 .logo-red {
-background-image:url(/assets/logo-red.svg);
+background-image:url(/logo/logo-red.svg);
 }
 .logo-teal {
-background-image:url(/assets/logo-teal.svg);
+background-image:url(/logo/logo-teal.svg);
 }

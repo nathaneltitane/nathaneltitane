@@ -1,68 +1,83 @@
-/* drawer */
-/*-----------------------------------------------*/
-.drawer * {
--webkit-transition:all .3s ease;
--moz-transition:all .3s ease;
--ms-transition:all .3s ease;
--o-transition:all .3s ease;
-transition:all .3s ease;
-}
 .drawer {
-background-color:#cccccc;
-width:210px;
-height:100vh;
-position:fixed;
-top:0;
-left:-210px;
+background:#bbbbbb;
+height:auto;
+width:325px;
+left:-325px;
+top:0px;
+position:absolute;
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
 text-overflow:ellipsis;
-z-index:1;
-
--webkit-transition: left 0.3s ease;
--moz-transition: left 0.3s ease;
--ms-transition: left 0.3s ease;
--o-transition: left 0.3s ease;
-transition: left 0.3s ease;
+opacity:95%;
+z-index:999;
 }
-body.menu-open .drawer {
-left:0;
-}
-.drawer .drawer-content {
+.drawer-button {
+background-size:contain;
+background-repeat:no-repeat;
+background:#44444400;
 height:100%;
-overflow:scroll;
+width:auto;
+margin:0px 0px 0px 0px;
+padding:10px 10px 10px 10px;
+top:0px;
+left:0px;
+position:absolute;
+opacity:100%;
+
+animation-name:drawer-open;
+animation-delay:1s;
+animation-duration:2s;
+animation-fill-mode:forwards;
 }
-.drawer ul {
+.drawer-button:hover {
+background:#444444aa;
 }
-.drawer li {
+.drawer-open .drawer {
+top:0px;
+left:0px;
+}
+.drawer-open .drawer:before{
+background:#444444aa;
+content:" ";
+height:100%;
+width:100%;
+top:0px;
+left:0px;
+position:fixed;
+}
+.drawer-container {
+height:100vh;
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+overflow:overlay;
 }
 .drawer a {
-color:#ffffff;
-display:block;
-margin:0;
-padding:10px;
-
-white-space:nowrap;
+margin:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
 overflow:hidden;
 text-overflow:ellipsis;
 }
-.drawer a:hover {
-background:transparent;
-color:#666666;
+@keyframes drawer-open {
+0% {left:0px;}
+10%, 90% {left:325px;}
+100% {left:325px;}
 }
-.drawer ul a {
+.available{
+background:#37a537;
+color:#8de08d !important;
+font-weight:bold;
 }
-.drawer li a {
+.unavailable{
+background:#ff9e5e;
+color:#ff6e0d !important;
+font-weight:bold;
 }
-.drawer > .label-menu > a,
-.drawer > .label-menu > a:hover {
-background:transparent !important;
-color:#666666 !important;
+.list{
+background:#bbbbbb;
 }
-.drawer > li:first-child {
-padding:0px;
+.category{
+padding:5px 0px 5px 0px;
 }
-.drawer li a:before {
-content:"";
-margin:0;
-}
-.drawer li a:after {
+.copyright{
+background:#cccccc;
 }

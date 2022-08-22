@@ -1,22 +1,15 @@
-/* Background */
-/*-----------------------------------------------*/
-.background {
-background:url("/background/bird.svg");
+#background {
+background:url("/background/background.svg");
 background-color: #000000;
 
 background-repeat:no-repeat;
-background-size:contain;
+background-attachment:fixed;
+background-position:center;;
+background-size:cover;
 
--webkit-background-position:center;
--moz-background-position:center;
--ms-background-position:center;
--o-background-position:center;
-background-position:center;
-
-width:100vw;
-height:100vh;
 opacity:0;
-position:relative;
+width:100vw;
+height:calc( 100vh - 10px - 10px - 10px - 10px);
 
 animation-name:background-reveal;
 animation-delay:0.5s;
@@ -24,10 +17,6 @@ animation-duration:1s;
 animation-fill-mode:forwards;
 }
 @keyframes background-reveal {
-0%{
-opacity:0;
-}
-100% {
-opacity:1.0;
-}
+0% {opacity:0;}
+100% {opacity:1.0;}
 }
