@@ -1,13 +1,15 @@
 
 		<script>
 
-			$(function(){
+		$(function(){
+			$.get("/modules/anchors.html", function (data) {
 
-				$.get("/modules/anchors.html", function (data) {$("anchors").append(data);});
+				$("#anchors").append(data);
 
-				}
+			});
 
-			);
+			}
+		);
 
 		</script>
 
@@ -1289,10 +1291,6 @@
 		</section>
 
 		<section id="anchors">
-
-			<anchors>
-
-			</anchors>
 
 		</section>
 
