@@ -1,0 +1,140 @@
+#!/bin/bash
+
+# dependencies /////////////////////////////////////////////////////////////////
+
+if [[ -z $(command -v frobulator) ]]
+then
+	curl -s -L get.frbltr.app > /usr/bin/frobulator
+fi
+
+. /usr/bin/frobulator
+
+if [[ $(id -u -n) = "root" ]]
+then
+	USER="${SUDO_USER}"
+	HOME=/home/"${USER}"
+fi
+
+# script ///////////////////////////////////////////////////////////////////////
+
+script=$(basename -- "${BASH_SOURCE[0]}")
+
+# version //////////////////////////////////////////////////////////////////////
+
+version="08-23-2022"
+
+# usage ////////////////////////////////////////////////////////////////////////
+
+# prompt ///////////////////////////////////////////////////////////////////////
+
+frobulator.script "Setting up ${script#*-}"
+echo
+
+# variables ////////////////////////////////////////////////////////////////////
+
+# defaults /////////////////////////////////////////////////////////////////////
+
+# functions ////////////////////////////////////////////////////////////////////
+
+frobulator.inf "Generating graphic content entries"
+echo
+
+frobulator.fwd "Writing..."
+echo
+
+# generate header
+
+cat << 'INDEX-HEADER' -> "graphic/index.html"
+
+		<script>
+
+		$(function(){
+
+			$.get("/modules/anchors.html", function (data) {
+
+				$("#anchors").append(data);
+
+			});
+
+			}
+		);
+
+		</script>
+
+		<!-- BEGIN INDEX -->
+
+INDEX-HEADER
+
+# values
+
+extensions_list=(
+	svg
+)
+
+for extension in ${extensions_list[@]}
+do
+	count=1
+
+	for content_directory in $(find graphic/ -type f -iname "*.${extension}")
+	do
+		IFS='/' read -r -a path <<< $(echo "$content_directory")
+
+		# /graphic/model-type/model/renders/flat/flat.${extension}
+
+		# "${path[0]}" /graphic
+		# "${path[1]}" /graphic-project
+		# "${path[2]}" /graphic-content
+
+				# keep first container visible
+
+		if [ "${count}" -eq 1 ]
+		then
+			container="container"
+		else
+			container="container hidden"
+		fi
+
+# generate model container
+
+cat << MODEL-CONTAINER ->> "graphic/index.html"
+<!-- BEGIN CONTAINER -->
+
+<div class='${container}'>
+
+	<div class='grid'>
+
+		<div class='grid-cell'>
+
+			<img src="/${path[0]}/${path[1]}/${path[2]}" />
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- END CONTAINER -->
+
+MODEL-CONTAINER
+
+	((count++))
+
+	done
+done
+
+# generate footer
+
+cat << FOOTER ->> "graphic/index.html"
+<!-- END INDEX -->
+
+<section id="anchors">
+
+</section>
+
+FOOTER
+
+frobulator.inf "Parsed content entries" "[ ${count} ]"
+echo
+
+frobulator.scs "Graphic content" "[ Done ]"
+echo
