@@ -1,6 +1,6 @@
 @import url("/css/all.css");
 @import url("/css/body.css");
-@import url("/css/webpage.css");
+@import url("/css/copyright.css");
 @import url("/css/anchors.css");
 @import url("/css/background.css");
 @import url("/css/button.css");
@@ -22,3 +22,5 @@
 @import url("/css/text-align.css");
 @import url("/css/text-size.css");
 @import url("/css/text-weight.css");
+@import url("/css/webpage.css");
+
