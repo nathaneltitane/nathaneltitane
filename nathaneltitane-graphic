@@ -21,7 +21,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="08-23-2022"
+version="08-26-2022"
 
 # usage ////////////////////////////////////////////////////////////////////////
 
@@ -97,23 +97,23 @@ do
 # generate model container
 
 cat << MODEL-CONTAINER ->> "graphic/index.html"
-<!-- BEGIN CONTAINER -->
+		<!-- BEGIN CONTAINER -->
 
-<div class='${container}'>
+		<div class='${container}'>
 
-	<div class='grid'>
+			<div class='grid grid-column grid-center grid-around grid-wrap'>
 
-		<div class='grid-cell'>
+				<div class='grid-cell'>
 
-			<img src="/${path[0]}/${path[1]}/${path[2]}"/>
+					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
+
+				</div>
+
+			</div>
 
 		</div>
 
-	</div>
-
-</div>
-
-<!-- END CONTAINER -->
+		<!-- END CONTAINER -->
 
 MODEL-CONTAINER
 
@@ -125,11 +125,11 @@ done
 # generate footer
 
 cat << FOOTER ->> "graphic/index.html"
-<!-- END INDEX -->
+		<!-- END INDEX -->
 
-<section id="anchors">
+		<section id="anchors">
 
-</section>
+		</section>
 
 FOOTER
 
