@@ -1,0 +1,163 @@
+#!/bin/bash
+
+# dependencies /////////////////////////////////////////////////////////////////
+
+USER_HOME="${HOME}"
+
+if [[ -z $(command -v frobulator) ]]
+then
+	if [[ $(id -u -n) = "root" ]]
+	then
+		if [ -z "${SUDO:-$HOME}" ]
+		then
+			SUDO_HOME=/root
+		else
+			SUDO_HOME="${SUDO:-$HOME}"
+		fi
+
+		USER="${SUDO_USER}"
+		USER_HOME=/home/"${USER}"
+	fi
+
+	if [[ -z $(command -v curl) ]]
+	then
+		yes | apt-get install curl
+	fi
+
+	if [ ! -d "${USER_HOME}"/.local/bin ]
+	then
+		mkdir -p "${USER_HOME}"/.local/bin/frobulator
+	fi
+
+	curl -s -L get.frbltr.app > "${USER_HOME}"/.local/bin/frobulator
+
+	chmod +x "${USER_HOME}"/.local/bin/frobulator
+fi
+
+. "${USER_HOME}"/.local/bin/frobulator
+
+# superuser ////////////////////////////////////////////////////////////////////
+
+# script ///////////////////////////////////////////////////////////////////////
+
+script=$(basename -- "${BASH_SOURCE[0]}")
+
+# version //////////////////////////////////////////////////////////////////////
+
+version="08-26-2022"
+
+# usage ////////////////////////////////////////////////////////////////////////
+
+# prompt ///////////////////////////////////////////////////////////////////////
+
+frobulator.script "Setting up ${script#*-}"
+echo
+
+# variables ////////////////////////////////////////////////////////////////////
+
+# defaults /////////////////////////////////////////////////////////////////////
+
+# functions ////////////////////////////////////////////////////////////////////
+
+frobulator.inf "Generating industrial content entries"
+echo
+
+frobulator.fwd "Writing..."
+echo
+
+# generate header
+
+cat << 'INDEX-HEADER' -> "industrial/index.html"
+
+		<script>
+
+		$(function(){
+
+			$.get("/modules/anchors.html", function (data) {
+
+				$("#anchors").append(data);
+
+			});
+
+			}
+		);
+
+		</script>
+
+		<!-- BEGIN INDEX -->
+
+INDEX-HEADER
+
+# values
+
+extensions_list=(
+	svg
+)
+
+for extension in ${extensions_list[@]}
+do
+	count=1
+
+	for content_directory in $(find industrial/ -type f -iname "*.${extension}")
+	do
+		IFS='/' read -r -a path <<< $(echo "$content_directory")
+
+		# /industrial/model-type/model/renders/flat/flat.${extension}
+
+		# "${path[0]}" /industrial
+		# "${path[1]}" /industrial-project
+		# "${path[2]}" /industrial-content
+
+				# keep first container visible
+
+		if [ "${count}" -eq 1 ]
+		then
+			container="container"
+		else
+			container="container hidden"
+		fi
+
+# generate model container
+
+cat << MODEL-CONTAINER ->> "industrial/index.html"
+		<!-- BEGIN CONTAINER -->
+
+		<div class='${container}'>
+
+			<div class='grid grid-column grid-center grid-around grid-wrap'>
+
+				<div class='grid-cell'>
+
+					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- END CONTAINER -->
+
+MODEL-CONTAINER
+
+	((count++))
+
+	done
+done
+
+# generate footer
+
+cat << FOOTER ->> "industrial/index.html"
+		<!-- END INDEX -->
+
+		<section id="anchors">
+
+		</section>
+
+FOOTER
+
+frobulator.inf "Parsed content entries" "[ ${count} ]"
+echo
+
+frobulator.scs "Industrial content" "[ Done ]"
+echo
