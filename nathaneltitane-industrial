@@ -102,7 +102,7 @@ do
 	do
 		IFS='/' read -r -a path <<< $(echo "$content_directory")
 
-		# /industrial/model-type/model/renders/flat/flat.${extension}
+		# /industrial/industrial-project/industrial-content.${extension}
 
 		# "${path[0]}" /industrial
 		# "${path[1]}" /industrial-project
