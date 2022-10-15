@@ -44,7 +44,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="08-26-2022"
+version="10-15-2022"
 
 # usage ////////////////////////////////////////////////////////////////////////
 
@@ -115,7 +115,7 @@ do
 			container="container"
 		fi
 
-# generate model container
+# generate content container
 
 cat << CONTENT-CONTAINER ->> "industrial/index.html"
 		<!-- BEGIN CONTAINER -->
