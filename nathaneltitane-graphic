@@ -102,13 +102,7 @@ do
 	do
 		IFS='/' read -r -a path <<< $(echo "${content_items}")
 
-		# /graphic/graphic-project/graphic-content.${extension}
-
-		# "${path[0]}" /graphic
-		# "${path[1]}" /graphic-project
-		# "${path[2]}" /graphic-content
-
-				# keep first container visible
+		# keep first container visible
 
 		if [ "${count}" -eq 1 ]
 		then
