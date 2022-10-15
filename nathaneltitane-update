@@ -1,0 +1,232 @@
+#!/bin/bash
+
+# dependencies /////////////////////////////////////////////////////////////////
+
+USER_HOME="${HOME}"
+
+if [[ -z $(command -v frobulator) ]]
+then
+	if [[ $(id -u -n) = "root" ]]
+	then
+		if [ -z "${SUDO:-$HOME}" ]
+		then
+			SUDO_HOME=/root
+		else
+			SUDO_HOME="${SUDO:-$HOME}"
+		fi
+
+		USER="${SUDO_USER}"
+		USER_HOME=/home/"${USER}"
+	fi
+
+	if [[ -z $(command -v curl) ]]
+	then
+		yes | apt-get install curl
+	fi
+
+	if [ ! -d "${USER_HOME}"/.local/bin ]
+	then
+		mkdir -p "${USER_HOME}"/.local/bin/frobulator
+	fi
+
+	curl -s -L get.frbltr.app > "${USER_HOME}"/.local/bin/frobulator
+
+	chmod +x "${USER_HOME}"/.local/bin/frobulator
+fi
+
+. "${USER_HOME}"/.local/bin/frobulator
+
+# superuser ////////////////////////////////////////////////////////////////////
+
+# script ///////////////////////////////////////////////////////////////////////
+
+script=$(basename -- "${BASH_SOURCE[0]}")
+
+# version //////////////////////////////////////////////////////////////////////
+
+version="10-15-2022"
+
+# usage ///////////////////////////////////////////////////////////////////////
+
+while (($#))
+do
+	case "${1}" in
+		-directory)
+			directory="${2}"
+
+			shift
+		;;
+
+		-a|--all)
+			option="all"
+		;;
+
+		-g|--graphic)
+			option="graphic"
+		;;
+
+		-i|--industrial)
+			option="industrial"
+		;;
+
+		-h|--help)
+			echo
+			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
+			echo
+			echo -e "Utility options:"
+			echo
+			echo -e "-directory        Specify directory to load models from."
+			echo
+			echo -e "-a, --all              Full website framework and content update."
+			echo -e "-g, --graphic          Models exports content update."
+			echo -e "-i, --industrial          Models renders content update."
+			echo
+			echo -e "'${script}'       [ Version ${version} ]"
+			echo
+
+			exit
+		;;
+
+		"")
+			# handle empty argument:
+			# use default values specified in script
+
+			:
+		;;
+
+		*)
+			echo
+			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
+			echo
+			echo -e "${script}: Unknown option '${1}'"
+			echo -e "Type './${script} --help' for help and usage information."
+			echo
+
+			exit 1
+
+		;;
+
+		esac
+
+		shift
+done
+
+# clear ////////////////////////////////////////////////////////////////////////
+
+frobulator.clear
+
+# prompt ///////////////////////////////////////////////////////////////////////
+
+frobulator.script "Setting up ${script#*-}"
+echo
+
+# variables ////////////////////////////////////////////////////////////////////
+
+# defaults /////////////////////////////////////////////////////////////////////
+
+# functions ////////////////////////////////////////////////////////////////////
+
+upload () {
+	git add *
+
+	git commit		\
+		--all		\
+		--message='Models update'
+
+	git push > /dev/null 2>&1
+}
+
+run () {
+	for script in ${scripts_list[@]}
+	do
+		bash ./"${script}"
+	done
+}
+
+# requirements /////////////////////////////////////////////////////////////////
+
+list=(
+	git
+	jpegoptim
+	optipng
+	rsync
+)
+
+if [[ $(id -u -n) = "root" ]]
+then
+	frobulator.require ${list[@]}
+
+	frobulator.msg "${script} requirements installed."
+	echo
+
+	frobulator.inf "Run ${script} as 'user' to proceed."
+	echo
+
+	exit
+else
+	for requirement in ${list[@]}
+	do
+		if [[ -z $(command -v "${requirement}") ]]
+		then
+			frobulator.err "Missing" "[ '${requirement}' ]"
+			echo
+
+			frobulator.wrn "Start ${script} as 'root' to install requirements."
+			echo
+
+			exit 1
+		fi
+	done
+fi
+
+list=()
+
+# update ///////////////////////////////////////////////////////////////////////
+
+# content
+
+if [[ "${option}" = "all" ]]
+then
+	scripts_list+=(
+	nathaneltitane-graphic
+	nathaneltitane-industrial
+	)
+
+	run
+
+	upload &
+
+	frobulator.progress "Updating..."
+	echo
+fi
+
+if [[ "${option}" = "graphic" ]]
+then
+	scripts_list+=(
+		nathaneltitane-graphic
+	)
+
+	run
+
+	upload &
+
+	frobulator.progress "Updating graphic..."
+	echo
+fi
+
+if [[ "${option}" = "industrial" ]]
+then
+	scripts_list+=(
+		nathaneltitane-industrial
+	)
+
+	run
+
+	upload &
+
+	frobulator.progress "Updating industrial..."
+	echo
+fi
+
+frobulator.scs "Update" "[ Done ]"
+echo
