@@ -117,7 +117,7 @@ do
 			container="container hidden"
 		fi
 
-# generate model container
+# generate content container
 
 cat << MODEL-CONTAINER ->> "graphic/index.html"
 		<!-- BEGIN CONTAINER -->
