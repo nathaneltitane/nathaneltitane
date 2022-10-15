@@ -75,13 +75,13 @@ do
 			echo
 			echo -e "Utility options:"
 			echo
-			echo -e "-directory        Specify directory to load models from."
+			echo -e "-directory          Specify directory to load models from."
 			echo
-			echo -e "-a, --all              Full website framework and content update."
-			echo -e "-g, --graphic          Models exports content update."
-			echo -e "-i, --industrial          Models renders content update."
+			echo -e "-a, --all           Full website framework and content update."
+			echo -e "-g, --graphic       Models exports content update."
+			echo -e "-i, --industrial    Models renders content update."
 			echo
-			echo -e "'${script}'       [ Version ${version} ]"
+			echo -e "'${script}'         [ Version ${version} ]"
 			echo
 
 			exit
