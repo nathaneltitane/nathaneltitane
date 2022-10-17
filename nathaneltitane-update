@@ -69,6 +69,10 @@ do
 			option="industrial"
 		;;
 
+		-s|--server)
+			option="server"
+		;;
+
 		-h|--help)
 			echo
 			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
@@ -80,6 +84,8 @@ do
 			echo -e "-a, --all           Full website framework and content update."
 			echo -e "-g, --graphic       Models exports content update."
 			echo -e "-i, --industrial    Models renders content update."
+			echo
+			echo -e "-server           Create local development server."
 			echo
 			echo -e "'${script}'         [ Version ${version} ]"
 			echo
@@ -188,6 +194,7 @@ list=()
 if [[ "${option}" = "all" ]]
 then
 	scripts_list+=(
+#	nathaneltitane-server
 	nathaneltitane-graphic
 	nathaneltitane-industrial
 	)
@@ -225,6 +232,18 @@ then
 	upload &
 
 	frobulator.progress "Updating industrial..."
+	echo
+fi
+
+if [[ "${option}" = "server" ]]
+then
+	scripts_list+=(
+		nathaneltitane-server
+	)
+
+	run
+
+	frobulator.progress "Creating server..."
 	echo
 fi
 
