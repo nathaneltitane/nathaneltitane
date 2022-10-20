@@ -5,7 +5,7 @@ display: none;
 }
 ::-webkit-scrollbar {
 -webkit-appearance:none;
-background-color:transparent;
+background-color:#00000000;
 height:0px;
 width:0px;
 }

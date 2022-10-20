@@ -4,7 +4,7 @@ height:auto;
 width:325px;
 left:-325px;
 top:0px;
-position:absolute;
+position:fixed;
 padding:0px 0px 0px 0px;
 margin:0px 0px 0px 0px;
 text-overflow:ellipsis;
@@ -35,15 +35,6 @@ background:#444444aa;
 .drawer-open .drawer {
 top:0px;
 left:0px;
-}
-.drawer-open .drawer:before{
-background:#444444aa;
-content:" ";
-height:100%;
-width:100%;
-top:0px;
-left:0px;
-position:fixed;
 }
 .drawer-container {
 height:100vh;
