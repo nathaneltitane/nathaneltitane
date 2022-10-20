@@ -25,7 +25,7 @@
 	position: absolute;
 	opacity: 100%;
 
-animation-name: drawer-open;
+	animation-name: drawer-open;
 	animation-delay: 1s;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;

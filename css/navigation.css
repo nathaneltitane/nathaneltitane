@@ -3,7 +3,7 @@
 	height: 10px;
 	opacity: 0;
 
-animation-name: background-reveal;
+	animation-name: background-reveal;
 	animation-delay: 0.5s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
