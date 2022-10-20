@@ -1,22 +1,26 @@
 #background {
-background:url("/background/background.svg");
-background-color: #000000;
+	background: url("/background/background.svg");
+	background-color:  #000000;
 
-background-repeat:no-repeat;
-background-attachment:fixed;
-background-position:center;;
-background-size:contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;;
+	background-size: contain;
 
-opacity:0;
-width:100vw;
-height:calc( 100vh - 10px - 10px - 10px - 10px);
+	height: calc( 100vh - 10px - 10px - 10px - 10px);
+	width: 100vw;
+	opacity: 0;
 
-animation-name:background-reveal;
-animation-delay:0.5s;
-animation-duration:1s;
-animation-fill-mode:forwards;
+	animation-name: background-reveal;
+	animation-delay: 0.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
+
 @keyframes background-reveal {
-0% {opacity:0;}
-100% {opacity:1.0;}
+	0% {opacity: 0;}
+
+	100% {opacity: 1.0;}
+
 }
+

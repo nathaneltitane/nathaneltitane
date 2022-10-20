@@ -1,11 +1,10 @@
 body {
-background:#00000000;
-color:#666666 !important;
-font-family:'Open Sans', sans-serif !important;
-font-size:15px;
-margin:0px 0px 0px 0px;
-padding:0px 0px 0px 0px;
-overflow-x: hidden;
-min-width:100%;
-min-height:100%;
+	background: transparent;
+	color: #666666 !important;
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
 }
+

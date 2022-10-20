@@ -1,21 +1,28 @@
 .logo-black {
-background-image:url(/logo/logo-black.svg);
+	background-image: url(/logo/logo-black.svg);
 }
+
 .logo-blue {
-background-image:url(/logo/logo-blue.svg);
+	background-image: url(/logo/logo-blue.svg);
 }
+
 .logo-green {
-background-image:url(/logo/logo-green.svg);
+	background-image: url(/logo/logo-green.svg);
 }
+
 .logo-grey {
-background-image:url(/logo/logo-grey.svg);
+	background-image: url(/logo/logo-grey.svg);
 }
+
 .logo-purple {
-background-image:url(/logo/logo-purple.svg);
+	background-image: url(/logo/logo-purple.svg);
 }
+
 .logo-red {
-background-image:url(/logo/logo-red.svg);
+	background-image: url(/logo/logo-red.svg);
 }
+
 .logo-teal {
-background-image:url(/logo/logo-teal.svg);
+	background-image: url(/logo/logo-teal.svg);
 }
+

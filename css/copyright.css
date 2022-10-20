@@ -1,3 +1,5 @@
-#copyright{
-margin-top:calc(100vh - 300px);
+#copyright {
+	height: 300px;
+	margin-top: calc(100vh - 300px);
 }
+

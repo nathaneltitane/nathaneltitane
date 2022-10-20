@@ -1,9 +1,12 @@
 html > ::-webkit-scrollbar {
-display: none;
+	display:  none;
 }
+
 body > ::-webkit-scrollbar {
-display: none;
+	display:  none;
 }
+
 ::-webkit-scrollbar {
-display:none;
+	display: none;
 }
+
