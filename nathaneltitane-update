@@ -44,7 +44,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="10-15-2022"
+version="10-20-2022"
 
 # usage ///////////////////////////////////////////////////////////////////////
 
@@ -97,7 +97,7 @@ do
 			# handle empty argument:
 			# use default values specified in script
 
-			:
+			option="all"
 		;;
 
 		*)
