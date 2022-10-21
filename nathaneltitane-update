@@ -195,6 +195,7 @@ if [[ "${option}" = "all" ]]
 then
 	scripts_list+=(
 #	nathaneltitane-server
+	nathaneltitane-drawer
 	nathaneltitane-graphic
 	nathaneltitane-industrial
 	)
@@ -210,6 +211,7 @@ fi
 if [[ "${option}" = "graphic" ]]
 then
 	scripts_list+=(
+		nathaneltitane-drawer
 		nathaneltitane-graphic
 	)
 
@@ -224,6 +226,7 @@ fi
 if [[ "${option}" = "industrial" ]]
 then
 	scripts_list+=(
+		nathaneltitane-drawer
 		nathaneltitane-industrial
 	)
 
