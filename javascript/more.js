@@ -20,13 +20,13 @@ $(document).ready(function() {
 
 			container.removeClass("hidden");
 
-			$('html,body').animate({
+			 $("html, body").animate(
 
-					scrollTop: $('#footer-top').offset().top
+				{ scrollTop: 0 },
 
-				},
+				"slow"
 
-				'slow');
+			);
 
 			if (count == 2) {
 

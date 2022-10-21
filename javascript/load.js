@@ -23,17 +23,25 @@ $(document).ready(function() {
 
 		get_page_data(link);
 
+		$('#load').css(
+
+			'border-top',
+
+			'10px solid #dddddd'
+
+		);
+
 		$('#drawer').removeClass('drawer-open');
 
 		$('#load').addClass('load-open');
 
-		$('html,body').animate({
+			 $("html, body").animate(
 
-				scrollTop: $('#navigation-bottom').offset().top
+				{ scrollTop: 0 },
 
-			},
+				"slow"
 
-			'slow');
+			);
 
 		$('#anchors.hidden').show();
 

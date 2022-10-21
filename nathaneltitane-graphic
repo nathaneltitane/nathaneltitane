@@ -44,7 +44,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="10-15-2022"
+version="10-20-2022"
 
 # usage ////////////////////////////////////////////////////////////////////////
 
@@ -68,19 +68,18 @@ echo
 # generate header
 
 cat << 'INDEX-HEADER' -> "graphic/index.html"
-
 		<script>
 
-		$(function(){
+			$(function(){
 
-			$.get("/modules/anchors.html", function (data) {
+				$.get("/modules/anchors.html", function (data) {
 
-				$("#anchors").append(data);
+					$("#anchors").append(data);
 
-			});
+				});
 
-			}
-		);
+				}
+			);
 
 		</script>
 
@@ -118,7 +117,7 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 		<div class='${container}'>
 
-			<div class='grid grid-column grid-center grid-around grid-wrap'>
+			<div class="grid grid-column">
 
 				<div class='grid-cell'>
 
@@ -144,9 +143,9 @@ done
 cat << FOOTER ->> "graphic/index.html"
 		<!-- END INDEX -->
 
-		<section id="anchors">
+		<div class="section" id="anchors">
 
-		</section>
+		<div>
 
 FOOTER
 
