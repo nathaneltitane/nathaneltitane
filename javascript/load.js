@@ -13,6 +13,7 @@ function parse_data(data) {
 	$('#load').append(data);
 
 }
+
 $(document).ready(function() {
 
 	$('[data-link]').click(function(e) {
