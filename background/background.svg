@@ -8,9 +8,9 @@
    version="1.1"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="background.svg"
-   inkscape:export-filename="/home/nathanel/bird.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90"
+   inkscape:export-filename="/media/internal/Avatars/avatar-bird-square-4096.png"
+   inkscape:export-xdpi="216"
+   inkscape:export-ydpi="216"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +40,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1875"
-     inkscape:cx="407.57895"
-     inkscape:cy="503.57895"
+     inkscape:zoom="1.8730469"
+     inkscape:cx="512"
+     inkscape:cy="512"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -93,7 +93,10 @@
      style="display:inline">
     <g
        id="g4273"
-       transform="matrix(-1,0,0,1,1264,-8.000005)">
+       transform="matrix(-1,0,0,1,1264,-8.000005)"
+       inkscape:export-filename="/media/internal/Avatars/avatar-bird-square-new.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          inkscape:connector-curvature="0"
          id="path4044"
