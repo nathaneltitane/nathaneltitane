@@ -10,7 +10,7 @@
 
 Nathanel + Titane - Industrial Design!
 
-This repository hosts the website built to showcase my portfolio as an industrial designer.
+This repository hosts the website built to showcase my works and projexts as an industrial designer.
 
 Nathanel + Titane uses:
 
