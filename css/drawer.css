@@ -9,7 +9,7 @@
 	margin: 0px 0px 0px 0px;
 	text-overflow: ellipsis;
 	opacity: 95%;
-	overflow: scroll;
+	overflow: overlay;
 	z-index: 999;
 }
 
