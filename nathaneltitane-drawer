@@ -88,127 +88,124 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 
 	</div>
 
-	<div class="drawer-container">
+	<div class="grid grid-column">
 
-		<div class="grid grid-column">
+		<!-- industrial -->
 
-			<!-- industrial -->
-
-			<div class="section">
-
-				<div class="grid-cell">
-
-					<a class="button" data-link="/industrial/">
-
-						<div class="grid grid-middle">
-
-							<div class="grid-cell">
-
-								<div class="logo-purple icon icon-flex"></div>
-
-							</div>
-
-							<div class="grid-cell">
-
-								<div class="text-center">INDUSTRIAL DESIGN</div>
-
-							</div>
-
-						</div>
-
-					</a>
-
-				</div>
-
-			</div>
-
-			<!-- graphic -->
-
-			<div class="section">
-
-				<div class="grid-cell">
-
-					<a class="button" data-link="/graphic/">
-
-						<div class="grid grid-middle">
-
-							<div class="grid-cell">
-
-								<div class="logo-teal icon icon-flex"></div>
-
-							</div>
-
-							<div class="grid-cell">
-
-								<div class="text-center">GRAPHIC DESIGN</div>
-
-							</div>
-
-						</div>
-
-					</a>
-
-				</div>
-
-			</div>
-
-			<!-- code -->
-
-			<div class="section">
-
-				<div class="grid-cell">
-
-					<a class="button" href="https://github.com/nathaneltitane/" target="_blank">
-
-						<div class="grid grid-middle">
-
-							<div class="grid-cell">
-
-								<div class="logo-black icon icon-flex"></div>
-
-							</div>
-
-							<div class="grid-cell">
-
-								<div class="text-center">CODE</div>
-
-							</div>
-
-						</div>
-
-					</a>
-
-				</div>
-
-			</div>
-
-		<!-- copyright -->
-
-		<div class="section" id="copyright">
+		<div class="section">
 
 			<div class="grid-cell">
 
-			<a class="button text-center">
+				<a class="button" data-link="/industrial/">
 
-				<div class="grid grid-middle">
+					<div class="grid grid-middle">
 
-					<div class="grid-cell">
+						<div class="grid-cell">
 
-						Version // ${stamp}</br>
-						Nathanel + Titane // Industrial + Designs</br>
-						Nathanel Titane - ©  <text id="year"></text>
+							<div class="logo-purple icon icon-flex"></div>
+
+						</div>
+
+						<div class="grid-cell">
+
+							<div class="text-center">INDUSTRIAL DESIGN</div>
+
+						</div>
 
 					</div>
 
-				</div>
+				</a>
 
-			</a>
+			</div>
 
 		</div>
+
+		<!-- graphic -->
+
+		<div class="section">
+
+			<div class="grid-cell">
+
+				<a class="button" data-link="/graphic/">
+
+					<div class="grid grid-middle">
+
+						<div class="grid-cell">
+
+							<div class="logo-teal icon icon-flex"></div>
+
+						</div>
+
+						<div class="grid-cell">
+
+							<div class="text-center">GRAPHIC DESIGN</div>
+
+						</div>
+
+					</div>
+
+				</a>
+
+			</div>
+
+		</div>
+
+		<!-- code -->
+
+		<div class="section">
+
+			<div class="grid-cell">
+
+				<a class="button" href="https://github.com/nathaneltitane/" target="_blank">
+
+					<div class="grid grid-middle">
+
+						<div class="grid-cell">
+
+							<div class="logo-black icon icon-flex"></div>
+
+						</div>
+
+						<div class="grid-cell">
+
+							<div class="text-center">CODE</div>
+
+						</div>
+
+					</div>
+
+				</a>
+
+			</div>
+
+		</div>
+
+	<!-- copyright -->
+
+	<div class="section" id="copyright">
+
+		<div class="grid-cell">
+
+		<a class="button text-center">
+
+			<div class="grid grid-middle">
+
+				<div class="grid-cell">
+
+					Version // ${stamp}</br>
+					Nathanel + Titane // Industrial + Designs</br>
+					Nathanel Titane - ©  <text id="year"></text>
+
+				</div>
+
+			</div>
+
+		</a>
 
 	</div>
 
 </div>
+
 MODEL-DRAWER-HEADER
 
 frobulator.inf "Parsed content entries" "[ ${count} ]"
