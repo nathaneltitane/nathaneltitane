@@ -205,7 +205,6 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 	</div>
 
 </div>
-
 MODEL-DRAWER-HEADER
 
 frobulator.inf "Parsed content entries" "[ ${count} ]"
