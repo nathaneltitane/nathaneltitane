@@ -7,7 +7,6 @@
 	position: fixed;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	text-overflow: ellipsis;
 	opacity: 95%;
 	z-index: 999;
 }
@@ -45,7 +44,6 @@
 	margin: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 @keyframes drawer-open {
