@@ -9,7 +9,6 @@
 	margin: 0px 0px 0px 0px;
 	text-overflow: ellipsis;
 	opacity: 95%;
-	overflow: overlay;
 	z-index: 999;
 }
 
@@ -39,6 +38,7 @@
 .drawer-open .drawer {
 	top: 0px;
 	left: 0px;
+	overflow: overlay;
 }
 
 .drawer a {
