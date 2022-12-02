@@ -6,9 +6,9 @@
 
 ---
 
-### Welcome to Nathanel + Titane!
+### Welcome to [Nathanel + Titane!](https://nathaneltitane.com)
 
-Nathanel + Titane - Industrial Design!
+Nathanel + Titane - Industrial Design Portfolio
 
 This repository hosts the website built to showcase my works and projects as an industrial designer.
 
