@@ -5,4 +5,17 @@
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+	opacity: 0;
+
+	animation-name: load-reveal;
+	animation-delay: 1.0s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes load-reveal {
+	0% {opacity: 0;}
+
+	100% {opacity: 1.0;}
+
 }
