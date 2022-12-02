@@ -6,7 +6,7 @@
 
 ---
 
-### Welcome to [Nathanel + Titane](https://nathaneltitane.com)!
+### Welcome to [Nathanel + Titane](https://nathaneltitane.com)
 
 Nathanel + Titane - Industrial Design Portfolio
 
