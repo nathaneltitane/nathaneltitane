@@ -26,14 +26,4 @@ $(document).ready(function() {
 
 	});
 
-	$('#model-canvas').click(function(e) {
-
-		// disable defaults prevention for href handling
-
-		// e.preventDefault();
-
-		$('#drawer').removeClass('drawer-open');
-
-	});
-
 });
