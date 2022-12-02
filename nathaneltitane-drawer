@@ -92,7 +92,7 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 
 		<!-- industrial -->
 
-		<div class="section">
+		<div class="list section">
 
 			<div class="grid-cell">
 
@@ -122,7 +122,7 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 
 		<!-- graphic -->
 
-		<div class="section">
+		<div class="list section">
 
 			<div class="grid-cell">
 
@@ -152,7 +152,7 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 
 		<!-- code -->
 
-		<div class="section">
+		<div class="list section">
 
 			<div class="grid-cell">
 
@@ -180,29 +180,33 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 
 		</div>
 
-	<!-- copyright -->
+		<!-- copyright -->
 
-	<div class="section" id="copyright">
+		<div class="list section copyright">
 
-		<div class="grid-cell">
-
-		<a class="button text-center">
-
-			<div class="grid grid-middle">
+			<div class="grid grid-column grid-middle">
 
 				<div class="grid-cell">
 
-					Version // ${stamp}</br>
-					Nathanel + Titane // Industrial + Designs</br>
-					Nathanel Titane - ©  <text id="year"></text>
+					<div class="avatar avatar-64 avatar-center" href=""></div>
 
 				</div>
 
 			</div>
 
-		</a>
+			<div class="grid grid-column grid-middle">
 
-	</div>
+				<div class="grid-cell text-center">
+
+					Version // 12-01-2022</br>
+					Nathanel + Titane - Industrial Design</br>
+					N Λ T H Λ N E L - ©  <text id="year"></text>
+
+				</div>
+
+			</div>
+
+		</div>
 
 </div>
 MODEL-DRAWER-HEADER
