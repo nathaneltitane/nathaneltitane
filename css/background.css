@@ -1,14 +1,13 @@
 #background {
 	background: url("/background/background.svg");
 	background-color:  #000000;
-
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;;
-	background-size: contain;
+	background-size: 50%;
 
 	height: 100vh;
 	width: 100vw;
+
 	opacity: 0;
 
 	animation-name: background-reveal;
@@ -20,7 +19,5 @@
 @keyframes background-reveal {
 	0% {opacity: 0;}
 
-	100% {opacity: 1.0;}
-
+	100% {opacity: 1;}
 }
-
