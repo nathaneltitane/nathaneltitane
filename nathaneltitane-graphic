@@ -119,7 +119,7 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 			<div class="grid grid-column">
 
-				<div class='grid-cell'>
+				<div class='grid-cell grid-cell-center'>
 
 					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
 

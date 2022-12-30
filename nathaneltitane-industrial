@@ -127,13 +127,13 @@ CONTENT-CONTAINER
 
 cat << CONTENT-TITLE ->> "industrial/index.html"
 
-				<div class="grid-cell">
+				<div class="grid-cell grid-cell-center grid-cell-stretch">
 
 					<div class="button">${content_title}</div>
 
 				</div>
 
-				<div class='grid-cell'>
+				<div class='grid-cell grid-cell-center'>
 
 					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
 
