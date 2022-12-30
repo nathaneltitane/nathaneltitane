@@ -13,25 +13,18 @@ function parse_data(data) {
 	$('#load').append(data);
 
 }
+
 $(document).ready(function() {
 
 	$('[data-link]').click(function(e) {
+
+		$('#drawer').removeClass('drawer-open');
 
 		e.preventDefault();
 
 		var link = $(this).data('link');
 
 		get_page_data(link);
-
-		$('#load').css(
-
-			'border-top',
-
-			'10px solid #dddddd'
-
-		);
-
-		$('#drawer').removeClass('drawer-open');
 
 		$('#load').addClass('load-open');
 

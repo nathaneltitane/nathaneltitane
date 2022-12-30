@@ -1,9 +1,11 @@
 img {
-	display: block;
 	height: auto;
-	width: 100vw;
-	margin-left: auto;
-	margin-right: auto;
-	padding:  10px 10px 10px 10px;
+	width: 100%;
+	min-width: 256px;
 }
 
+.image {
+	height: auto;
+	width: 25vh;
+	min-width: 256px;
+}

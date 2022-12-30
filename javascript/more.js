@@ -4,8 +4,6 @@ $(document).ready(function() {
 
 	if ($('.container.hidden').length >= 1) {
 
-		$('#top').hide();
-
 		var count = 0;
 
 		$('#more').on('click', function(e) {
@@ -27,12 +25,6 @@ $(document).ready(function() {
 				"slow"
 
 			);
-
-			if (count == 2) {
-
-				$('#top').show();
-
-			}
 
 			if ($('.container.hidden').length == 0) {
 

@@ -1,5 +1,8 @@
 #copyright {
-	height: 300px;
-	margin-top: calc(100vh - 300px);
+
 }
 
+.copyright {
+	background: #ccccccff;
+	border-radius: 2px;
+}

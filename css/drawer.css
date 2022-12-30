@@ -1,5 +1,5 @@
 .drawer {
-	background: #bbbbbb;
+	background: #ddddddaa;
 	height: 100%;
 	width: 325px;
 	left: -325px;
@@ -50,9 +50,9 @@
 }
 
 .list:last-of-type {
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
 	position: absolute;
 }
 
