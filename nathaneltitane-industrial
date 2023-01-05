@@ -121,19 +121,19 @@ cat << CONTENT-CONTAINER ->> "industrial/index.html"
 
 		<div class='${container}'>
 
-			<div class="grid grid-column">
+			<div class="flex flex-column">
 
 CONTENT-CONTAINER
 
 cat << CONTENT-TITLE ->> "industrial/index.html"
 
-				<div class="grid-cell grid-cell-center grid-cell-stretch">
+				<div class="flex-cell flex-cell-center flex-cell-stretch">
 
 					<div class="button">${content_title}</div>
 
 				</div>
 
-				<div class='grid-cell grid-cell-center'>
+				<div class='flex-cell flex-cell-center'>
 
 					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
 
