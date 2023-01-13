@@ -219,9 +219,9 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 </div>
 MODEL-DRAWER-HEADER
 
-frobulator.inf "Parsed content entries" "[ ${count} ]"
+frobulator.inf "Entries" "[ ${count} ]"
 echo
 
-frobulator.scs "Content drawer" "[ Done ]"
+frobulator.scs "Drawer" "[ Done ]"
 echo
 

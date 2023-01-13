@@ -143,8 +143,8 @@ cat << FOOTER ->> "graphic/index.html"
 
 FOOTER
 
-frobulator.inf "Parsed content entries" "[ ${count} ]"
+frobulator.inf "Entries" "[ ${count} ]"
 echo
 
-frobulator.scs "Graphic content" "[ Done ]"
+frobulator.scs "Graphic" "[ Done ]"
 echo

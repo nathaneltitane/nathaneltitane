@@ -160,8 +160,8 @@ cat << FOOTER ->> "industrial/index.html"
 
 FOOTER
 
-frobulator.inf "Parsed content entries" "[ ${count} ]"
+frobulator.inf "Entries" "[ ${count} ]"
 echo
 
-frobulator.scs "Industrial content" "[ Done ]"
+frobulator.scs "Industrial" "[ Done ]"
 echo
