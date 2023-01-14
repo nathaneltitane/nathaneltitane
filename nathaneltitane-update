@@ -38,7 +38,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="10-20-2022"
+version="01-14-2023"
 
 # usage ///////////////////////////////////////////////////////////////////////
 
@@ -55,12 +55,12 @@ do
 			option="all"
 		;;
 
-		-g|--graphic)
-			option="graphic"
+		-i|--industrial)
+			option="exports"
 		;;
 
-		-i|--industrial)
-			option="industrial"
+		-g|--graphic)
+			option="renders"
 		;;
 
 		-h|--help)
@@ -72,10 +72,11 @@ do
 			echo -e "-directory          Specify directory to load models from."
 			echo
 			echo -e "-a, --all           Full website framework and content update."
-			echo -e "-g, --graphic       Models exports content update."
-			echo -e "-i, --industrial    Models renders content update."
 			echo
-			echo -e "'${script}'         [ Version ${version} ]"
+			echo -e "-i, --industrial    Models exports content update."
+			echo -e "-g, --graphic       Models renders content update."
+			echo
+			echo -e "'${script}'       [ Version ${version} ]"
 			echo
 
 			exit
@@ -121,127 +122,86 @@ echo
 # functions ////////////////////////////////////////////////////////////////////
 
 upload () {
+	message="${1}"
+
 	git add *
 
 	git commit		\
 		--all		\
-		--message='Models update'
+		--message="$${message}"
 
 	git push > /dev/null 2>&1
 }
 
-run () {
-	for script in ${scripts_list[@]}
+option () {
+	if [[ -n "${#list[@]}" ]]
+	then
+		# ${2} - array
+
+		list+=(${@:1})
+	else
+		script="${1}"
+
+		list=()
+
+		list+=("${script}")
+	fi
+
+	for script in ${list[@]}
 	do
-		bash ./"${script}"
+		"${SHELL}" ./"${script}"
 	done
+
+	upload "Models update" &
+
+	frobulator.fwd "Updating..."
+	echo
+
+	list=()
 }
 
 # requirements /////////////////////////////////////////////////////////////////
 
-frobulator.assess () {
-	if [[ -n "${#list[@]}" ]]
-	then
-		# ${1} - array
-
-		list=(${@:1})
-	else
-		command="${1}"
-
-		list=()
-
-		list+=("${command}")
-	fi
-
-	if [[ $(id -u -n) = "root" ]]
-	then
-		frobulator.require ${list[@]}
-
-		frobulator.msg "${script} requirements installed."
-		echo
-
-		frobulator.inf "Run ${script} as 'user' to proceed."
-		echo
-
-		exit
-	else
-		for requirement in ${list[@]}
-		do
-			if [[ -z $(command -v "${requirement}") ]]
-			then
-				frobulator.err "Missing" "[ '${requirement}' ]"
-				echo
-
-				frobulator.wrn "Start ${script} as 'root' to install requirements."
-				echo
-
-				exit 1
-			fi
-		done
-	fi
-}
-
-list=(
-	git
-	jpegoptim
-	optipng
-	rsync
-)
-
-frobulator.assess
-
-list=()
-
 # update ///////////////////////////////////////////////////////////////////////
 
-# content
+if [[ "${option}" = "directory" ]]
+then
+	export models_directory="${directory}"
+fi
 
 if [[ "${option}" = "all" ]]
 then
-	scripts_list+=(
-#	nathaneltitane-server
-	nathaneltitane-drawer
-	nathaneltitane-graphic
-	nathaneltitane-industrial
+	list+=(
+		legolinux-drawer
+		legolinux-industrial
+		legolinux-graphin
 	)
-
-	run
-
-	upload &
-
-	frobulator.progress "Updating..."
-	echo
 fi
 
-if [[ "${option}" = "graphic" ]]
+if [[ "${option}" = "drawer" ]]
 then
-	scripts_list+=(
-		nathaneltitane-drawer
-		nathaneltitane-graphic
+	list+=(
+		legolinux-drawer
 	)
-
-	run
-
-	upload &
-
-	frobulator.progress "Updating graphic..."
-	echo
 fi
 
 if [[ "${option}" = "industrial" ]]
 then
-	scripts_list+=(
-		nathaneltitane-drawer
-		nathaneltitane-industrial
+	list+=(
+		legolinux-industrial
 	)
-
-	run
-
-	upload &
-
-	frobulator.progress "Updating industrial..."
-	echo
 fi
+
+if [[ "${option}" = "graphic" ]]
+then
+	list+=(
+		legolinux-graphic
+	)
+fi
+
+option ${list[@]}
+
+list=()
 
 frobulator.scs "Update" "[ Done ]"
 echo
