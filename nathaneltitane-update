@@ -76,7 +76,7 @@ do
 			echo -e "-i, --industrial    Models exports content update."
 			echo -e "-g, --graphic       Models renders content update."
 			echo
-			echo -e "'${script}'       [ Version ${version} ]"
+			echo -e "'${script}'         [ Version ${version} ]"
 			echo
 
 			exit
