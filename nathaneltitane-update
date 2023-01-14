@@ -134,22 +134,9 @@ upload () {
 }
 
 option () {
-	if [[ -n "${#list[@]}" ]]
-	then
-		# ${2} - array
-
-		list+=(${@:1})
-	else
-		script="${1}"
-
-		list=()
-
-		list+=("${script}")
-	fi
-
 	for script in ${list[@]}
 	do
-		"${SHELL}" ./"${script}"
+		"${SHELL}" "${PWD}"/"${script}"
 	done
 
 	upload "Models update" &
