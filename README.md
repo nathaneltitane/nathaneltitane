@@ -12,7 +12,7 @@ Nathanel + Titane - Industrial Design Portfolio
 
 This repository hosts the website built to showcase my works and projects as an industrial designer.
 
-Nathanel + Titane uses:
+### Repositories
 
 - [Frobulator](https://github.com/nathaneltitane/frobulator) to streamline the scripts and make redundant code a thing of the past.
 
