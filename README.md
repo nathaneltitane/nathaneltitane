@@ -22,7 +22,7 @@ This repository hosts the website built to showcase my works and projects as an 
 
 [[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop)
 
-[[Frobulator]](https://github.com/nathaneltitane/frobulator)
+[[ Frobulator // Project Page ]](https://github.com/nathaneltitane/frobulator)
 
 [[ L²CU // Project Page ]](https://github.com/nathaneltitane/l2cu)
 
