@@ -1,52 +1,56 @@
-.drawer {
-	background: #ddddddaa;
-	height: 100%;
-	width: 325px;
-	left: -325px;
-	top: 0px;
+#drawer {
+	background: #bbbbbbff;
+
+	z-index: 999;
 	position: fixed;
+	top: 0;
+	left: -325px;
+
+	width: 325px;
+	height: 100vh;
+
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	z-index: 999;
+}
+
+#drawer.drawer-open {
+	top: 0;
+	right: 0;
+}
+
+.drawer {
+	width: 100%;
+	height: 100%;
+
+	overflow-y: scroll;
 }
 
 .drawer-button {
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: auto;
 	margin: 0px 0px 0px 0px;
 	padding: 10px 10px 10px 10px;
+
 	position: absolute;
 	top: 0px;
 	right: 0px;
 
-	animation-name: drawer-open;
+	animation-name: drawer-button-reveal;
 	animation-delay: 0.5s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-.drawer-open .drawer {
-	top: 0px;
-	left: 0px;
-	overflow: overlay;
-}
-
 .drawer a {
-	margin: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	overflow: hidden;
 }
 
-@keyframes drawer-open {
+@keyframes drawer-button-reveal {
 	0% {left: 0px;}
 
 	100% {left: 325px;}
-
 }
 
 .list {
-
 }
 
 .list:last-of-type {
