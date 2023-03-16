@@ -166,30 +166,30 @@ fi
 if [[ "${option}" = "all" ]]
 then
 	list+=(
-		legolinux-drawer
-		legolinux-industrial
-		legolinux-graphin
+		nathaneltitane-drawer
+		nathaneltitane-industrial
+		nathaneltitane-graphic
 	)
 fi
 
 if [[ "${option}" = "drawer" ]]
 then
 	list+=(
-		legolinux-drawer
+		nathaneltitane-drawer
 	)
 fi
 
 if [[ "${option}" = "industrial" ]]
 then
 	list+=(
-		legolinux-industrial
+		nathaneltitane-industrial
 	)
 fi
 
 if [[ "${option}" = "graphic" ]]
 then
 	list+=(
-		legolinux-graphic
+		nathaneltitane-graphic
 	)
 fi
 
