@@ -15,7 +15,7 @@
 
 #drawer.drawer-open {
 	top: 0;
-	right: 0;
+	left: 0;
 }
 
 .drawer {
@@ -31,7 +31,7 @@
 
 	position: absolute;
 	top: 0px;
-	right: 0px;
+	left: 0px;
 
 	animation-name: drawer-button-reveal;
 	animation-delay: 0.5s;
