@@ -103,14 +103,8 @@
 
 @media (pointer: coarse) and (max-device-width: 480px) {
 
-	#drawer{
+	#drawer {
 		top: 60px;
-	}
-
-	@keyframes drawer-reveal {
-		0% {top: 60px;}
-
-		100% {top: calc(60px - 216px);}
 	}
 }
 
@@ -118,14 +112,8 @@
 
 @media (pointer: coarse) and (min-device-width: 800px) {
 
-	#drawer{
+	#drawer {
 		top: 60px;
-	}
-
-	@keyframes drawer-reveal {
-		0% {top: 60px;}
-
-		100% {top: calc(60px - 256px);}
 	}
 }
 
