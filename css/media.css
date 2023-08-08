@@ -103,18 +103,12 @@
 
 @media (pointer: coarse) and (max-device-width: 480px) {
 
-	#drawer {
-		top: 60px;
-	}
 }
 
 /* // tablet // */
 
 @media (pointer: coarse) and (min-device-width: 800px) {
 
-	#drawer {
-		top: 60px;
-	}
 }
 
 /* // specific models // */
