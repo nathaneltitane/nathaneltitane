@@ -90,7 +90,6 @@ INDEX-HEADER
 
 extensions_list=(
 	jpg
-	png
 	svg
 )
 
