@@ -43,7 +43,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="01-14-2023"
+version="09-03-2023"
 
 # usage ////////////////////////////////////////////////////////////////////////
 
@@ -53,6 +53,8 @@ frobulator.script "Setting up ${script#*-}"
 echo
 
 # variables ////////////////////////////////////////////////////////////////////
+
+industrial_directory="${PWD}"/industrial
 
 # defaults /////////////////////////////////////////////////////////////////////
 
@@ -90,7 +92,6 @@ INDEX-HEADER
 
 extensions_list=(
 	jpg
-	png
 	svg
 )
 
@@ -98,11 +99,31 @@ count=1
 
 for extension in ${extensions_list[@]}
 do
-	for content_items in $(find industrial/* -type f -iname "*.${extension}")
-	do
-		IFS='/' read -r -a path <<< $(echo "${content_items}")
+	content_items=( $(find ${industrial_directory} -type f -iname "*.${extension}" | sort) )
 
-		content_title=$(cat ${path[0]}/${path[1]}/title)
+	# set IFS
+
+	IFS=$'\n'
+
+	for content_path in ${content_items[@]}
+	do
+		content_path=$(echo "${content_path}" | cut -d '/' -f5-)
+
+		# get content file name from path
+
+		content_file="${content_path##*/}"
+
+		# strip extension from content file name
+
+		content_name="${content_file%.*}"
+
+		# use content directory as root
+
+		content_directory="${content_path%/*}"
+
+		# define content title file location
+
+		content_title=$(cat "${content_directory}"/title)
 
 		# keep first container visible
 
@@ -134,7 +155,7 @@ cat << CONTENT-TITLE ->> "industrial/index.html"
 
 				<div class='flex-cell flex-cell-center'>
 
-					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
+					<img src="/${content_path}"/>
 
 				</div>
 
@@ -152,6 +173,11 @@ CONTENT-CONTAINER
 	((count++))
 
 	done
+
+	# reste IFS
+
+	IFS=''
+
 done
 
 # generate footer

@@ -43,7 +43,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="01-14-2023"
+version="09-03-2023"
 
 # usage ////////////////////////////////////////////////////////////////////////
 
@@ -53,6 +53,8 @@ frobulator.script "Setting up ${script#*-}"
 echo
 
 # variables ////////////////////////////////////////////////////////////////////
+
+graphic_directory="${PWD}"/graphic
 
 # defaults /////////////////////////////////////////////////////////////////////
 
@@ -92,21 +94,39 @@ extensions_list=(
 	svg
 )
 
+count=1
+
 for extension in ${extensions_list[@]}
 do
-	count=1
+	content_items=( $(find ${graphic_directory} -type f -iname "*.${extension}" | sort) )
 
-	for content_items in $(find graphic/ -type f -iname "*.${extension}")
+	# set IFS
+
+	IFS=$'\n'
+
+	for content_path in ${content_items[@]}
 	do
-		IFS='/' read -r -a path <<< $(echo "${content_items}")
+		content_path=$(echo "${content_path}" | cut -d '/' -f5-)
+
+		# get model file name from path
+
+		content_file="${content_path##*/}"
+
+		# strip extension from model file name
+
+		content_name="${content_file%.*}"
+
+		# use model directory as root
+
+		content_directory="${content_path%/*}"
 
 		# keep first container visible
 
-		if [ "${count}" -eq 1 ]
+		if [ "${count}" -gt 1 ]
 		then
-			container="container"
-		else
 			container="container hidden"
+		else
+			container="container"
 		fi
 
 # generate content container
@@ -120,7 +140,7 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 				<div class='flex-cell flex-cell-center'>
 
-					<img src="/${path[0]}/${path[1]}/${path[2]}"/>
+					<img src="/${content_path}"/>
 
 				</div>
 
