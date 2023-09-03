@@ -107,7 +107,7 @@ do
 
 	for content_path in ${content_items[@]}
 	do
-		content_path=$(echo "${content_path}" | cut -d '/' -f5-)
+		content_path=$(echo "${content_path}" | cut -d '/' -f6-)
 
 		# get content file name from path
 
@@ -134,6 +134,7 @@ do
 			container="container"
 		fi
 
+		exit
 # generate content container
 
 cat << CONTENT-CONTAINER ->> "industrial/index.html"
