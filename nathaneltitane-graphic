@@ -106,7 +106,7 @@ do
 
 	for content_path in ${content_items[@]}
 	do
-		content_path=$(echo "${content_path}" | cut -d '/' -f5-)
+		content_path=$(echo "${content_path}" | cut -d '/' -f6-)
 
 		# get model file name from path
 

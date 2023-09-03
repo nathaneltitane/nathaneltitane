@@ -134,7 +134,6 @@ do
 			container="container"
 		fi
 
-		exit
 # generate content container
 
 cat << CONTENT-CONTAINER ->> "industrial/index.html"
