@@ -77,11 +77,11 @@
 	align-items: stretch;
 }
 
-.flex-wrap{
+.flex-wrap {
 	flex-wrap: wrap;
 }
 
-.flex-wrap-reverse{
+.flex-wrap-reverse {
 	flex-wrap: wrap-reverse;
 }
 
@@ -117,11 +117,11 @@
 	flex: none;
 }
 
-.flex-cell-flex{
+.flex-cell-flex {
 	flex: 0 1 auto;
 }
 
-.flex-cell-first{
+.flex-cell-first {
 	order: -1;
 }
 
