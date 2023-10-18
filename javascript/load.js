@@ -16,17 +16,61 @@ function parse_data ( data ) {
 
 $( document ).ready ( function ( ) {
 
+	var drawer = $( '#drawer' );
+
+	var load = $( '.load' );
+
+	function show ( ) {
+
+        load.removeClass ( 'load-hide' );
+
+        setTimeout ( function ( ) {
+
+            load.addClass ( 'load-show' );
+
+        }, 250 );
+
+    };
+
+    function hide ( ) {
+
+        load.removeClass ( 'load-show' );
+
+		load.addClass ( 'load-hide' );
+
+    };
+
+	function toggle ( ) {
+
+        if ( load.hasClass ( 'load-show' ) ) {
+
+            hide ( );
+
+        }
+
+        else {
+
+			drawer.removeClass ( 'drawer-show' );
+
+			drawer.addClass ( 'drawer-hide' );
+
+			show ( );
+
+        }
+
+    };
+
 	$( '[data-link]' ).click ( function ( event ) {
 
-		$( '#drawer' ).removeClass ( 'drawer-show' );
-
-		$( '#drawer' ).addClass ( 'drawer-hide' );
-
-		$( '.load' ).addClass ( 'load-show' );
+		toggle ( );
 
 		var link = $( this ).data ( 'link' );
 
-		get_page_data ( link );
+		setTimeout ( function ( ) {
+
+			get_page_data ( link );
+
+		}, 250 );
 
 	} );
 
