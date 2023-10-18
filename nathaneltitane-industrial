@@ -182,5 +182,5 @@ done
 frobulator.inf "Entries" "[ ${count} ]"
 echo
 
-frobulator.scs "Industrial" "[ Done ]"
+frobulator.cpt "Complete" "[ Industrial ]"
 echo

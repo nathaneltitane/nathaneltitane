@@ -164,5 +164,5 @@ done
 frobulator.inf "Entries" "[ ${count} ]"
 echo
 
-frobulator.scs "Graphic" "[ Done ]"
+frobulator.cpt "Complete" "[ Graphic ]"
 echo
