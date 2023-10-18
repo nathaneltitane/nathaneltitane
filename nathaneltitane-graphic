@@ -43,7 +43,7 @@ script=$(basename -- "${BASH_SOURCE[0]}")
 
 # version //////////////////////////////////////////////////////////////////////
 
-version="09-03-2023"
+version="10-18-2023"
 
 # usage ////////////////////////////////////////////////////////////////////////
 
@@ -155,7 +155,7 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 CONTENT-CONTAINER
 
-	((count++))
+	(( count ++ ))
 
 	done
 

@@ -1,11 +1,49 @@
 #load {
-	background: #00000000;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 
 	height: 100vh;
+}
+
+.load {
+	position: fixed;
+	bottom: 0vh;
+	left: 0px;
+	right: 0px;
+
+	height: 100vh;
 
 	overflow-y: scroll;
+}
+
+@keyframes load-reveal {
+	0% {bottom: -100vh;}
+
+	100% {bottom: 0vh;}
+}
+
+.load-show {
+	bottom: 0vh;
+
+	animation: load-reveal 1s;
+	animation-delay: 0s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes load-conceal {
+	0% {bottom: 0vh;}
+
+	100% {bottom: -100vh;}
+}
+
+.load-hide {
+	bottom: -100vh;
+
+	animation: load-conceal 1s;
+	animation-delay: 0s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }

@@ -1,35 +1,96 @@
 // drawer //
 
-$(document).ready(function() {
+$( document ).ready ( function ( ) {
 
-	$('.drawer-button').click(function(e) {
+	var drawer = $( '#drawer' );
 
-		// disable defaults prevention for href handling
+	var ids = [
+        '#navigation-button-label',
+        '#paypal-button-label',
+        '#color-button-label',
+        '#controls-button-label'
+    ];
 
-		// e.preventDefault();
+    var classes = [
+        'navigation-label-color',
+        'paypal-label-color',
+        'color-label-color',
+        'controls-label-color'
+    ];
 
-		$('#drawer').toggleClass('drawer-open');
+    var ids = ids.join ( ', ' );
 
-	});
+    var classes = classes.join ( ' ' );
 
-	$('#background').click(function(e) {
+    function show ( ) {
 
-		// disable defaults prevention for href handling
+    $( ids ).addClass ( classes );
 
-		// e.preventDefault();
+        drawer.removeClass ( 'drawer-hide' );
 
-		$('#drawer').removeClass('drawer-open');
+        setTimeout ( function ( ) {
 
-	});
+            drawer.addClass ( 'drawer-show' );
 
-		$('#load').click(function(e) {
+        }, 250 );
 
-		// disable defaults prevention for href handling
+    };
 
-		// e.preventDefault();
+    function hide ( ) {
 
-		$('#drawer').removeClass('drawer-open');
+        drawer.removeClass ( 'drawer-show' );
 
-	});
+        drawer.addClass ( 'drawer-hide' );
 
-});
+        setTimeout ( function ( ) {
+
+            $( ids ).removeClass ( classes );
+
+        }, 500 );
+
+    };
+
+    function toggle ( ) {
+
+        if ( drawer.hasClass ( 'drawer-show' ) ) {
+
+            hide ( );
+
+        }
+
+        else {
+
+            show ( );
+
+        }
+    };
+
+    $( '.navigation' ).click ( function ( event ) {
+
+        show ( ) ;
+
+    } );
+
+    $( '#load' ).click ( function ( event ) {
+
+        if ( drawer.hasClass ( 'drawer-show' ) ) {
+
+            hide ( );
+
+        }
+
+    } );
+
+    // keyboard
+
+    $( document ).on ( 'keyup', function ( event ) {
+
+        if ( event.key === 'd' ) {
+
+            toggle ( );
+
+        }
+
+    } );
+
+} );

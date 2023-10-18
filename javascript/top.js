@@ -1,12 +1,12 @@
 // top //
 
-$(document).ready(function() {
+$( document ).ready ( function ( ) {
 
-	$('.top').click(function(event) {
+	$( '.top' ).click ( function ( event ) {
 
-		event.preventDefault();
+		event.preventDefault ( );
 
-		$('html, body').animate({
+		$( 'html, body' ).animate ( {
 
 			scrollTop: '0'
 
@@ -18,6 +18,6 @@ $(document).ready(function() {
 
 		return false;
 
-	})
+	} )
 
-});
+} );

@@ -1,9 +1,5 @@
 .container {
-	background-color: #ccccccff;
+	background-color: #ccccccaa;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 10px 0px 10px;
-}
-
-.hidden {
-	display: none;
 }

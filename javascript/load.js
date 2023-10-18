@@ -1,43 +1,33 @@
 // load //
 
-function get_page_data(href) {
+function get_page_data ( href ) {
 
-	$.get(href, parse_data);
-
-}
-
-function parse_data(data) {
-
-	$('#load').empty();
-
-	$('#load').append(data);
+	$.get ( href, parse_data );
 
 }
 
-$(document).ready(function() {
+function parse_data ( data ) {
 
-	$('[data-link]').click(function(e) {
+	$( '.load' ).empty ( );
 
-		$('#drawer').removeClass('drawer-open');
+	$( '.load' ).append ( data );
 
-		e.preventDefault();
+}
 
-		var link = $(this).data('link');
+$( document ).ready ( function ( ) {
 
-		get_page_data(link);
+	$( '[data-link]' ).click ( function ( event ) {
 
-		$('#load').addClass('load-open');
+		$( '#drawer' ).removeClass ( 'drawer-show' );
 
-			 $("html, body").animate(
+		$( '#drawer' ).addClass ( 'drawer-hide' );
 
-				{ scrollTop: 0 },
+		$( '.load' ).addClass ( 'load-show' );
 
-				"slow"
+		var link = $( this ).data ( 'link' );
 
-			);
+		get_page_data ( link );
 
-		$('#anchors.hidden').show();
+	} );
 
-	});
-
-});
+} );

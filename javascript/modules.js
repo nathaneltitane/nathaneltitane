@@ -6,18 +6,24 @@ $(function() {
 
 		$("head").append(data);
 
-	});
+	} );
 
-	$.get("/modules/drawer.html", function(data) {
+	$.get( "/modules/drawer.html", function ( data ) {
 
-		$("#drawer").append(data);
+		$( "#drawer" ).append ( data );
 
-	});
+	} );
 
-	$.get("/modules/anchors.html", function(data) {
+	$.get( "/modules/navigation.html", function ( data ) {
 
-		$("#anchor").append(data);
+		$( "#navigation" ).append ( data );
 
-	});
+	} );
 
-});
+		$.get( "/modules/load.html", function ( data ) {
+
+		$( "#load" ).append ( data );
+
+	} );
+
+} );

@@ -1,19 +1,19 @@
 // bottom //
 
-$(document).ready(function() {
+$( document ).ready ( function ( ) {
 
-	$('.bottom').click(function(event) {
+	$( '.bottom' ).click ( function ( event ) {
 
-		event.preventDefault();
+		event.preventDefault ( );
 
-		$('html, body').animate({
+		$( 'html, body' ).animate ( {
 
-			scrollTop: $(document).height()
+			scrollTop: $( document ).height ( )
 
-		}, 'slow');
+		}, 'slow' );
 
 		return false;
 
-	});
+	} );
 
-});
+} );

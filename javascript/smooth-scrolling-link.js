@@ -1,10 +1,10 @@
 // smooth scrolling link //
 
-$('a').click(function() {
+$( 'a' ).click ( function ( ) {
 
-	$('html, body').animate({
+	$( 'html, body' ).animate ( {
 
-		scrollTop: $($.attr(this, 'href')).offset().top
+		scrollTop: $( $.attr ( this, 'href' ) ).offset ( ).top
 
 	},
 
@@ -14,4 +14,4 @@ $('a').click(function() {
 
 	return false;
 
-});
+} );

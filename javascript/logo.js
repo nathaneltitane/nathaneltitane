@@ -1,6 +1,6 @@
 // set random logo //
 
-$(document).ready(function() {
+$( document ).ready ( function ( ) {
 
 	var logo_array = [
 
@@ -16,8 +16,8 @@ $(document).ready(function() {
 
 	];
 
-	var index = Math.floor(Math.random() * logo_array.length);
+	var index = Math.floor ( Math.random ( ) * logo_array.length );
 
-	$('.logo').css('background-image', 'url("/logo/' + logo_array[index] + '.svg")');
+	$( '.logo' ).css ( 'background-image', 'url("/logo/' + logo_array[index] + '.svg")' );
 
-});
+} );
