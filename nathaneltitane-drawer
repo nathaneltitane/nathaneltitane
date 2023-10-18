@@ -229,8 +229,5 @@ cat << MODEL-DRAWER-COPYRIGHT ->> "modules/drawer.html"
 </div>
 MODEL-DRAWER-COPYRIGHT
 
-frobulator.inf "Entries" "[ ${count} ]"
-echo
-
 frobulator.cpt "Complete" "[ Drawer ]"
 echo
