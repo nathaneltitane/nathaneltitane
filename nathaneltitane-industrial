@@ -128,7 +128,7 @@ do
 
 		if [ "${count}" -gt 1 ]
 		then
-			container="container hidden"
+			container="container"
 		else
 			container="container"
 		fi
@@ -173,22 +173,11 @@ CONTENT-CONTAINER
 
 	done
 
-	# reste IFS
+	# reset IFS
 
 	IFS=''
 
 done
-
-# generate footer
-
-cat << FOOTER ->> "industrial/index.html"
-		<!-- END INDEX -->
-
-		<div class="section" id="anchors">
-
-		<div>
-
-FOOTER
 
 frobulator.inf "Entries" "[ ${count} ]"
 echo
