@@ -139,7 +139,11 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 				<div class='flex-cell flex-cell-center'>
 
-					<img src="/${content_path}"/>
+					<a href="/${content_path}">
+
+						<img src="/${content_path}"/>
+
+					</a>
 
 				</div>
 
