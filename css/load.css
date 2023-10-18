@@ -1,7 +1,11 @@
 #load {
-	background: #ddddddaa;
+	background: #00000000;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+
+	height: 100vh;
+
+	overflow-y: scroll;
 }
