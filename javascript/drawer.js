@@ -22,12 +22,6 @@ $( document ).ready ( function ( ) {
 
         drawer.addClass ( 'drawer-hide' );
 
-        setTimeout ( function ( ) {
-
-            $( ids ).removeClass ( classes );
-
-        }, 500 );
-
     };
 
     function toggle ( ) {
