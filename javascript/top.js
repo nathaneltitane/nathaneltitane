@@ -2,11 +2,15 @@
 
 $( document ).ready ( function ( ) {
 
-	$( '.top' ).click ( function ( event ) {
+	var top = $( '.top' );
+
+	var load = $( '.load' );
+
+	top.click ( function ( event ) {
 
 		event.preventDefault ( );
 
-		$( '.load' ).animate ( {
+		load.animate ( {
 
 			scrollTop: '0'
 
