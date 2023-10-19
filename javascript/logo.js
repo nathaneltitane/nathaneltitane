@@ -3,17 +3,11 @@
 $( document ).ready ( function ( ) {
 
 	var logo_array = [
-
 		['logo-blue'],
-
 		['logo-green'],
-
 		['logo-purple'],
-
 		['logo-red'],
-
 		['logo-teal']
-
 	];
 
 	var index = Math.floor ( Math.random ( ) * logo_array.length );
