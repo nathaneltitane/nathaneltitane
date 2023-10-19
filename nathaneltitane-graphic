@@ -90,7 +90,7 @@ INDEX-HEADER
 # values
 
 extensions_list=(
-	svg
+	jpg
 )
 
 count=1
