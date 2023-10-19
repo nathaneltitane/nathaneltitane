@@ -2,26 +2,15 @@
 
 $( document ).ready ( function ( ) {
 
-	var count = 0;
-
 	$( '.bottom' ).click ( function ( event ) {
 
 	event.preventDefault();
 
-	var containers = $( '.container' );
+	var load = $( '.load' );
 
-	if ( count < containers.length ) {
+	load.animate ( {
 
-		containers.eq ( count ).slideDown ( 'slow' );
-
-		count ++;
-	}
-
-	var scrollToContainer = containers.eq ( count - 1 );
-
-	$( '.load' ).animate ( {
-
-		scrollTop: scrollToContainer.offset ( ).top
+		scrollTop: load[0].scrollHeight
 
 	}, 'slow' );
 
