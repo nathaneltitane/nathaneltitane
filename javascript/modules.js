@@ -4,7 +4,7 @@ $( function ( ) {
 
 	$.get ( '/modules/head.html', function ( data ) {
 
-		$('head' ).append ( data );
+		$( 'head' ).append ( data );
 
 	} );
 
@@ -37,6 +37,5 @@ $( function ( ) {
 		$( '#top' ).append ( data );
 
 	} );
-
 
 } );
