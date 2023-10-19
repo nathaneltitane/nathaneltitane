@@ -2,11 +2,13 @@
 
 $( document ).ready ( function ( ) {
 
-	$( '.bottom' ).click ( function ( event ) {
-
-	event.preventDefault();
+	var bottom = $( '.bottom' );
 
 	var load = $( '.load' );
+
+	bottom.click ( function ( event ) {
+
+	event.preventDefault();
 
 	load.animate ( {
 
