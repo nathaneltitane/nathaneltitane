@@ -26,3 +26,10 @@
 	background-image: url(/logo/logo-teal.svg);
 }
 
+.logo-bottom {
+	background-image: url(/logo/logo-bottom.svg);
+}
+
+.logo-top {
+	background-image: url(/logo/logo-top.svg);
+}

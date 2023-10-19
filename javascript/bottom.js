@@ -2,17 +2,28 @@
 
 $( document ).ready ( function ( ) {
 
+	var count = 0;
+
 	$( '.bottom' ).click ( function ( event ) {
 
-		event.preventDefault ( );
+	event.preventDefault();
 
-		$( 'html, body' ).animate ( {
+	var containers = $( '.container' );
 
-			scrollTop: $( document ).height ( )
+	if ( count < containers.length ) {
 
-		}, 'slow' );
+		containers.eq ( count ).slideDown ( 'slow' );
 
-		return false;
+		count ++;
+	}
+
+	var scrollToContainer = containers.eq ( count - 1 );
+
+	$( '.load' ).animate ( {
+
+		scrollTop: scrollToContainer.offset ( ).top
+
+	}, 'slow' );
 
 	} );
 

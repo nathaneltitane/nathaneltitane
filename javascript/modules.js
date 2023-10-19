@@ -20,10 +20,23 @@ $( function ( ) {
 
 	} );
 
-		$.get( '/modules/load.html', function ( data ) {
+	$.get( '/modules/load.html', function ( data ) {
 
 		$( '#load' ).append ( data );
 
 	} );
+
+	$.get( '/modules/bottom.html', function ( data ) {
+
+		$( '#bottom' ).append ( data );
+
+	} );
+
+	$.get( '/modules/top.html', function ( data ) {
+
+		$( '#top' ).append ( data );
+
+	} );
+
 
 } );

@@ -18,7 +18,7 @@ $( document ).ready ( function ( ) {
 
 			container.removeClass ( "hidden" );
 
-			 $( 'html, body'"' ).animate(
+			 $( 'html, body' ).animate(
 
 				{ scrollTop: 0 },
 

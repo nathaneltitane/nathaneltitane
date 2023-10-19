@@ -186,7 +186,7 @@ MODEL-DRAWER-CODE
 cat << MODEL-DRAWER-COPYRIGHT ->> "modules/drawer.html"
 		<!-- copyright -->
 
-		<div class="section">
+		<div class="section last">
 
 			<div class="flex flex-column flex-center flex-middle">
 

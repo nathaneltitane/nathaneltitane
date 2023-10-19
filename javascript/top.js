@@ -6,7 +6,7 @@ $( document ).ready ( function ( ) {
 
 		event.preventDefault ( );
 
-		$( 'html, body' ).animate ( {
+		$( '.load' ).animate ( {
 
 			scrollTop: '0'
 
@@ -18,6 +18,6 @@ $( document ).ready ( function ( ) {
 
 		return false;
 
-	} )
+	} );
 
 } );

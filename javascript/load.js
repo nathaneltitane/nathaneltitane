@@ -20,25 +20,45 @@ $( document ).ready ( function ( ) {
 
 	var load = $( '.load' );
 
+	var bottom = $( '.bottom' );
+
+	var top = $( '.top' );
+
 	function show ( ) {
 
-        load.removeClass ( 'load-hide' );
-
         setTimeout ( function ( ) {
+
+			load.removeClass ( 'load-hide' );
 
             load.addClass ( 'load-show' );
 
         }, 250 );
 
+		bottom.removeClass ( 'bottom-hide' );
+
+		bottom.addClass ( 'bottom-show' );
+
+		top.removeClass ( 'top-hide' );
+
+		top.addClass ( 'top-show' );
+
     };
 
     function hide ( ) {
 
-        load.removeClass ( 'load-show' );
+		bottom.removeClass ( 'bottom-show' );
+
+		bottom.addClass ( 'bottom-hide' );
+
+		top.removeClass ( 'top-show' );
+
+		top.addClass ( 'top-hide' );
+
+		load.removeClass ( 'load-show' );
 
 		load.addClass ( 'load-hide' );
 
-    };
+	};
 
 	function toggle ( ) {
 
