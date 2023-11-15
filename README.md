@@ -32,8 +32,6 @@ This repository contains the website created for the presentation of a comprehen
 
 [[ Terminal // Project Page ]](https://github.com/nathaneltitane/terminal)
 
-[[ Termux // Project Page ]](https://github.com/nathaneltitane/termux)
-
 ### Reports:
 
 [Submit bug report or feature request](https://github.com/nathaneltitane/nathaneltitane/issues)
