@@ -20,7 +20,7 @@ This repository contains the website created for the presentation of a comprehen
 
 ### Projects:
 
-[[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop) [Stars](https://img.shields.io/github/stars/nathaneltitane/dextop)
+[[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=flat)
 
 [[ Frobulator // Project Page ]](https://github.com/nathaneltitane/frobulator)
 
