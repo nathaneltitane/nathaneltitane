@@ -20,17 +20,17 @@ This repository contains the website created for the presentation of a comprehen
 
 ### Projects:
 
-![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=flat) [[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop)
+[[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=flat)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/frobulator?style=flat) [[ Frobulator // Project Page ]](https://github.com/nathaneltitane/frobulator)
+[[ Frobulator // Project Page ]](https://github.com/nathaneltitane/frobulator) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/frobulator?style=flat)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/l2cu?style=flat) [[ L²CU // Project Page ]](https://github.com/nathaneltitane/l2cu)
+[[ L²CU // Project Page ]](https://github.com/nathaneltitane/l2cu) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/l2cu?style=flat)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/legolinux?style=flat) [[ Lego // Linux // Project Page ]](https://github.com/nathaneltitane/legolinux)
+[[ Lego // Linux // Project Page ]](https://github.com/nathaneltitane/legolinux) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/legolinux?style=flat)
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/nathaneltitane?style=flat)
 
-[[ Terminal // Project Page ]](https://github.com/nathaneltitane/terminal)
+[[ Terminal // Project Page ]](https://github.com/nathaneltitane/terminal) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/terminal?style=flat)
 
 ### Reports:
 
