@@ -20,17 +20,17 @@ This repository contains the website created for the presentation of a comprehen
 
 ### Projects:
 
-[[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=flat-square)
+[[ Dextop // Project Page ]](https://github.com/nathaneltitane/dextop) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=for-the-badge)
 
-[[ Frobulator // Project Page ]](https://github.com/nathaneltitane/frobulator) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/frobulator?style=flat-square)
+[[ Frobulator // Project Page ]](https://github.com/nathaneltitane/frobulator) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/frobulator?style=for-the-badge)
 
-[[ L²CU // Project Page ]](https://github.com/nathaneltitane/l2cu) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/l2cu?style=flat-square)
+[[ L²CU // Project Page ]](https://github.com/nathaneltitane/l2cu) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/l2cu?style=for-the-badge)
 
-[[ Lego // Linux // Project Page ]](https://github.com/nathaneltitane/legolinux) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/legolinux?style=flat-square)
+[[ Lego // Linux // Project Page ]](https://github.com/nathaneltitane/legolinux) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/legolinux?style=for-the-badge)
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/nathaneltitane?style=flat-square)
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/nathaneltitane?style=for-the-badge)
 
-[[ Terminal // Project Page ]](https://github.com/nathaneltitane/terminal) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/terminal?style=flat-square)
+[[ Terminal // Project Page ]](https://github.com/nathaneltitane/terminal) ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/terminal?style=for-the-badge)
 
 ### Reports:
 
