@@ -20,7 +20,7 @@ This repository contains the website created for the presentation of a comprehen
 
 ### Projects:
 
-![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=for-the-badge&logo=gnubash&logoColor=ffffff&label=DEXTOP&link=https%3A%2F%2Fdextop.app&link=https%3A%2F%2Fgithub.com%2Fnathaneltitane%2Fdextop)
+![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/dextop?style=for-the-badge&logo=gnubash&logoColor=ffffff&label=DEXTOP)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/frobulator?style=for-the-badge&logo=gnubash&logoColor=ffffff&label=FROBULATOR)
 
