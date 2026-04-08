@@ -1,0 +1,172 @@
+#!/bin/bash
+
+# dependencies /////////////////////////////////////////////////////////////////
+
+if [ -f "${HOME}"/.local/bin/frobulator ]
+then
+	rm -r -f "${HOME}"/.local/bin/frobulator
+fi
+
+if [[ -z $(command -v frobulator) ]]
+then
+	if [[ $(id -u -n) = "root" ]]
+	then
+		SUDO_HOME=/root
+
+		USER="${SUDO_USER}"
+
+		HOME=/home/"${USER}"
+	fi
+
+	if [[ -z $(command -v curl) ]]
+	then
+		yes | apt-get install curl
+	fi
+
+	if [ ! -d "${HOME}"/.local/bin ]
+	then
+		mkdir -p "${HOME}"/.local/bin
+	fi
+
+	curl -s -L get.frbltr.app > "${HOME}"/.local/bin/frobulator
+
+	chmod +x "${HOME}"/.local/bin/frobulator
+fi
+
+. "${HOME}"/.local/bin/frobulator
+
+# superuser ////////////////////////////////////////////////////////////////////
+
+# script ///////////////////////////////////////////////////////////////////////
+
+script=$(basename -- "${BASH_SOURCE[0]}")
+
+# version //////////////////////////////////////////////////////////////////////
+
+version="10-18-2023"
+
+# usage ////////////////////////////////////////////////////////////////////////
+
+# prompt ///////////////////////////////////////////////////////////////////////
+
+frobulator.script "Setting up ${script#*-}"
+
+# variables ////////////////////////////////////////////////////////////////////
+
+graphic_directory="${PWD}"/graphic
+
+# defaults /////////////////////////////////////////////////////////////////////
+
+# functions ////////////////////////////////////////////////////////////////////
+
+frobulator.inf "Generating graphic content entries"
+echo
+
+frobulator.fwd "Writing..."
+echo
+
+# generate header
+
+cat << 'INDEX-HEADER' -> "graphic/index.html"
+		<script>
+
+			$(function(){
+
+				$.get("/modules/anchors.html", function (data) {
+
+					$("#anchors").append(data);
+
+				});
+
+				}
+			);
+
+		</script>
+
+		<!-- BEGIN INDEX -->
+
+INDEX-HEADER
+
+# values
+
+extensions_list=(
+	png
+)
+
+count=1
+
+for extension in ${extensions_list[@]}
+do
+	content_items=( $(find ${graphic_directory} -type f -iname "*.${extension}" | sort) )
+
+	# set IFS
+
+	IFS=$'\n'
+
+	for content_path in ${content_items[@]}
+	do
+		content_path=$(echo "${content_path}" | cut -d '/' -f6-)
+
+		# get model file name from path
+
+		content_file="${content_path##*/}"
+
+		# strip extension from model file name
+
+		content_name="${content_file%.*}"
+
+		# use model directory as root
+
+		content_directory="${content_path%/*}"
+
+		# keep first container visible
+
+		if [ "${count}" -gt 1 ]
+		then
+			container="container"
+		else
+			container="container"
+		fi
+
+# generate content container
+
+cat << CONTENT-CONTAINER ->> "graphic/index.html"
+		<!-- BEGIN CONTAINER -->
+
+		<div class='${container}'>
+
+			<div class="flex flex-column">
+
+				<div class='flex-cell flex-cell-center'>
+
+					<a href="/${content_path}">
+
+						<img src="/${content_path}"/>
+
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- END CONTAINER -->
+
+CONTENT-CONTAINER
+
+	(( count ++ ))
+
+	done
+
+	# reset IFS
+
+	IFS=''
+
+done
+
+frobulator.inf "Entries" "[ ${count} ]"
+echo
+
+frobulator.cpt "Complete" "[ Graphic ]"
+echo

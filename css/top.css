@@ -1,0 +1,48 @@
+#top {
+	height: 64px;
+	width: 64px;
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+.top {
+	color: #000000ff;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 10px 10px 10px;
+
+	position: fixed;
+	bottom: 0px;
+	right: -200px;
+}
+
+.top-label-color {
+	 color: #00000000;
+}
+
+@keyframes top-reveal {
+	0% {right: -200px;}
+
+	100% {right: 0px;}
+}
+
+.top-show {
+	animation-name: top-reveal;
+	animation-delay: 1.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes top-conceal {
+	0% {right: 0px;}
+
+	100% {right: -200px;}
+}
+
+.top-hide {
+	animation-name: top-conceal;
+	animation-delay: 0s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}

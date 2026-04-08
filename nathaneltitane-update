@@ -1,0 +1,202 @@
+#!/bin/bash
+
+# dependencies /////////////////////////////////////////////////////////////////
+
+if [ -f "${HOME}"/.local/bin/frobulator ]
+then
+	rm -r -f "${HOME}"/.local/bin/frobulator
+fi
+
+if [[ -z $(command -v frobulator) ]]
+then
+	if [[ $(id -u -n) = "root" ]]
+	then
+		SUDO_HOME=/root
+
+		USER="${SUDO_USER}"
+
+		HOME=/home/"${USER}"
+	fi
+
+	if [[ -z $(command -v curl) ]]
+	then
+		yes | apt-get install curl
+	fi
+
+	if [ ! -d "${HOME}"/.local/bin ]
+	then
+		mkdir -p "${HOME}"/.local/bin
+	fi
+
+	curl -s -L get.frbltr.app > "${HOME}"/.local/bin/frobulator
+
+	chmod +x "${HOME}"/.local/bin/frobulator
+fi
+
+. "${HOME}"/.local/bin/frobulator
+
+# superuser ////////////////////////////////////////////////////////////////////
+
+# script ///////////////////////////////////////////////////////////////////////
+
+script=$(basename -- "${BASH_SOURCE[0]}")
+
+# version //////////////////////////////////////////////////////////////////////
+
+version="10-18-2023"
+
+# usage ///////////////////////////////////////////////////////////////////////
+
+while (($#))
+do
+	case "${1}" in
+		-directory)
+			directory="${2}"
+
+			shift
+		;;
+
+		-a|--all)
+			option="all"
+		;;
+
+		-i|--industrial)
+			option="exports"
+		;;
+
+		-g|--graphic)
+			option="renders"
+		;;
+
+		-h|--help)
+			echo
+			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
+			echo
+			echo -e "Utility options:"
+			echo
+			echo -e "-directory          Specify directory to load models from."
+			echo
+			echo -e "-a, --all           Full website framework and content update."
+			echo
+			echo -e "-i, --industrial    Models exports content update."
+			echo -e "-g, --graphic       Models renders content update."
+			echo
+			echo -e "'${script}'         [ Version ${version} ]"
+			echo
+
+			exit
+		;;
+
+		"")
+			# handle empty argument:
+			# use default values specified in script
+
+			:
+		;;
+
+		*)
+			echo
+			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
+			echo
+			echo -e "${script}: Unknown option '${1}'"
+			echo -e "Type './${script} --help' for help and usage information."
+			echo
+
+			exit 1
+
+		;;
+
+		esac
+
+		shift
+done
+
+# clear ////////////////////////////////////////////////////////////////////////
+
+frobulator.clear
+
+# prompt ///////////////////////////////////////////////////////////////////////
+
+frobulator.script "Setting up ${script#*-}"
+
+# variables ////////////////////////////////////////////////////////////////////
+
+# defaults /////////////////////////////////////////////////////////////////////
+
+# functions ////////////////////////////////////////////////////////////////////
+
+upload () {
+
+	message="${1}"
+
+	git add *
+
+	git commit		\
+		--all		\
+		--message="$${message}"
+
+	git push > /dev/null 2>&1
+
+	echo
+}
+
+option () {
+
+	for script in ${list[@]}
+	do
+		"${SHELL}" "${PWD}"/"${script}"
+	done
+
+	upload "Models update" &
+
+	frobulator.fwd "Updating..."
+	echo
+
+	list=()
+}
+
+# requirements /////////////////////////////////////////////////////////////////
+
+# update ///////////////////////////////////////////////////////////////////////
+
+if [[ "${option}" = "directory" ]]
+then
+	export models_directory="${directory}"
+fi
+
+if [[ "${option}" = "all" ]]
+then
+	list+=(
+		nathaneltitane-drawer
+		nathaneltitane-industrial
+		nathaneltitane-graphic
+	)
+fi
+
+if [[ "${option}" = "drawer" ]]
+then
+	list+=(
+		nathaneltitane-drawer
+	)
+fi
+
+if [[ "${option}" = "industrial" ]]
+then
+	list+=(
+		nathaneltitane-industrial
+	)
+fi
+
+if [[ "${option}" = "graphic" ]]
+then
+	list+=(
+		nathaneltitane-graphic
+	)
+fi
+
+option ${list[@]}
+
+list=()
+
+frobulator.scs "Update" "[ Done ]"
+echo

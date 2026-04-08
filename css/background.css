@@ -1,0 +1,24 @@
+#background {
+	background: url("/background/background.svg");
+	background-color:  #000000;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+
+	height: 100vh;
+	width: 100vw;
+
+	opacity: 0;
+
+	animation-name: background-reveal;
+	animation-delay: 0.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes background-reveal {
+	0% {opacity: 0;}
+
+	100% {opacity: 1;}
+}

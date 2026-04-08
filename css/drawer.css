@@ -1,0 +1,61 @@
+#drawer {
+	background: #ccccccaa;
+	width: 50vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: -50vw;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+
+	z-index: 999;
+}
+
+.drawer {
+	width: 100%;
+	height: 100%;
+
+	overflow-y: scroll;
+}
+
+.drawer a {
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+@keyframes drawer-reveal {
+	0% {left: -50vw;}
+
+	100% {left: 0vw;}
+}
+
+.drawer-show {
+	left: 0vw;
+
+	animation: drawer-reveal 1s;
+	animation-delay: 0s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes drawer-conceal {
+	0% {left: 0vw;}
+
+	100% {left: -50vw;}
+}
+
+.drawer-hide {
+	left: -50vw;
+
+	animation: drawer-conceal 1s;
+	animation-delay: 0s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.drawer .last {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
