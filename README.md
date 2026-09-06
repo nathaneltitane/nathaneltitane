@@ -2,7 +2,7 @@
 
 [![Donate](https://img.shields.io/badge/Paypal-2f343f.svg?style=for-the-badge&logo=paypal&label=Donate)](https://www.paypal.com/donate?hosted_button_id=ZW3CDCANHJCWJ)
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) [ Version // 01-21-2023 ]
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) [ Version // 2023-01-21 ]
 
 ---
 
@@ -44,7 +44,7 @@ This repository contains the website created for the presentation of a comprehen
 
 ---
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) [ Version // 01-21-2023 ]
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) [ Version // 2023-01-21 ]
 
 ### Enjoying Nathanel + Titane? Buy me a coffee to show your appreciation!
 
