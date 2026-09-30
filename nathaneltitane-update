@@ -114,7 +114,8 @@ version="2026-09-29"
 
 while (($#))
 do
-	case "${1}" in
+	case "${1}"
+	in
 		-directory)
 			directory="${2}"
 
@@ -126,27 +127,30 @@ do
 		;;
 
 		-i|--industrial)
-			option="exports"
+			option="industrial"
 		;;
 
 		-g|--graphic)
-			option="renders"
+			option="graphic"
 		;;
 
 		-h|--help)
 			echo
 			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
 			echo
-			echo -e "Utility options:"
+			echo -e "Options:"
 			echo
-			echo -e "-directory          Specify directory to load models from."
+			echo -e "-directory          Specify [d]irectory to load models from."
 			echo
-			echo -e "-a, --all           Full website framework and content update."
+			echo -e "-a, --all           Update [a]ll website framework and content."
 			echo
-			echo -e "-i, --industrial    Models exports content update."
-			echo -e "-g, --graphic       Models renders content update."
+			echo -e "-i, --industrial    Update [i]ndustrial content."
 			echo
-			echo -e "'${script}'         [ Version ${version} ]"
+			echo -e "-g, --graphic       Update [g]raphic content."
+			echo
+			echo -e "-h, --help          Show [h]elp and usage information."
+			echo
+			echo -e "'${script}'         [ Version // ${version} ]"
 			echo
 
 			exit
@@ -163,8 +167,8 @@ do
 			echo
 			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
 			echo
-			echo -e "${script}: Unknown option '${1}'"
-			echo -e "Type './${script} --help' for help and usage information."
+			echo -e "Unknown option: '${script} ${1}':"
+			echo -e "Type './${script} -h' for help and usage information."
 			echo
 
 			exit 1
@@ -173,7 +177,8 @@ do
 
 		esac
 
-		shift
+	shift
+
 done
 
 # clear ////////////////////////////////////////////////////////////////////////
