@@ -215,7 +215,6 @@ option () {
 	upload "Models update" &
 
 	frobulator.fwd "Updating..."
-	echo
 
 	list=()
 }
@@ -264,4 +263,3 @@ option ${list[@]}
 list=()
 
 frobulator.scs "Update" "[ Done ]"
-echo

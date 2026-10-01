@@ -163,10 +163,8 @@ graphic_directory="${PWD}"/graphic
 # functions ////////////////////////////////////////////////////////////////////
 
 frobulator.inf "Generating graphic content entries"
-echo
 
 frobulator.fwd "Writing..."
-echo
 
 # generate header
 
@@ -269,7 +267,5 @@ CONTENT-CONTAINER
 done
 
 frobulator.inf "Entries" "[ ${count} ]"
-echo
 
 frobulator.cpt "Complete" "[ Graphic ]"
-echo

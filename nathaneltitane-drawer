@@ -163,10 +163,8 @@ stamp=$(date +"%m-%d-%Y")
 # functions ////////////////////////////////////////////////////////////////////
 
 frobulator.inf "Generating content entries"
-echo
 
 frobulator.fwd "Writing..."
-echo
 
 # generate header
 
@@ -333,4 +331,3 @@ cat << MODEL-DRAWER-COPYRIGHT ->> "modules/drawer.html"
 MODEL-DRAWER-COPYRIGHT
 
 frobulator.cpt "Complete" "[ Drawer ]"
-echo
