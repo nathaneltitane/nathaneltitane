@@ -163,10 +163,8 @@ industrial_directory="${PWD}"/industrial
 # functions ////////////////////////////////////////////////////////////////////
 
 frobulator.inf "Generating industrial content entries"
-echo
 
 frobulator.fwd "Writing..."
-echo
 
 # generate header
 
@@ -287,7 +285,5 @@ CONTENT-CONTAINER
 done
 
 frobulator.inf "Entries" "[ ${count} ]"
-echo
 
 frobulator.cpt "Complete" "[ Industrial ]"
-echo
