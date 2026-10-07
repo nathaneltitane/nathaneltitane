@@ -183,7 +183,7 @@ option () {
 
 if [[ "${option}" = "directory" ]]
 then
-	export models_directory="${directory}"
+	export directory_models="${directory}"
 fi
 
 if [[ "${option}" = "all" ]]
