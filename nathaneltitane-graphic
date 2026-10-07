@@ -114,7 +114,7 @@ done
 
 # variables ────────────────────────────────────────────────────────────────────
 
-graphic_directory="${PWD}"/graphic
+directory_graphic="${PWD}"/graphic
 
 # defaults ─────────────────────────────────────────────────────────────────────
 
@@ -148,43 +148,43 @@ INDEX-HEADER
 
 # values
 
-extensions_list=(
+list_extensions=(
 	png
 )
 
-count=1
+count_entries=1
 
-for extension in ${extensions_list[@]}
+for extension in ${list_extensions[@]}
 do
-	content_items=( $(find ${graphic_directory} -type f -iname "*.${extension}" | sort) )
+	list_paths_content=( $(find ${directory_graphic} -type f -iname "*.${extension}" | sort) )
 
 	# set IFS
 
 	IFS=$'\n'
 
-	for content_path in ${content_items[@]}
+	for path_content in ${list_paths_content[@]}
 	do
-		content_path=$(echo "${content_path}" | cut -d '/' -f6-)
+		path_content=$(echo "${path_content}" | cut -d '/' -f6-)
 
 		# get model file name from path
 
-		content_file="${content_path##*/}"
+		file_content="${path_content##*/}"
 
 		# strip extension from model file name
 
-		content_name="${content_file%.*}"
+		name_content="${file_content%.*}"
 
 		# use model directory as root
 
-		content_directory="${content_path%/*}"
+		directory_content="${path_content%/*}"
 
 		# keep first container visible
 
-		if [ "${count}" -gt 1 ]
+		if [ "${count_entries}" -gt 1 ]
 		then
-			container="container"
+			class_container="container"
 		else
-			container="container"
+			class_container="container"
 		fi
 
 # generate content container
@@ -192,15 +192,15 @@ do
 cat << CONTENT-CONTAINER ->> "graphic/index.html"
 		<!-- BEGIN CONTAINER -->
 
-		<div class='${container}'>
+		<div class='${class_container}'>
 
 			<div class="flex flex-column">
 
 				<div class='flex-cell flex-cell-center'>
 
-					<a href="/${content_path}">
+					<a href="/${path_content}">
 
-						<img src="/${content_path}"/>
+						<img src="/${path_content}"/>
 
 					</a>
 
@@ -214,7 +214,7 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 CONTENT-CONTAINER
 
-	(( count ++ ))
+	(( count_entries ++ ))
 
 	done
 
@@ -224,6 +224,6 @@ CONTENT-CONTAINER
 
 done
 
-frobulator.inf "Entries" "[ ${count} ]"
+frobulator.inf "Entries" "[ ${count_entries} ]"
 
 frobulator.cpt "Complete" "[ Graphic ]"
