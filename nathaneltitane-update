@@ -156,7 +156,7 @@ upload () {
 
 	git commit		\
 		--all		\
-		--message="$${message}"
+		--message="${message}"
 
 	git push > "${sink}" 2>&1
 
