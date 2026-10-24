@@ -52,8 +52,7 @@ This repository contains the website created for the presentation of a comprehen
 
 ---
 
-[![Donate](https://img.shields.io/badge/Paypal-2f343f.svg?style=for-the-badge&logo=paypal&label=Donate)](https://www.paypal.com/donate?hosted_button_id=ZW3CDCANHJCWJ)<br>
-Show your appreciation with a PayPal donation!
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) [ Version // 2023-01-21 ]
 
 ---
 
@@ -62,4 +61,5 @@ Useful? Star the repository - it helps others find it.
 
 ---
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane) [ Version // 2023-01-21 ]
+[![Donate](https://img.shields.io/badge/Paypal-2f343f.svg?style=for-the-badge&logo=paypal&label=Donate)](https://www.paypal.com/donate?hosted_button_id=ZW3CDCANHJCWJ)<br>
+Show your appreciation with a PayPal donation!
