@@ -10,7 +10,7 @@ Useful? Star the repository - it helps others find it.
 
 ---
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)---------------------------------------------------------------------------[ Version // 2023-01-21 ]
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[ Version // 2023-01-21 ]
 
 ---
 
@@ -52,7 +52,7 @@ This repository contains the website created for the presentation of a comprehen
 
 ---
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)---------------------------------------------------------------------------[ Version // 2023-01-21 ]
+[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[ Version // 2023-01-21 ]
 
 ---
 
