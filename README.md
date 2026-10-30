@@ -10,10 +10,6 @@ Useful? Star the repository - it helps others find it.
 
 ---
 
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[ Version // 2023-01-21 ]
-
----
-
 ### Welcome to [Nathanel + Titane](https://nathaneltitane.com)
 
 Nathanel + Titane - Industrial Design Portfolio
@@ -51,10 +47,6 @@ This repository contains the website created for the presentation of a comprehen
 [![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/nathaneltitane?style=for-the-badge&logo=gnubash&logoColor=ffffff&label=NATHANEL%20%2b%20TITANE)](https://github.com/nathaneltitane/nathaneltitane)
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/nathaneltitane/pewpewprints?style=for-the-badge&logo=gnubash&logoColor=ffffff&label=PEW%21%20PEW%21%20PRINTS)](https://github.com/nathaneltitane/pewpewprints)
-
----
-
-[[ Nathanel + Titane // Project Page ]](https://github.com/nathaneltitane/nathaneltitane)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[ Version // 2023-01-21 ]
 
 ---
 
