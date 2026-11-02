@@ -12,6 +12,6 @@ $( document ).ready ( function ( ) {
 
 	var index = Math.floor ( Math.random ( ) * logo_array.length );
 
-	$( '.logo' ).css ( 'background-image', 'url("/logo/' + logo_array[index] + '.svg")' );
+	$( '.logo' ).css ( 'background-image', 'url("/resources/logo/' + logo_array[index] + '.svg")' );
 
 } );
