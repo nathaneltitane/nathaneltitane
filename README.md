@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/nathaneltitane/nathaneltitane/main/nathaneltitane.svg" alt="Nathanel + Titane"><br><b>Industrial Design Portfolio</b><br>DESIGN. ENGINEER. MAKE.</p>
+<p align="center"><img src="https://raw.githubusercontent.com/nathaneltitane/nathaneltitane/main/resources/logo/logo-nathaneltitane.svg" alt="Nathanel + Titane"><br><b>Industrial Design Portfolio</b><br>DESIGN. ENGINEER. MAKE.</p>
 
 ---
 
