@@ -131,7 +131,7 @@ cat << 'INDEX-HEADER' -> "graphic/index.html"
 
 			$(function(){
 
-				$.get("/modules/anchors.html", function (data) {
+				$.get("/resources/modules/anchors.html", function (data) {
 
 					$("#anchors").append(data);
 

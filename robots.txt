@@ -2,13 +2,13 @@ User-agent: *
 Disallow: /abstracts-outlines
 Disallow: /android
 Disallow: /assets
-Disallow: /background
+Disallow: /resources/background
 Disallow: /bird
 Disallow: /boxit
 Disallow: /diode
 Disallow: /edamame
 Disallow: /graphic
-Disallow: /logo
+Disallow: /resources/logo
 Disallow: /panda
 Disallow: /photography
 Disallow: /renders

@@ -126,14 +126,14 @@ frobulator.fwd "Writing..."
 
 # generate header
 
-cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
+cat << MODEL-DRAWER-HEADER -> "resources/modules/drawer.html"
 <!-- scripts -->
 
-<script src="/javascript/drawer.js" type="text/javascript"></script>
+<script src="/resources/javascript/drawer.js" type="text/javascript"></script>
 
-<script src="/javascript/load.js" type="text/javascript"></script>
+<script src="/resources/javascript/load.js" type="text/javascript"></script>
 
-<script src="/javascript/year.js" type="text/javascript"></script>
+<script src="/resources/javascript/year.js" type="text/javascript"></script>
 
 <!-- drawer -->
 
@@ -142,7 +142,7 @@ cat << MODEL-DRAWER-HEADER -> "modules/drawer.html"
 	<div class="flex flex-column">
 MODEL-DRAWER-HEADER
 
-cat << MODEL-DRAWER-INDUSTRIAL ->> "modules/drawer.html"
+cat << MODEL-DRAWER-INDUSTRIAL ->> "resources/modules/drawer.html"
 
 		<!-- industrial -->
 
@@ -175,7 +175,7 @@ cat << MODEL-DRAWER-INDUSTRIAL ->> "modules/drawer.html"
 		</div>
 MODEL-DRAWER-INDUSTRIAL
 
-cat << MODEL-DRAWER-GRAPHIC ->> "modules/drawer.html"
+cat << MODEL-DRAWER-GRAPHIC ->> "resources/modules/drawer.html"
 
 <!-- graphic -->
 
@@ -208,7 +208,7 @@ cat << MODEL-DRAWER-GRAPHIC ->> "modules/drawer.html"
 		</div>
 MODEL-DRAWER-GRAPHIC
 
-cat << MODEL-DRAWER-CODE ->> "modules/drawer.html"
+cat << MODEL-DRAWER-CODE ->> "resources/modules/drawer.html"
 
 		<!-- code -->
 
@@ -242,7 +242,7 @@ cat << MODEL-DRAWER-CODE ->> "modules/drawer.html"
 
 MODEL-DRAWER-CODE
 
-cat << MODEL-DRAWER-COPYRIGHT ->> "modules/drawer.html"
+cat << MODEL-DRAWER-COPYRIGHT ->> "resources/modules/drawer.html"
 		<!-- copyright -->
 
 		<div class="section last copyright">
