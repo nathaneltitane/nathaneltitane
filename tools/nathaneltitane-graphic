@@ -8,13 +8,15 @@ script="$(basename -- "${BASH_SOURCE[0]}")"
 
 self_arguments=("${@}")
 
+# load frobulator once
+
 if [ "${frobulator_loaded}" != "true" ]
 then
 	echo
 	echo "[  >  ] Checking..."
 	echo
 
-	# root through sudo keeps using the user's frobulator
+	# keep the sudo user home
 
 	if [ -n "${SUDO_USER}" ]
 	then
@@ -22,15 +24,19 @@ then
 		HOME="$(getent passwd "${SUDO_USER}" | cut -d ':' -f 6)"
 	fi
 
+	# local copy and download
+
 	frobulator="${HOME}/.local/bin/frobulator"
 	frobulator_download="$(mktemp)"
 
 	mkdir -p "${HOME}/.local/bin"
 
-	# latest release - curl or wget - local copy replaced only by a newer one
+	# fetch the latest release
 
 	curl -s -L -o "${frobulator_download}" get.frbltr.app 2> /dev/null ||
 	wget -q -O "${frobulator_download}" get.frbltr.app 2> /dev/null
+
+	# keep only a newer release
 
 	version_online="$(grep -m 1 '^update=' "${frobulator_download}")"
 	version_local="$(grep -m 1 '^update=' "${frobulator}" 2> /dev/null)"
@@ -42,7 +48,11 @@ then
 		chmod +x "${frobulator}"
 	fi
 
+	# drop the download
+
 	rm -f "${frobulator_download}"
+
+	# stop without frobulator
 
 	if [ ! -f "${frobulator}" ]
 	then
@@ -51,6 +61,8 @@ then
 
 		exit 1
 	fi
+
+	# load the library
 
 	source "${frobulator}"
 fi
@@ -114,17 +126,21 @@ done
 
 # variables ────────────────────────────────────────────────────────────────────
 
+# graphic folder
+
 directory_graphic="${PWD}"/graphic
 
 # defaults ─────────────────────────────────────────────────────────────────────
 
 # functions ────────────────────────────────────────────────────────────────────
 
+# report progress
+
 frobulator.inf "Generating graphic content entries"
 
 frobulator.fwd "Writing..."
 
-# generate header
+# page header
 
 cat << 'INDEX-HEADER' -> "graphic/index.html"
 		<script>
@@ -146,35 +162,41 @@ cat << 'INDEX-HEADER' -> "graphic/index.html"
 
 INDEX-HEADER
 
-# values
+# file types
 
 list_extensions=(
 	png
 )
 
+# entry counter
+
 count_entries=1
 
 for extension in ${list_extensions[@]}
 do
+	# every file of this type
+
 	list_paths_content=( $(find ${directory_graphic} -type f -iname "*.${extension}" | sort) )
 
-	# set IFS
+	# split on new lines
 
 	IFS=$'\n'
 
 	for path_content in ${list_paths_content[@]}
 	do
+		# path below the site root
+
 		path_content=$(echo "${path_content}" | cut -d '/' -f6-)
 
-		# get model file name from path
+		# image file name
 
 		file_content="${path_content##*/}"
 
-		# strip extension from model file name
+		# name without extension
 
 		name_content="${file_content%.*}"
 
-		# use model directory as root
+		# image folder
 
 		directory_content="${path_content%/*}"
 
@@ -187,7 +209,7 @@ do
 			class_container="container"
 		fi
 
-# generate content container
+# content containers
 
 cat << CONTENT-CONTAINER ->> "graphic/index.html"
 		<!-- BEGIN CONTAINER -->
@@ -214,15 +236,19 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 CONTENT-CONTAINER
 
+	# count the entry
+
 	(( count_entries ++ ))
 
 	done
 
-	# reset IFS
+	# default splitting
 
 	IFS=''
 
 done
+
+# report the result
 
 frobulator.inf "Entries" "[ ${count_entries} ]"
 

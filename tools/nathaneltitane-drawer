@@ -8,13 +8,15 @@ script="$(basename -- "${BASH_SOURCE[0]}")"
 
 self_arguments=("${@}")
 
+# load frobulator once
+
 if [ "${frobulator_loaded}" != "true" ]
 then
 	echo
 	echo "[  >  ] Checking..."
 	echo
 
-	# root through sudo keeps using the user's frobulator
+	# keep the sudo user home
 
 	if [ -n "${SUDO_USER}" ]
 	then
@@ -22,15 +24,19 @@ then
 		HOME="$(getent passwd "${SUDO_USER}" | cut -d ':' -f 6)"
 	fi
 
+	# local copy and download
+
 	frobulator="${HOME}/.local/bin/frobulator"
 	frobulator_download="$(mktemp)"
 
 	mkdir -p "${HOME}/.local/bin"
 
-	# latest release - curl or wget - local copy replaced only by a newer one
+	# fetch the latest release
 
 	curl -s -L -o "${frobulator_download}" get.frbltr.app 2> /dev/null ||
 	wget -q -O "${frobulator_download}" get.frbltr.app 2> /dev/null
+
+	# keep only a newer release
 
 	version_online="$(grep -m 1 '^update=' "${frobulator_download}")"
 	version_local="$(grep -m 1 '^update=' "${frobulator}" 2> /dev/null)"
@@ -42,7 +48,11 @@ then
 		chmod +x "${frobulator}"
 	fi
 
+	# drop the download
+
 	rm -f "${frobulator_download}"
+
+	# stop without frobulator
 
 	if [ ! -f "${frobulator}" ]
 	then
@@ -51,6 +61,8 @@ then
 
 		exit 1
 	fi
+
+	# load the library
 
 	source "${frobulator}"
 fi
@@ -114,17 +126,21 @@ done
 
 # variables ────────────────────────────────────────────────────────────────────
 
+# version stamp
+
 date_version=$(date +"%m-%d-%Y")
 
 # defaults ─────────────────────────────────────────────────────────────────────
 
 # functions ────────────────────────────────────────────────────────────────────
 
+# report progress
+
 frobulator.inf "Generating content entries"
 
 frobulator.fwd "Writing..."
 
-# generate header
+# page header
 
 cat << MODEL-DRAWER-HEADER -> "resources/modules/drawer.html"
 <!-- scripts -->
@@ -141,6 +157,8 @@ cat << MODEL-DRAWER-HEADER -> "resources/modules/drawer.html"
 
 	<div class="flex flex-column">
 MODEL-DRAWER-HEADER
+
+# industrial entry
 
 cat << MODEL-DRAWER-INDUSTRIAL ->> "resources/modules/drawer.html"
 
@@ -175,6 +193,8 @@ cat << MODEL-DRAWER-INDUSTRIAL ->> "resources/modules/drawer.html"
 		</div>
 MODEL-DRAWER-INDUSTRIAL
 
+# graphic entry
+
 cat << MODEL-DRAWER-GRAPHIC ->> "resources/modules/drawer.html"
 
 <!-- graphic -->
@@ -207,6 +227,8 @@ cat << MODEL-DRAWER-GRAPHIC ->> "resources/modules/drawer.html"
 
 		</div>
 MODEL-DRAWER-GRAPHIC
+
+# code entry
 
 cat << MODEL-DRAWER-CODE ->> "resources/modules/drawer.html"
 
@@ -241,6 +263,8 @@ cat << MODEL-DRAWER-CODE ->> "resources/modules/drawer.html"
 		</div>
 
 MODEL-DRAWER-CODE
+
+# copyright card
 
 cat << MODEL-DRAWER-COPYRIGHT ->> "resources/modules/drawer.html"
 		<!-- copyright -->
@@ -287,5 +311,7 @@ cat << MODEL-DRAWER-COPYRIGHT ->> "resources/modules/drawer.html"
 
 </div>
 MODEL-DRAWER-COPYRIGHT
+
+# report the result
 
 frobulator.cpt "Complete" "[ Drawer ]"
