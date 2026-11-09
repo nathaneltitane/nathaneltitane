@@ -20,14 +20,6 @@ This repository contains the website created for the presentation of a comprehen
 
 ---
 
-### Repositories:
-
-[Frobulator](https://github.com/nathaneltitane/frobulator) to streamline the scripts and make redundant code a thing of the past.
-
-[GNU/Bash](https://github.com/gitGNU/gnu_bash) as the shell environment on top of which the scripts function.
-
----
-
 ### License:
 
 Nathanel + Titane is free software released under the GNU General Public License version 3 - see 'LICENSE.md'.
