@@ -18,15 +18,21 @@ Nathanel + Titane - Industrial Design Portfolio
 
 This repository contains the website created for the presentation of a comprehensive portfolio of industrial design projects and accomplishments.
 
+---
+
 ### Repositories:
 
 [Frobulator](https://github.com/nathaneltitane/frobulator) to streamline the scripts and make redundant code a thing of the past.
 
 [GNU/Bash](https://github.com/gitGNU/gnu_bash) as the shell environment on top of which the scripts function.
 
+---
+
 ### Reports:
 
 [Submit bug report or feature request](https://github.com/nathaneltitane/nathaneltitane/issues)
+
+---
 
 ### Projects:
 
