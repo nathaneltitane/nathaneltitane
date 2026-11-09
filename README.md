@@ -20,6 +20,12 @@ This repository contains the website created for the presentation of a comprehen
 
 ---
 
+### Credits:
+
+Nathanel + Titane uses [jQuery](https://github.com/jquery/jquery), with its scripts written for [GNU Bash](https://www.gnu.org/software/bash/) and built on [Frobulator](https://github.com/nathaneltitane/frobulator), the shell scripting function library behind every Nathanel + Titane script.
+
+---
+
 ### License:
 
 Nathanel + Titane is free software released under the GNU General Public License version 3 - see 'LICENSE.md'.
