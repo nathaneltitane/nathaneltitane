@@ -28,6 +28,12 @@ This repository contains the website created for the presentation of a comprehen
 
 ---
 
+### License:
+
+Nathanel + Titane is free software released under the GNU General Public License version 3 - see 'LICENSE.md'.
+
+---
+
 ### Reports:
 
 [Submit bug report or feature request](https://github.com/nathaneltitane/nathaneltitane/issues)
