@@ -48,3 +48,11 @@
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
+
+/* dark fill while a gallery is open */
+
+.fill-bottom {
+	background-color: #000000dd;
+	border-radius: 5px;
+	margin: 10px 20px 0px 0px;
+}

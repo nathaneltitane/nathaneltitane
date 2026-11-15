@@ -72,11 +72,3 @@
 	width: 256px;
 }
 
-
-/* dark fill while a gallery is open */
-
-.fill-icon {
-	background-color: #000000dd;
-	border-radius: 5px;
-	margin: 0px 10px 0px 0px;
-}

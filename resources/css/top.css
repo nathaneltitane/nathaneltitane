@@ -46,3 +46,11 @@
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
+
+/* dark fill while a gallery is open */
+
+.fill-top {
+	background-color: #000000dd;
+	border-radius: 5px;
+	margin: 0px 20px 10px 0px;
+}
