@@ -5,12 +5,34 @@
 	padding: 5px 10px 5px 10px;
 }
 
+/* clickable buttons bolden on hover */
+
+a.button:hover {
+	font-weight: bold;
+}
+
 /* section colors from the logo strokes */
 
 .button-industrial {
 	border-bottom: 5px solid #800080ff;
 }
 
+.button-industrial:hover {
+	color: #800080ff;
+}
+
 .button-graphic {
 	border-bottom: 5px solid #2c89a0ff;
+}
+
+.button-graphic:hover {
+	color: #2c89a0ff;
+}
+
+.button-code {
+	border-bottom: 5px solid #333333ff;
+}
+
+.button-code:hover {
+	color: #333333ff;
 }
