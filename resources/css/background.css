@@ -1,13 +1,23 @@
 #background {
-	background: url("/resources/background/background.svg");
 	background-color:  #000000;
+
+	height: 100vh;
+	width: 100vw;
+}
+
+/* only the picture blurs */
+
+#background::before {
+	content: "";
+
+	position: fixed;
+	inset: 0px;
+
+	background: url("/resources/background/background.svg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: min(50vw, 70vh);
-
-	height: 100vh;
-	width: 100vw;
 
 	opacity: 0;
 
