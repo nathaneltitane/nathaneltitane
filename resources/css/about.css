@@ -4,13 +4,6 @@
 	border-bottom: 5px solid #f46f2cff;
 }
 
-/* bird from the copyright avatar */
-
-.about-icon {
-	background-image: url(/resources/avatar/avatar-bird.png);
-	background-position: center;
-}
-
 .about-text {
 	margin: 5px 0px 0px 0px;
 }
