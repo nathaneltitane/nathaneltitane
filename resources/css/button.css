@@ -1,16 +1,16 @@
 .button {
-	background-color: #eeeeeeff;
-	border-radius: 4px;
+	background-color: #ffffffff;
+	border-radius: 5px;
 	margin: 10px 0px 10px 0px;
 	padding: 5px 10px 5px 10px;
 }
 
-/* section colors from the logo tints */
+/* section colors from the logo strokes */
 
 .button-industrial {
-	background-color: #ddafe9ff;
+	border-bottom: 5px solid #800080ff;
 }
 
 .button-graphic {
-	background-color: #afdde9ff;
+	border-bottom: 5px solid #2c89a0ff;
 }
