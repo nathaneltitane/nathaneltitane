@@ -50,3 +50,16 @@
 	border-radius: 5px;
 	margin: 0px 20px 10px 0px;
 }
+
+/* arrow hidden while the gallery scrolls */
+
+#top.scroll {
+	opacity: 0;
+}
+
+/* arrow hidden while the drawer is open */
+
+#top.covered {
+	opacity: 0;
+	pointer-events: none;
+}

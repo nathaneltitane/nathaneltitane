@@ -2,16 +2,12 @@
 	height: auto;
 }
 
-/* links in the copyright line stay inline */
+/* copyright anchored to drawer bottom */
 
-.copyright .flex-cell a {
-	display: inline;
-}
+.drawer .copyright {
+	flex-grow: 1;
 
-/* card without a background */
-
-.copyright .container {
-	background-color: #00000000;
-	border-radius: 5px;
-	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }

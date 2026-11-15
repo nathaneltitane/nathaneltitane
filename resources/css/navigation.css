@@ -30,9 +30,7 @@
 
 /* overlays hidden while the gallery scrolls */
 
-#navigation.scroll,
-#top.scroll,
-#bottom.scroll {
+#navigation.scroll {
 	opacity: 0;
 }
 
@@ -46,9 +44,7 @@
 
 /* overlays hidden while the drawer is open */
 
-#navigation.covered,
-#top.covered,
-#bottom.covered {
+#navigation.covered {
 	opacity: 0;
 	pointer-events: none;
 }

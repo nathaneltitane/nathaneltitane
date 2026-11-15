@@ -1,16 +1,3 @@
-/* about card in the button style */
-
-.button.about {
-	border-bottom: 5px solid #f46f2cff;
-}
-
-/* label hovers like the other buttons */
-
-.button.about:hover .label {
-	color: #f46f2cff;
-	font-weight: bold;
-}
-
 .about .paragraph {
 	line-height: 1.5;
 	margin: 15px 0px 0px 0px;

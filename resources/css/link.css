@@ -20,3 +20,17 @@ a:hover {
 	outline: none;
 }
 
+/* links in the copyright line stay inline */
+
+.copyright .flex-cell a {
+	display: inline;
+}
+
+.drawer a {
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+.gallery a {
+	flex: 1 1 400px;
+}

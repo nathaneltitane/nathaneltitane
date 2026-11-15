@@ -7,8 +7,6 @@
 	padding: 10px 10px 10px 10px;
 }
 
-
-
 .bottom {
 	color: #000000ff;
 	margin: 0px 0px 0px 0px;
@@ -51,4 +49,17 @@
 	background-color: #000000dd;
 	border-radius: 5px;
 	margin: 10px 20px 0px 0px;
+}
+
+/* arrow hidden while the gallery scrolls */
+
+#bottom.scroll {
+	opacity: 0;
+}
+
+/* arrow hidden while the drawer is open */
+
+#bottom.covered {
+	opacity: 0;
+	pointer-events: none;
 }

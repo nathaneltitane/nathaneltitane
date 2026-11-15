@@ -52,3 +52,16 @@ a.button:hover {
 .button.linkedin:hover {
 	color: #3737c8ff;
 }
+
+/* about card in the button style */
+
+.button.about {
+	border-bottom: 5px solid #f46f2cff;
+}
+
+/* label hovers like the other buttons */
+
+.button.about:hover .label {
+	color: #f46f2cff;
+	font-weight: bold;
+}
