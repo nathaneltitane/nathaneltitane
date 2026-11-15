@@ -45,6 +45,14 @@ $( document ).ready ( function ( ) {
 
     } );
 
+    // click or tap on the drawer closes it
+
+    drawer.click ( function ( event ) {
+
+        hide ( ) ;
+
+    } );
+
     $( '#load' ).click ( function ( event ) {
 
         if ( drawer.hasClass ( 'drawer-show' ) ) {
