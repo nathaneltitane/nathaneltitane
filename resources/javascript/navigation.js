@@ -1,10 +1,10 @@
-// navigation //
+// scroll hide //
 
 $( document ).ready ( function ( ) {
 
-	var navigation = $( '#navigation' );
+	var overlays = $( '#navigation, #top, #bottom' ) ;
 
-	var timer_scroll = null;
+	var timer_scroll = null ;
 
 	// the gallery loads later, so listen on the document
 
@@ -16,7 +16,7 @@ $( document ).ready ( function ( ) {
 
 		}
 
-		navigation.addClass ( 'navigation-hide' ) ;
+		overlays.addClass ( 'scroll-hide' ) ;
 
 		clearTimeout ( timer_scroll ) ;
 
@@ -24,7 +24,7 @@ $( document ).ready ( function ( ) {
 
 		timer_scroll = setTimeout ( function ( ) {
 
-			navigation.removeClass ( 'navigation-hide' ) ;
+			overlays.removeClass ( 'scroll-hide' ) ;
 
 		}, 500 ) ;
 

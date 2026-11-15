@@ -32,8 +32,8 @@
 	 color: #00000000;
 }
 
-/* hidden while the gallery scrolls */
+/* overlays hidden while the gallery scrolls */
 
-.navigation-hide {
+.scroll-hide {
 	opacity: 0;
 }
