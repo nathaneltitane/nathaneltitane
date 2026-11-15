@@ -5,3 +5,12 @@
 	padding: 5px 10px 5px 10px;
 }
 
+/* section colors from the logo tints */
+
+.button-industrial {
+	background-color: #ddafe9ff;
+}
+
+.button-graphic {
+	background-color: #afdde9ff;
+}

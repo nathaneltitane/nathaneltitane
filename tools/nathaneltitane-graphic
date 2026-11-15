@@ -389,7 +389,7 @@ cat << CONTENT-CONTAINER ->> "graphic/index.html"
 
 				<div class="flex-cell flex-cell-center flex-cell-stretch">
 
-					<div class="button">${name_project}</div>
+					<div class="button button-graphic">${name_project}</div>
 
 				</div>
 

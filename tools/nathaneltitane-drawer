@@ -168,7 +168,7 @@ cat << MODEL-DRAWER-INDUSTRIAL ->> "resources/modules/drawer.html"
 
 			<div class="flex-cell">
 
-				<a class="button" data-link="/industrial/">
+				<a class="button button-industrial" data-link="/industrial/">
 
 					<div class="flex flex-middle">
 
@@ -203,7 +203,7 @@ cat << MODEL-DRAWER-GRAPHIC ->> "resources/modules/drawer.html"
 
 			<div class="flex-cell">
 
-				<a class="button" data-link="/graphic/">
+				<a class="button button-graphic" data-link="/graphic/">
 
 					<div class="flex flex-middle">
 
