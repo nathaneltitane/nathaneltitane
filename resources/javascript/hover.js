@@ -3,16 +3,17 @@
 $( document ).ready ( function ( ) {
 
 	var background = $( '#background' ) ;
+	var trigger = $( '#background-trigger' ) ;
 
-	// mouse reveals while over the bird
+	// mouse reveals while over the bird square
 
-	background.on ( 'mouseenter', function ( ) {
+	trigger.on ( 'mouseenter', function ( ) {
 
 		background.addClass ( 'background-hover' ) ;
 
 	} ) ;
 
-	background.on ( 'mouseleave', function ( ) {
+	trigger.on ( 'mouseleave', function ( ) {
 
 		background.removeClass ( 'background-hover' ) ;
 
@@ -20,7 +21,7 @@ $( document ).ready ( function ( ) {
 
 	// touch toggles on each tap
 
-	background.on ( 'touchstart', function ( event ) {
+	trigger.on ( 'touchstart', function ( event ) {
 
 		event.preventDefault ( ) ;
 

@@ -28,6 +28,19 @@
 	animation-fill-mode: forwards;
 }
 
+/* square over the bird reveals the title */
+
+#background-trigger {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	height: calc(min(50vw, 70vh) * 0.6);
+	width: calc(min(50vw, 70vh) * 0.6);
+
+	transform: translate(-50%, -50%);
+}
+
 /* bird fades in and comes into focus */
 
 @keyframes background-reveal {
