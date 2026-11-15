@@ -23,6 +23,10 @@
 	margin: 0px 0px 5px 0px;
 }
 
+.landing p {
+	font-size: 20px;
+}
+
 /* title fades in on hover */
 
 #background.background-hover ~ .landing {
