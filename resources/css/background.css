@@ -35,8 +35,8 @@
 	top: 50%;
 	left: 50%;
 
-	height: calc(min(50vw, 70vh) * 0.6);
-	width: calc(min(50vw, 70vh) * 0.6);
+	height: calc(min(50vw, 70vh) * 0.7);
+	width: calc(min(50vw, 70vh) * 0.7);
 
 	transform: translate(-50%, -50%);
 }
