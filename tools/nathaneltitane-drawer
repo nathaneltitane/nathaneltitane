@@ -348,9 +348,9 @@ cat << MODEL-DRAWER-ABOUT ->> "resources/modules/drawer.html"
 
 				<div class="button button-about">
 
-					<div class="text-right">ABOUT</div>
+					<div class="about-label text-right">ABOUT</div>
 
-					<p class="about-text">Hi, I'm Nathanel, an industrial designer driven by curiosity, creativity, and the joy of making things.</p>
+					<p class="about-text">I'm Nathanel, an industrial designer driven by curiosity, creativity, and the joy of making things.</p>
 
 					<p class="about-text">I bring ideas to life, turning sketches and concepts into tangible things. From products, workplace systems and lighting to branding and illustration, I enjoy exploring the space where imagination, design and craftsmanship meet.</p>
 
@@ -358,7 +358,7 @@ cat << MODEL-DRAWER-ABOUT ->> "resources/modules/drawer.html"
 
 					<p class="about-text">A sparrow: small, colourful and full of character.<br>Its sharp geometric facets reflect the balance between artistic expression and technical precision. But there's something more to it: a little bird with a fierce spirit, always reaching for freedom.</p>
 
-					<div class="about-motto text-right">Every facet calculated, every idea free.</div>
+					<div class="about-motto text-right">EVERY FACET CALCULATED, EVERY IDEA FREE.</div>
 
 				</div>
 

@@ -4,6 +4,13 @@
 	border-bottom: 5px solid #f46f2cff;
 }
 
+/* label hovers like the other buttons */
+
+.button-about:hover .about-label {
+	color: #f46f2cff;
+	font-weight: bold;
+}
+
 .about-text {
 	margin: 5px 0px 0px 0px;
 }
