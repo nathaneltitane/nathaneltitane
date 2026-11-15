@@ -214,6 +214,8 @@ container_close () {
 	# use to close the open content container
 
 cat << CONTENT-CONTAINER ->> "industrial/index.html"
+				</div>
+
 			</div>
 
 		</div>
@@ -401,21 +403,19 @@ cat << CONTENT-CONTAINER ->> "industrial/index.html"
 
 				</div>
 
+				<div class="gallery">
+
 CONTENT-CONTAINER
 	fi
 
 # content image
 
 cat << CONTENT-IMAGE ->> "industrial/index.html"
-				<div class='flex-cell flex-cell-center'>
-
 					<a href="/${path_content}">
 
 						<img src="/${path_content}"/>
 
 					</a>
-
-				</div>
 
 CONTENT-IMAGE
 

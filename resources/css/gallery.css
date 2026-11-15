@@ -1,0 +1,19 @@
+/* images side by side, filling each row */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 0px 0px 10px 0px;
+}
+
+.gallery a {
+	flex: 1 1 400px;
+}
+
+.gallery img {
+	height: 100%;
+	min-width: 0px;
+	display: block;
+	object-fit: cover;
+}
