@@ -48,7 +48,9 @@ $( document ).ready ( function ( ) {
 
 		// icons get a dark fill over the gallery
 
-		$( '.navigation .icon, .top .icon, .bottom .icon' ).addClass ( 'fill-icon' ) ;
+		$( '.top .icon, .bottom .icon' ).addClass ( 'fill-icon' ) ;
+
+		$( '.navigation' ).addClass ( 'fill-navigation' ) ;
 
     };
 
@@ -66,7 +68,9 @@ $( document ).ready ( function ( ) {
 
 		load.addClass ( 'hide-load' );
 
-		$( '.navigation .icon, .top .icon, .bottom .icon' ).removeClass ( 'fill-icon' ) ;
+		$( '.top .icon, .bottom .icon' ).removeClass ( 'fill-icon' ) ;
+
+		$( '.navigation' ).removeClass ( 'fill-navigation' ) ;
 
 	};
 

@@ -37,3 +37,11 @@
 .hide-scroll {
 	opacity: 0;
 }
+
+/* dark fill while a gallery is open */
+
+.fill-navigation {
+	background-color: #000000dd;
+	border-radius: 5px;
+	margin: 0px 0px 0px 10px;
+}
