@@ -41,6 +41,12 @@
 	transform: translate(-50%, -50%);
 }
 
+/* bird softens while hovered */
+
+#background.background-hover #background-trigger {
+	backdrop-filter: blur(1px);
+}
+
 /* bird fades in and comes into focus */
 
 @keyframes background-reveal {
