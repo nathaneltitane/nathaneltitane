@@ -15,9 +15,3 @@
 	border-radius: 5px;
 	padding: 10px 10px 10px 10px;
 }
-
-/* bird without its black square */
-
-.copyright .avatar {
-	background-image: url(/resources/avatar/avatar-bird.png);
-}
