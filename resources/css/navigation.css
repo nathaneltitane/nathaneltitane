@@ -34,14 +34,21 @@
 
 /* overlays hidden while the gallery scrolls */
 
-.hide-scroll {
+.scroll-hide {
 	opacity: 0;
 }
 
 /* dark fill while a gallery is open */
 
-.fill-navigation {
+.navigation-fill {
 	background-color: #000000dd;
 	border-radius: 5px;
 	margin: 0px 0px 10px 10px;
+}
+
+/* overlays hidden while the drawer is open */
+
+.overlay-hide {
+	opacity: 0;
+	pointer-events: none;
 }

@@ -4,44 +4,50 @@ $( document ).ready ( function ( ) {
 
 	var drawer = $( '#drawer' );
 
-    function show ( ) {
+    function drawer_show ( ) {
 
-        drawer.removeClass ( 'hide-drawer' );
+        drawer.removeClass ( 'drawer-hide' );
+
+        // overlays vanish while the drawer is open
+
+        $( '#navigation, #top, #bottom' ).addClass ( 'overlay-hide' ) ;
 
         setTimeout ( function ( ) {
 
-            drawer.addClass ( 'show-drawer' );
+            drawer.addClass ( 'drawer-show' );
 
         }, 250 );
 
     };
 
-    function hide ( ) {
+    function drawer_hide ( ) {
 
-        drawer.removeClass ( 'show-drawer' );
+        drawer.removeClass ( 'drawer-show' );
 
-        drawer.addClass ( 'hide-drawer' );
+        drawer.addClass ( 'drawer-hide' );
+
+        $( '#navigation, #top, #bottom' ).removeClass ( 'overlay-hide' ) ;
 
     };
 
-    function toggle ( ) {
+    function drawer_toggle ( ) {
 
-        if ( drawer.hasClass ( 'show-drawer' ) ) {
+        if ( drawer.hasClass ( 'drawer-show' ) ) {
 
-            hide ( );
+            drawer_hide ( );
 
         }
 
         else {
 
-            show ( );
+            drawer_show ( );
 
         }
     };
 
     $( '.navigation' ).click ( function ( event ) {
 
-        show ( ) ;
+        drawer_show ( ) ;
 
     } );
 
@@ -49,15 +55,15 @@ $( document ).ready ( function ( ) {
 
     drawer.click ( function ( event ) {
 
-        hide ( ) ;
+        drawer_hide ( ) ;
 
     } );
 
     $( '#load' ).click ( function ( event ) {
 
-        if ( drawer.hasClass ( 'show-drawer' ) ) {
+        if ( drawer.hasClass ( 'drawer-show' ) ) {
 
-            hide ( );
+            drawer_hide ( );
 
         }
 
@@ -69,7 +75,7 @@ $( document ).ready ( function ( ) {
 
         if ( event.key === 'd' ) {
 
-            toggle ( );
+            drawer_toggle ( );
 
         }
 

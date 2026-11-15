@@ -10,7 +10,7 @@ $( document ).ready ( function ( ) {
 
 	// page opens at the top
 
-	arrow_top.addClass ( 'hide-scroll' ) ;
+	arrow_top.addClass ( 'scroll-hide' ) ;
 
 	// the gallery loads later, so listen on the document
 
@@ -29,11 +29,11 @@ $( document ).ready ( function ( ) {
 		var range_scroll = Math.max ( load.scrollHeight - load.clientHeight, 1 ) ;
 		var progress_scroll = load.scrollTop / range_scroll ;
 
-		arrow_top.toggleClass ( 'hide-scroll', progress_scroll < 0.4 ) ;
+		arrow_top.toggleClass ( 'scroll-hide', progress_scroll < 0.4 ) ;
 
-		arrow_bottom.toggleClass ( 'hide-scroll', progress_scroll > 0.6 ) ;
+		arrow_bottom.toggleClass ( 'scroll-hide', progress_scroll > 0.6 ) ;
 
-		navigation.addClass ( 'hide-scroll' ) ;
+		navigation.addClass ( 'scroll-hide' ) ;
 
 		clearTimeout ( timer_scroll ) ;
 
@@ -41,7 +41,7 @@ $( document ).ready ( function ( ) {
 
 		timer_scroll = setTimeout ( function ( ) {
 
-			navigation.removeClass ( 'hide-scroll' ) ;
+			navigation.removeClass ( 'scroll-hide' ) ;
 
 		}, 500 ) ;
 

@@ -3,29 +3,29 @@
 $( document ).ready ( function ( ) {
 
 	var background = $( '#background' ) ;
-	var trigger = $( '#trigger-background' ) ;
+	var trigger_background = $( '#trigger-background' ) ;
 
 	// mouse reveals while over the bird square
 
-	trigger.on ( 'mouseenter', function ( ) {
+	trigger_background.on ( 'mouseenter', function ( ) {
 
-		background.addClass ( 'hover-background' ) ;
+		background.addClass ( 'background-hover' ) ;
 
 	} ) ;
 
-	trigger.on ( 'mouseleave', function ( ) {
+	trigger_background.on ( 'mouseleave', function ( ) {
 
-		background.removeClass ( 'hover-background' ) ;
+		background.removeClass ( 'background-hover' ) ;
 
 	} ) ;
 
 	// touch toggles on each tap
 
-	trigger.on ( 'touchstart', function ( event ) {
+	trigger_background.on ( 'touchstart', function ( event ) {
 
 		event.preventDefault ( ) ;
 
-		background.toggleClass ( 'hover-background' ) ;
+		background.toggleClass ( 'background-hover' ) ;
 
 	} ) ;
 

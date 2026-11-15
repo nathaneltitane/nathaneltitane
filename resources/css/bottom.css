@@ -29,7 +29,7 @@
 	100% {right: 0px;}
 }
 
-.show-bottom {
+.bottom-show {
 	animation-name: reveal-bottom;
 	animation-delay: 1s;
 	animation-duration: 1s;
@@ -42,7 +42,7 @@
 	100% {right: -200px;}
 }
 
-.hide-bottom {
+.bottom-hide {
 	animation-name: conceal-bottom;
 	animation-delay: 0s;
 	animation-duration: 1s;
@@ -51,7 +51,7 @@
 
 /* dark fill while a gallery is open */
 
-.fill-bottom {
+.bottom-fill {
 	background-color: #000000dd;
 	border-radius: 5px;
 	margin: 10px 20px 0px 0px;

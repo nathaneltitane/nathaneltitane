@@ -10,8 +10,8 @@ $( document ).ready ( function ( ) {
 		['logo-teal']
 	];
 
-	var index = Math.floor ( Math.random ( ) * list_logos.length );
+	var index_logo = Math.floor ( Math.random ( ) * list_logos.length );
 
-	$( '.logo' ).css ( 'background-image', 'url("/resources/logo/' + list_logos[index] + '.svg")' );
+	$( '.logo' ).css ( 'background-image', 'url("/resources/logo/' + list_logos[index_logo] + '.svg")' );
 
 } );

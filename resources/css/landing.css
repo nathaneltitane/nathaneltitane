@@ -29,7 +29,7 @@
 
 /* title fades in on hover */
 
-#background.hover-background ~ .landing {
+#background.background-hover ~ .landing {
 	opacity: 1;
 }
 

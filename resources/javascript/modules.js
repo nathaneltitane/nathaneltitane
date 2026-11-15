@@ -2,33 +2,33 @@
 
 $( function ( ) {
 
-	$.get( '/resources/modules/drawer.html', function ( data ) {
+	$.get( '/resources/modules/drawer.html', function ( html_module ) {
 
-		$( '#drawer' ).append ( data );
-
-	} );
-
-	$.get( '/resources/modules/navigation.html', function ( data ) {
-
-		$( '#navigation' ).append ( data );
+		$( '#drawer' ).append ( html_module );
 
 	} );
 
-	$.get( '/resources/modules/load.html', function ( data ) {
+	$.get( '/resources/modules/navigation.html', function ( html_module ) {
 
-		$( '#load' ).append ( data );
-
-	} );
-
-	$.get( '/resources/modules/bottom.html', function ( data ) {
-
-		$( '#bottom' ).append ( data );
+		$( '#navigation' ).append ( html_module );
 
 	} );
 
-	$.get( '/resources/modules/top.html', function ( data ) {
+	$.get( '/resources/modules/load.html', function ( html_module ) {
 
-		$( '#top' ).append ( data );
+		$( '#load' ).append ( html_module );
+
+	} );
+
+	$.get( '/resources/modules/bottom.html', function ( html_module ) {
+
+		$( '#bottom' ).append ( html_module );
+
+	} );
+
+	$.get( '/resources/modules/top.html', function ( html_module ) {
+
+		$( '#top' ).append ( html_module );
 
 	} );
 

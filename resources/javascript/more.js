@@ -4,13 +4,13 @@ $( document ).ready ( function ( ) {
 
 	if ( $( '.container.hidden' ).length >= 1 ) {
 
-		var count = 0;
+		var count_more = 0;
 
 		$( '#more' ).on ( 'click', function ( event ) {
 
 			event.preventDefault ( );
 
-			count += 1;
+			count_more += 1;
 
 			var container = $( '.container.hidden' ).slice ( 0, 1 );
 

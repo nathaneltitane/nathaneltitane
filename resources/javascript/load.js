@@ -28,71 +28,73 @@ $( document ).ready ( function ( ) {
 
 	var top = $( '.top' );
 
-	function show ( ) {
+	function load_show ( ) {
 
         setTimeout ( function ( ) {
 
-			load.removeClass ( 'hide-load' );
+			load.removeClass ( 'load-hide' );
 
-            load.addClass ( 'show-load' );
+            load.addClass ( 'load-show' );
 
         }, 250 );
 
-		bottom.removeClass ( 'hide-bottom' );
+		bottom.removeClass ( 'bottom-hide' );
 
-		bottom.addClass ( 'show-bottom' );
+		bottom.addClass ( 'bottom-show' );
 
-		top.removeClass ( 'hide-top' );
+		top.removeClass ( 'top-hide' );
 
-		top.addClass ( 'show-top' );
+		top.addClass ( 'top-show' );
 
 		// overlays get a dark fill over the gallery
 
-		top.addClass ( 'fill-top' ) ;
+		top.addClass ( 'top-fill' ) ;
 
-		bottom.addClass ( 'fill-bottom' ) ;
+		bottom.addClass ( 'bottom-fill' ) ;
 
-		$( '.navigation' ).addClass ( 'fill-navigation' ) ;
+		$( '.navigation' ).addClass ( 'navigation-fill' ) ;
 
     };
 
-    function hide ( ) {
+    function load_hide ( ) {
 
-		bottom.removeClass ( 'show-bottom' );
+		bottom.removeClass ( 'bottom-show' );
 
-		bottom.addClass ( 'hide-bottom' );
+		bottom.addClass ( 'bottom-hide' );
 
-		top.removeClass ( 'show-top' );
+		top.removeClass ( 'top-show' );
 
-		top.addClass ( 'hide-top' );
+		top.addClass ( 'top-hide' );
 
-		load.removeClass ( 'show-load' );
+		load.removeClass ( 'load-show' );
 
-		load.addClass ( 'hide-load' );
+		load.addClass ( 'load-hide' );
 
-		top.removeClass ( 'fill-top' ) ;
+		top.removeClass ( 'top-fill' ) ;
 
-		bottom.removeClass ( 'fill-bottom' ) ;
+		bottom.removeClass ( 'bottom-fill' ) ;
 
-		$( '.navigation' ).removeClass ( 'fill-navigation' ) ;
+		$( '.navigation' ).removeClass ( 'navigation-fill' ) ;
 
 	};
 
-	function toggle ( ) {
+	function load_toggle ( ) {
 
-        if ( load.hasClass ( 'show-load' ) ) {
+        if ( load.hasClass ( 'load-show' ) ) {
 
-            hide ( );
+            load_hide ( );
 
         }
 
         else {
 
-			drawer.removeClass ( 'show-drawer' );
+			drawer.removeClass ( 'drawer-show' );
 
-			drawer.addClass ( 'hide-drawer' );
+			drawer.addClass ( 'drawer-hide' );
 
-			show ( );
+			$( '#navigation, #top, #bottom' ).removeClass ( 'overlay-hide' ) ;
+
+			load_show ( );
 
         }
 
@@ -100,7 +102,7 @@ $( document ).ready ( function ( ) {
 
 	$( '[data-link]' ).click ( function ( event ) {
 
-		toggle ( );
+		load_toggle ( );
 
 		var link = $( this ).data ( 'link' );
 

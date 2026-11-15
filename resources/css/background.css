@@ -43,7 +43,7 @@
 
 /* bird softens while hovered */
 
-#background.hover-background #trigger-background {
+#background.background-hover #trigger-background {
 	backdrop-filter: blur(1px);
 }
 

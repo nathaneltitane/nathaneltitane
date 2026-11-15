@@ -43,7 +43,7 @@
 	100% {left: 0vw;}
 }
 
-.show-drawer {
+.drawer-show {
 	left: 0vw;
 
 	animation: reveal-drawer 1s;
@@ -58,7 +58,7 @@
 	100% {left: -50vw;}
 }
 
-.hide-drawer {
+.drawer-hide {
 	left: -50vw;
 
 	animation: conceal-drawer 1s;
