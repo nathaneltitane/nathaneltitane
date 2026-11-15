@@ -1,4 +1,5 @@
 @import url("/resources/css/all.css");
+@import url("/resources/css/about.css");
 @import url("/resources/css/avatar.css");
 @import url("/resources/css/background.css");
 @import url("/resources/css/body.css");
@@ -15,6 +16,7 @@
 @import url("/resources/css/horizontal-rule.css");
 @import url("/resources/css/icon.css");
 @import url("/resources/css/image.css");
+@import url("/resources/css/landing.css");
 @import url("/resources/css/link.css");
 @import url("/resources/css/load.css");
 @import url("/resources/css/logo.css");

@@ -4,12 +4,16 @@
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: min(50vw, 70vh);
 
 	height: 100vh;
 	width: 100vw;
 
 	opacity: 0;
+
+	filter: saturate(0.25) blur(5px);
+
+	transition: filter 0.5s ease;
 
 	animation-name: background-reveal;
 	animation-delay: 0.5s;
@@ -18,7 +22,13 @@
 }
 
 @keyframes background-reveal {
-	0% {opacity: 0;}
+	0% {opacity: 0; transform: scale(0.85);}
 
-	100% {opacity: 1;}
+	100% {opacity: 1; transform: scale(1);}
+}
+
+/* full colour and focus on hover */
+
+#background.background-hover {
+	filter: saturate(1) blur(0px);
 }

@@ -336,6 +336,32 @@ cat << MODEL-DRAWER-LINKEDIN ->> "resources/modules/drawer.html"
 
 MODEL-DRAWER-LINKEDIN
 
+# about card
+
+cat << MODEL-DRAWER-ABOUT ->> "resources/modules/drawer.html"
+
+		<!-- about -->
+
+		<div class="section">
+
+			<div class="flex-cell">
+
+				<div class="about">
+
+					<div class="about-title">ABOUT</div>
+
+					<p>I'm an industrial and graphic designer: I take products, office systems and lighting from sketches and CAD models to renders, prototypes and 3D prints, and I also do branding and illustration. My faceted bird says it best: its colours and geometry stand for art and technical skill, and the bird itself for creativity and freedom.</p>
+
+					<div class="about-motto">Every facet calculated, every idea free.</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+MODEL-DRAWER-ABOUT
+
 # copyright card
 
 cat << MODEL-DRAWER-COPYRIGHT ->> "resources/modules/drawer.html"

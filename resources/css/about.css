@@ -1,0 +1,19 @@
+/* about card shaped like the buttons */
+
+.about {
+	background-color: #ffffffff;
+	border-radius: 5px;
+	margin: 10px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+}
+
+.about-title {
+	color: #333333ff;
+	margin: 0px 0px 5px 0px;
+}
+
+.about-motto {
+	color: #333333ff;
+	font-style: italic;
+	margin: 10px 0px 0px 0px;
+}

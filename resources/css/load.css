@@ -5,6 +5,8 @@
 	right: 0px;
 
 	height: 100vh;
+
+	pointer-events: none;
 }
 
 .load {
@@ -26,6 +28,8 @@
 
 .load-show {
 	bottom: 0vh;
+
+	pointer-events: auto;
 
 	animation: load-reveal 1s;
 	animation-delay: 0s;

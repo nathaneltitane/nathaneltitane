@@ -1,0 +1,72 @@
+/* landing title over the bird */
+
+.landing {
+	color: #999999ff;
+	position: fixed;
+	top: 20px;
+	left: 110px;
+	right: 110px;
+
+	pointer-events: none;
+
+	opacity: 0;
+
+	animation: landing-reveal 0.75s ease 1.5s forwards;
+}
+
+.landing-title {
+	color: #ccccccff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px 0px 5px 0px;
+}
+
+@keyframes landing-reveal {
+
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+
+}
+
+/* motto fades in under the bird on hover */
+
+#motto {
+	color: #ccccccff;
+	font-size: 20px;
+	text-align: center;
+
+	position: fixed;
+	top: calc(50% + min(50vw, 70vh) * 0.3);
+	left: 0px;
+	right: 0px;
+
+	pointer-events: none;
+
+	opacity: 0;
+
+	transition: opacity 0.5s ease;
+}
+
+#background.background-hover ~ #motto {
+	opacity: 1;
+}
+
+/* phone texts span the width */
+
+@media (max-width: 520px) {
+
+	.landing {
+		top: 100px;
+	}
+
+	.landing {
+		left: 20px;
+		right: 20px;
+	}
+
+}
