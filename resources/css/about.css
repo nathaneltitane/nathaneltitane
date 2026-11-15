@@ -1,19 +1,28 @@
-/* about card shaped like the buttons */
+/* about card in the button style */
 
-.about {
-	background-color: #ffffffff;
-	border-radius: 5px;
-	margin: 10px 0px 10px 0px;
-	padding: 10px 10px 10px 10px;
+.button-about {
+	border-bottom: 5px solid #f46f2cff;
 }
 
-.about-title {
-	color: #333333ff;
-	margin: 0px 0px 5px 0px;
+/* bird from the copyright avatar */
+
+.about-icon {
+	background-image: url(/resources/avatar/avatar-bird.png);
+	background-position: center;
+}
+
+.about-text {
+	margin: 5px 0px 0px 0px;
 }
 
 .about-motto {
-	color: #333333ff;
+	color: #f46f2cff;
 	font-style: italic;
+	margin: 10px 0px 5px 0px;
+}
+
+.about-question {
+	color: #333333ff;
+	font-weight: bold;
 	margin: 10px 0px 0px 0px;
 }
