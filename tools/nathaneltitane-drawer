@@ -356,7 +356,9 @@ cat << MODEL-DRAWER-ABOUT ->> "resources/modules/drawer.html"
 
 					<div class="about-question">Why the bird?</div>
 
-					<p class="about-text">A sparrow: small, colourful and full of character.<br>Its sharp geometric facets reflect the balance between artistic expression and technical precision. But there's something more to it: a little bird with a fierce spirit, always reaching for freedom.</p>
+					<p class="about-text">A sparrow: small, colourful and full of character.</p>
+
+					<p class="about-text">Its sharp geometric facets reflect the balance between artistic expression and technical precision. But there's something more to it: a little bird with a fierce spirit, always reaching for freedom.</p>
 
 					<div class="about-motto text-right">EVERY FACET CALCULATED, EVERY IDEA FREE.</div>
 
