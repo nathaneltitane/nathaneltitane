@@ -36,3 +36,11 @@ a.button:hover {
 .button-code:hover {
 	color: #333333ff;
 }
+
+.button-contact {
+	border-bottom: 5px solid #f46f2cff;
+}
+
+.button-contact:hover {
+	color: #f46f2cff;
+}
