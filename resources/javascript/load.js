@@ -46,6 +46,10 @@ $( document ).ready ( function ( ) {
 
 		top.addClass ( 'show-top' );
 
+		// icons get a dark fill over the gallery
+
+		$( '.navigation .icon, .top .icon, .bottom .icon' ).addClass ( 'fill-icon' ) ;
+
     };
 
     function hide ( ) {
@@ -61,6 +65,8 @@ $( document ).ready ( function ( ) {
 		load.removeClass ( 'show-load' );
 
 		load.addClass ( 'hide-load' );
+
+		$( '.navigation .icon, .top .icon, .bottom .icon' ).removeClass ( 'fill-icon' ) ;
 
 	};
 
