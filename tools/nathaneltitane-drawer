@@ -269,39 +269,34 @@ MODEL-DRAWER-CODE
 cat << MODEL-DRAWER-COPYRIGHT ->> "resources/modules/drawer.html"
 		<!-- copyright -->
 
-		<div class="section last copyright">
+		<div class="section copyright">
 
-			<div class="flex flex-column flex-center flex-middle">
+			<div class="flex flex-column flex-stretch">
 
-				<div class="flex-cell">
+				<div class="container">
 
-					<div class="avatar avatar-64 avatar-center" href=""></div>
+					<div class="flex flex-column flex-center flex-middle">
+
+						<a class="flex" href="https://nathaneltitane.com" aria-label="N Λ T H Λ N E L">
+
+							<div class="avatar avatar-64"></div>
+
+						</a>
+
+					</div>
+
+					<div class="flex flex-column flex-center flex-middle">
+
+						<div class="flex-cell text-center">
+
+							<div>Version // ${date_version}</div>
+							<div><text id="year"></text> - <a href="https://github.com/nathaneltitane">N Λ T H Λ N E L</a> - <a href="https://github.com/nathaneltitane/nathaneltitane/issues">Submit bug reports or feature requests</a></div>
+
+						</div>
+
+					</div>
 
 				</div>
-
-			</div>
-
-			<div class="flex-cell text-center">
-
-				Version ${date_version}<br>
-
-			</div>
-
-			<div class="flex-cell section">
-
-				<hr>
-
-			</div>
-
-			<div class="flex-cell text-center">
-
-				Nathanel + Titane - Industrial Design<br>
-
-			</div>
-
-			<div class="flex-cell text-center">
-
-				N Λ T H Λ N E L - ©  <text id="year"></text>
 
 			</div>
 

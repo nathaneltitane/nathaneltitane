@@ -18,6 +18,20 @@
 	overflow-y: scroll;
 }
 
+.drawer > .flex-column {
+	min-height: 100%;
+}
+
+/* copyright anchored to drawer bottom */
+
+.drawer .copyright {
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
 .drawer a {
 	margin: 0px 0px 0px 0px;
 	overflow: hidden;
@@ -51,11 +65,4 @@
 	animation-delay: 0s;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
-}
-
-.drawer .last {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
