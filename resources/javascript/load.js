@@ -12,6 +12,10 @@ function parse_data ( data ) {
 
 	$( '.load' ).append ( data );
 
+	// new gallery starts at the top
+
+	$( '.load' ).scrollTop ( 0 ) ;
+
 }
 
 $( document ).ready ( function ( ) {
