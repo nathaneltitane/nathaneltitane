@@ -151,8 +151,6 @@ pattern_title='^(.*[^ ]) *\[ *(.*[^ ]) *\]$'
 list_items=()
 list_schema=()
 
-declare -A list_seen
-
 # defaults ─────────────────────────────────────────────────────────────────────
 
 # functions ────────────────────────────────────────────────────────────────────
@@ -208,6 +206,21 @@ project_add () {
 
 	list_items+=( "					<li><a href=\"/${path_project}\">${text_item}</a></li>" )
 	list_schema+=( "					{ \"@type\": \"ListItem\", \"position\": ${position_project}, \"item\": { \"@type\": \"CreativeWork\", \"name\": \"${name_escaped}\", \"image\": \"${url_site}/${path_project}\"${text_keywords}, \"creator\": { \"@id\": \"${url_site}/#person\" } } }" )
+
+}
+
+container_close () {
+
+	# use to close the open content container
+
+cat << CONTENT-CONTAINER ->> "industrial/index.html"
+			</div>
+
+		</div>
+
+		<!-- END CONTAINER -->
+
+CONTENT-CONTAINER
 
 }
 
@@ -310,44 +323,48 @@ cat << 'INDEX-HEADER' -> "industrial/index.html"
 
 INDEX-HEADER
 
-# file types
+# every image, folders kept together
 
-list_extensions=(
-	jpg
-	svg
-)
+mapfile -t list_paths_content < <(find ${directory_industrial} -type f \( -iname "*.jpg" -o -iname "*.svg" \) | sort)
 
 # entry counter
 
 count_entries=1
 
-for extension in ${list_extensions[@]}
+# folder of the open container
+
+unset directory_open
+
+for path_content in "${list_paths_content[@]}"
 do
-	# every file of this type
+	# path below the site root
 
-	list_paths_content=( $(find ${directory_industrial} -type f -iname "*.${extension}" | sort) )
+	path_content=$(echo "${path_content}" | cut -d '/' -f6-)
 
-	# split on new lines
+	# content file name
 
-	IFS=$'\n'
+	file_content="${path_content##*/}"
 
-	for path_content in ${list_paths_content[@]}
-	do
-		# path below the site root
+	# name without extension
 
-		path_content=$(echo "${path_content}" | cut -d '/' -f6-)
+	name_content="${file_content%.*}"
 
-		# content file name
+	# content folder
 
-		file_content="${path_content##*/}"
+	directory_content="${path_content%/*}"
 
-		# name without extension
+	# one container and title per folder
 
-		name_content="${file_content%.*}"
+	if [ "${directory_content}" != "${directory_open}" ]
+	then
+		# close the previous container
 
-		# content folder
+		if [ -n "${directory_open}" ]
+		then
+			container_close
+		fi
 
-		directory_content="${path_content%/*}"
+		directory_open="${directory_content}"
 
 		# content title file
 
@@ -355,48 +372,28 @@ do
 
 		# first image of each project on the home page
 
-		if [ -z "${list_seen[${directory_content}]}" ]
+		name_project="${title_content}"
+
+		unset keywords_project
+
+		# title and tools in brackets
+
+		if [[ "${title_content}" =~ ${pattern_title} ]]
 		then
-			list_seen[${directory_content}]=1
-
-			name_project="${title_content}"
-
-			unset keywords_project
-
-			# title and tools in brackets
-
-			if [[ "${title_content}" =~ ${pattern_title} ]]
-			then
-				name_project="${BASH_REMATCH[1]}"
-				keywords_project="${BASH_REMATCH[2]// | /, }"
-			fi
-
-			project_add "${name_project}" "${keywords_project}" "${path_content}"
+			name_project="${BASH_REMATCH[1]}"
+			keywords_project="${BASH_REMATCH[2]// | /, }"
 		fi
 
-		# keep first container visible
+		project_add "${name_project}" "${keywords_project}" "${path_content}"
 
-		if [ "${count_entries}" -gt 1 ]
-		then
-			class_container="container"
-		else
-			class_container="container"
-		fi
-
-# content containers
+# content container and title
 
 cat << CONTENT-CONTAINER ->> "industrial/index.html"
 		<!-- BEGIN CONTAINER -->
 
-		<div class='${class_container}'>
+		<div class='container'>
 
 			<div class="flex flex-column">
-
-CONTENT-CONTAINER
-
-# content title
-
-cat << CONTENT-TITLE ->> "industrial/index.html"
 
 				<div class="flex-cell flex-cell-center flex-cell-stretch">
 
@@ -404,6 +401,12 @@ cat << CONTENT-TITLE ->> "industrial/index.html"
 
 				</div>
 
+CONTENT-CONTAINER
+	fi
+
+# content image
+
+cat << CONTENT-IMAGE ->> "industrial/index.html"
 				<div class='flex-cell flex-cell-center'>
 
 					<a href="/${path_content}">
@@ -414,30 +417,20 @@ cat << CONTENT-TITLE ->> "industrial/index.html"
 
 				</div>
 
-CONTENT-TITLE
-
-# close the container
-
-cat << CONTENT-CONTAINER ->> "industrial/index.html"
-			</div>
-
-		</div>
-
-		<!-- END CONTAINER -->
-
-CONTENT-CONTAINER
+CONTENT-IMAGE
 
 	# count the entry
 
 	(( count_entries ++ ))
 
-	done
-
-	# default splitting
-
-	IFS=''
-
 done
+
+# close the last container
+
+if [ -n "${directory_open}" ]
+then
+	container_close
+fi
 
 # write the home page section
 
