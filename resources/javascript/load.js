@@ -32,55 +32,55 @@ $( document ).ready ( function ( ) {
 
         setTimeout ( function ( ) {
 
-			load.removeClass ( 'load-hide' );
+			load.removeClass ( 'hide' );
 
-            load.addClass ( 'load-show' );
+            load.addClass ( 'show' );
 
         }, 250 );
 
-		bottom.removeClass ( 'bottom-hide' );
+		bottom.removeClass ( 'hide' );
 
-		bottom.addClass ( 'bottom-show' );
+		bottom.addClass ( 'show' );
 
-		top.removeClass ( 'top-hide' );
+		top.removeClass ( 'hide' );
 
-		top.addClass ( 'top-show' );
+		top.addClass ( 'show' );
 
 		// overlays get a dark fill over the gallery
 
-		top.addClass ( 'top-fill' ) ;
+		top.addClass ( 'fill' ) ;
 
-		bottom.addClass ( 'bottom-fill' ) ;
+		bottom.addClass ( 'fill' ) ;
 
-		$( '.navigation' ).addClass ( 'navigation-fill' ) ;
+		$( '.navigation' ).addClass ( 'fill' ) ;
 
     };
 
     function load_hide ( ) {
 
-		bottom.removeClass ( 'bottom-show' );
+		bottom.removeClass ( 'show' );
 
-		bottom.addClass ( 'bottom-hide' );
+		bottom.addClass ( 'hide' );
 
-		top.removeClass ( 'top-show' );
+		top.removeClass ( 'show' );
 
-		top.addClass ( 'top-hide' );
+		top.addClass ( 'hide' );
 
-		load.removeClass ( 'load-show' );
+		load.removeClass ( 'show' );
 
-		load.addClass ( 'load-hide' );
+		load.addClass ( 'hide' );
 
-		top.removeClass ( 'top-fill' ) ;
+		top.removeClass ( 'fill' ) ;
 
-		bottom.removeClass ( 'bottom-fill' ) ;
+		bottom.removeClass ( 'fill' ) ;
 
-		$( '.navigation' ).removeClass ( 'navigation-fill' ) ;
+		$( '.navigation' ).removeClass ( 'fill' ) ;
 
 	};
 
 	function load_toggle ( ) {
 
-        if ( load.hasClass ( 'load-show' ) ) {
+        if ( load.hasClass ( 'show' ) ) {
 
             load_hide ( );
 
@@ -88,11 +88,11 @@ $( document ).ready ( function ( ) {
 
         else {
 
-			drawer.removeClass ( 'drawer-show' );
+			drawer.removeClass ( 'show' );
 
-			drawer.addClass ( 'drawer-hide' );
+			drawer.addClass ( 'hide' );
 
-			$( '#navigation, #top, #bottom' ).removeClass ( 'overlay-hide' ) ;
+			$( '#navigation, #top, #bottom' ).removeClass ( 'covered' ) ;
 
 			load_show ( );
 

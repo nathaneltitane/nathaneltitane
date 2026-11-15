@@ -4,14 +4,6 @@
 	padding: 0px 10px 0px 10px;
 }
 
-.show {
-	display: block;
-}
-
-.hide {
-	display: none;
-}
-
 .container img {
 	border-radius: 5px;
 }

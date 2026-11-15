@@ -30,7 +30,7 @@
 
 /* square over the bird reveals the title */
 
-#trigger-background {
+#background .trigger {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -43,7 +43,7 @@
 
 /* bird softens while hovered */
 
-#background.background-hover #trigger-background {
+#background.hover .trigger {
 	backdrop-filter: blur(1px);
 }
 

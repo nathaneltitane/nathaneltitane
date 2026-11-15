@@ -399,7 +399,7 @@ cat << CONTENT-CONTAINER ->> "industrial/index.html"
 
 				<div class="flex-cell flex-cell-center flex-cell-stretch">
 
-					<div class="button button-industrial">${title_content}</div>
+					<div class="button industrial">${title_content}</div>
 
 				</div>
 

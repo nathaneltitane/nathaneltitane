@@ -3,19 +3,19 @@
 $( document ).ready ( function ( ) {
 
 	var background = $( '#background' ) ;
-	var trigger_background = $( '#trigger-background' ) ;
+	var trigger_background = $( '#background .trigger' ) ;
 
 	// mouse reveals while over the bird square
 
 	trigger_background.on ( 'mouseenter', function ( ) {
 
-		background.addClass ( 'background-hover' ) ;
+		background.addClass ( 'hover' ) ;
 
 	} ) ;
 
 	trigger_background.on ( 'mouseleave', function ( ) {
 
-		background.removeClass ( 'background-hover' ) ;
+		background.removeClass ( 'hover' ) ;
 
 	} ) ;
 
@@ -25,7 +25,7 @@ $( document ).ready ( function ( ) {
 
 		event.preventDefault ( ) ;
 
-		background.toggleClass ( 'background-hover' ) ;
+		background.toggleClass ( 'hover' ) ;
 
 	} ) ;
 

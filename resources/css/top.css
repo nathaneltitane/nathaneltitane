@@ -17,17 +17,13 @@
 	right: -200px;
 }
 
-.color-label-top {
-	 color: #00000000;
-}
-
 @keyframes reveal-top {
 	0% {right: -200px;}
 
 	100% {right: 0px;}
 }
 
-.top-show {
+.top.show {
 	animation-name: reveal-top;
 	animation-delay: 1.5s;
 	animation-duration: 1s;
@@ -40,7 +36,7 @@
 	100% {right: -200px;}
 }
 
-.top-hide {
+.top.hide {
 	animation-name: conceal-top;
 	animation-delay: 0s;
 	animation-duration: 1s;
@@ -49,7 +45,7 @@
 
 /* dark fill while a gallery is open */
 
-.top-fill {
+.top.fill {
 	background-color: #000000dd;
 	border-radius: 5px;
 	margin: 0px 20px 10px 0px;

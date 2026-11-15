@@ -1,28 +1,28 @@
 /* about card in the button style */
 
-.button-about {
+.button.about {
 	border-bottom: 5px solid #f46f2cff;
 }
 
 /* label hovers like the other buttons */
 
-.button-about:hover .label-about {
+.button.about:hover .label {
 	color: #f46f2cff;
 	font-weight: bold;
 }
 
-.paragraph-about {
+.about .paragraph {
 	line-height: 1.5;
 	margin: 15px 0px 0px 0px;
 }
 
-.motto-about {
+.about .motto {
 	color: #f46f2cff;
 	font-weight: bold;
 	margin: 20px 0px 5px 0px;
 }
 
-.heading-about {
+.about .heading {
 	color: #333333ff;
 	font-weight: bold;
 	margin: 25px 0px 0px 0px;

@@ -19,17 +19,13 @@
 	right: -200px;
 }
 
-.color-label-bottom {
-	 color: #00000000;
-}
-
 @keyframes reveal-bottom {
 	0% {right: -200px;}
 
 	100% {right: 0px;}
 }
 
-.bottom-show {
+.bottom.show {
 	animation-name: reveal-bottom;
 	animation-delay: 1s;
 	animation-duration: 1s;
@@ -42,7 +38,7 @@
 	100% {right: -200px;}
 }
 
-.bottom-hide {
+.bottom.hide {
 	animation-name: conceal-bottom;
 	animation-delay: 0s;
 	animation-duration: 1s;
@@ -51,7 +47,7 @@
 
 /* dark fill while a gallery is open */
 
-.bottom-fill {
+.bottom.fill {
 	background-color: #000000dd;
 	border-radius: 5px;
 	margin: 10px 20px 0px 0px;

@@ -13,42 +13,42 @@ a.button:hover {
 
 /* section colors from the logo strokes */
 
-.button-industrial {
+.button.industrial {
 	border-bottom: 5px solid #800080ff;
 }
 
-.button-industrial:hover {
+.button.industrial:hover {
 	color: #800080ff;
 }
 
-.button-graphic {
+.button.graphic {
 	border-bottom: 5px solid #2c89a0ff;
 }
 
-.button-graphic:hover {
+.button.graphic:hover {
 	color: #2c89a0ff;
 }
 
-.button-code {
+.button.code {
 	border-bottom: 5px solid #333333ff;
 }
 
-.button-code:hover {
+.button.code:hover {
 	color: #333333ff;
 }
 
-.button-contact {
+.button.contact {
 	border-bottom: 5px solid #5aa02cff;
 }
 
-.button-contact:hover {
+.button.contact:hover {
 	color: #5aa02cff;
 }
 
-.button-linkedin {
+.button.linkedin {
 	border-bottom: 5px solid #3737c8ff;
 }
 
-.button-linkedin:hover {
+.button.linkedin:hover {
 	color: #3737c8ff;
 }
