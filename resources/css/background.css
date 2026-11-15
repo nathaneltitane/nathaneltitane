@@ -22,7 +22,7 @@
 	opacity: 0;
 
 	animation-name: background-reveal;
-	animation-delay: 3s;
+	animation-delay: 2.5s;
 	animation-duration: 2s;
 	animation-timing-function: ease;
 	animation-fill-mode: forwards;
