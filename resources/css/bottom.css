@@ -19,31 +19,31 @@
 	right: -200px;
 }
 
-.bottom-label-color {
+.color-label-bottom {
 	 color: #00000000;
 }
 
-@keyframes bottom-reveal {
+@keyframes reveal-bottom {
 	0% {right: -200px;}
 
 	100% {right: 0px;}
 }
 
-.bottom-show {
-	animation-name: bottom-reveal;
+.show-bottom {
+	animation-name: reveal-bottom;
 	animation-delay: 1s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes bottom-conceal {
+@keyframes conceal-bottom {
 	0% {right: 0px;}
 
 	100% {right: -200px;}
 }
 
-.bottom-hide {
-	animation-name: bottom-conceal;
+.hide-bottom {
+	animation-name: conceal-bottom;
 	animation-delay: 0s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;

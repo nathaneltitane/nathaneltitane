@@ -1,16 +1,16 @@
 // load //
 
-function get_page_data ( href ) {
+function page_get ( url_page ) {
 
-	$.get ( href, parse_data );
+	$.get ( url_page, page_insert );
 
 }
 
-function parse_data ( data ) {
+function page_insert ( html_page ) {
 
 	$( '.load' ).empty ( );
 
-	$( '.load' ).append ( data );
+	$( '.load' ).append ( html_page );
 
 	// new gallery starts at the top
 
@@ -32,41 +32,41 @@ $( document ).ready ( function ( ) {
 
         setTimeout ( function ( ) {
 
-			load.removeClass ( 'load-hide' );
+			load.removeClass ( 'hide-load' );
 
-            load.addClass ( 'load-show' );
+            load.addClass ( 'show-load' );
 
         }, 250 );
 
-		bottom.removeClass ( 'bottom-hide' );
+		bottom.removeClass ( 'hide-bottom' );
 
-		bottom.addClass ( 'bottom-show' );
+		bottom.addClass ( 'show-bottom' );
 
-		top.removeClass ( 'top-hide' );
+		top.removeClass ( 'hide-top' );
 
-		top.addClass ( 'top-show' );
+		top.addClass ( 'show-top' );
 
     };
 
     function hide ( ) {
 
-		bottom.removeClass ( 'bottom-show' );
+		bottom.removeClass ( 'show-bottom' );
 
-		bottom.addClass ( 'bottom-hide' );
+		bottom.addClass ( 'hide-bottom' );
 
-		top.removeClass ( 'top-show' );
+		top.removeClass ( 'show-top' );
 
-		top.addClass ( 'top-hide' );
+		top.addClass ( 'hide-top' );
 
-		load.removeClass ( 'load-show' );
+		load.removeClass ( 'show-load' );
 
-		load.addClass ( 'load-hide' );
+		load.addClass ( 'hide-load' );
 
 	};
 
 	function toggle ( ) {
 
-        if ( load.hasClass ( 'load-show' ) ) {
+        if ( load.hasClass ( 'show-load' ) ) {
 
             hide ( );
 
@@ -74,9 +74,9 @@ $( document ).ready ( function ( ) {
 
         else {
 
-			drawer.removeClass ( 'drawer-show' );
+			drawer.removeClass ( 'show-drawer' );
 
-			drawer.addClass ( 'drawer-hide' );
+			drawer.addClass ( 'hide-drawer' );
 
 			show ( );
 
@@ -92,7 +92,7 @@ $( document ).ready ( function ( ) {
 
 		setTimeout ( function ( ) {
 
-			get_page_data ( link );
+			page_get ( link );
 
 		}, 250 );
 

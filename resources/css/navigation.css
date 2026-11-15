@@ -7,7 +7,7 @@
 	padding: 10px 10px 10px 10px;
 }
 
-@keyframes navigation-reveal {
+@keyframes reveal-navigation {
 	0% {left: -200px;}
 
 	100% {left: 10px;}
@@ -22,18 +22,18 @@
 	bottom: 0px;
 	left: -200px;
 
-	animation-name: navigation-reveal;
+	animation-name: reveal-navigation;
 	animation-delay: 4.5s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-.navigation-label-color {
+.color-label-navigation {
 	 color: #00000000;
 }
 
 /* overlays hidden while the gallery scrolls */
 
-.scroll-hide {
+.hide-scroll {
 	opacity: 0;
 }

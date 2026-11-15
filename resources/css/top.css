@@ -17,31 +17,31 @@
 	right: -200px;
 }
 
-.top-label-color {
+.color-label-top {
 	 color: #00000000;
 }
 
-@keyframes top-reveal {
+@keyframes reveal-top {
 	0% {right: -200px;}
 
 	100% {right: 0px;}
 }
 
-.top-show {
-	animation-name: top-reveal;
+.show-top {
+	animation-name: reveal-top;
 	animation-delay: 1.5s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes top-conceal {
+@keyframes conceal-top {
 	0% {right: 0px;}
 
 	100% {right: -200px;}
 }
 
-.top-hide {
-	animation-name: top-conceal;
+.hide-top {
+	animation-name: conceal-top;
 	animation-delay: 0s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;

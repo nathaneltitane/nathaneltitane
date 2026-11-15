@@ -1,1 +1,1 @@
-Nathanel + Titane - Industrial Design portfolio
+Nathanel + Titane - Industrial + Graphic Design portfolio: products and systems, from concept to creation

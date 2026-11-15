@@ -6,11 +6,11 @@ $( document ).ready ( function ( ) {
 
     function show ( ) {
 
-        drawer.removeClass ( 'drawer-hide' );
+        drawer.removeClass ( 'hide-drawer' );
 
         setTimeout ( function ( ) {
 
-            drawer.addClass ( 'drawer-show' );
+            drawer.addClass ( 'show-drawer' );
 
         }, 250 );
 
@@ -18,15 +18,15 @@ $( document ).ready ( function ( ) {
 
     function hide ( ) {
 
-        drawer.removeClass ( 'drawer-show' );
+        drawer.removeClass ( 'show-drawer' );
 
-        drawer.addClass ( 'drawer-hide' );
+        drawer.addClass ( 'hide-drawer' );
 
     };
 
     function toggle ( ) {
 
-        if ( drawer.hasClass ( 'drawer-show' ) ) {
+        if ( drawer.hasClass ( 'show-drawer' ) ) {
 
             hide ( );
 
@@ -55,7 +55,7 @@ $( document ).ready ( function ( ) {
 
     $( '#load' ).click ( function ( event ) {
 
-        if ( drawer.hasClass ( 'drawer-show' ) ) {
+        if ( drawer.hasClass ( 'show-drawer' ) ) {
 
             hide ( );
 

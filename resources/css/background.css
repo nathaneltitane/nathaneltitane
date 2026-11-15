@@ -21,7 +21,7 @@
 
 	opacity: 0;
 
-	animation-name: background-reveal;
+	animation-name: reveal-background;
 	animation-delay: 2.5s;
 	animation-duration: 2s;
 	animation-timing-function: ease;
@@ -30,7 +30,7 @@
 
 /* square over the bird reveals the title */
 
-#background-trigger {
+#trigger-background {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -43,13 +43,13 @@
 
 /* bird softens while hovered */
 
-#background.background-hover #background-trigger {
+#background.hover-background #trigger-background {
 	backdrop-filter: blur(1px);
 }
 
 /* bird fades in and comes into focus */
 
-@keyframes background-reveal {
+@keyframes reveal-background {
 	0% {opacity: 0; filter: saturate(0) blur(20px);}
 
 	100% {opacity: 1; filter: saturate(1) blur(0px);}

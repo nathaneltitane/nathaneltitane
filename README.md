@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/nathaneltitane/nathaneltitane/main/resources/logo/logo-nathaneltitane.svg" alt="Nathanel + Titane"><br><b>Industrial Design Portfolio</b><br>IDEA. FORM. FUNCTION.</p>
+<p align="center"><img src="https://raw.githubusercontent.com/nathaneltitane/nathaneltitane/main/resources/logo/logo-github.svg" alt="Nathanel + Titane"><br><b>Industrial + Graphic Design Portfolio</b><br>STRUCTURED BY TECHNIQUE, FREED BY IMAGINATION.</p>
 
 ---
 
@@ -14,9 +14,19 @@ Useful? Star the repository - it helps others find it.
 
 ### Welcome to [Nathanel + Titane](https://nathaneltitane.com)
 
-Nathanel + Titane - Industrial Design Portfolio
+Nathanel + Titane - Industrial + Graphic Design Portfolio
 
-This repository contains the website created for the presentation of a comprehensive portfolio of industrial design projects and accomplishments.
+Products and systems, from concept to creation: structured by technique, freed by imagination.
+
+I'm Nathanel, an industrial designer driven by curiosity, creativity, and the joy of making things. I bring ideas to life, turning sketches and concepts into tangible things. From products, workplace systems and lighting to branding and illustration, I enjoy exploring the space where imagination, design and craftsmanship meet.
+
+**Why the bird?**
+
+A sparrow: small, colourful and full of character. Its sharp geometric facets reflect the balance between artistic expression and technical precision. But there's something more to it: a little bird with a fierce spirit, always reaching for freedom.
+
+**Every facet calculated, every idea free.**
+
+This repository holds the website that presents these industrial and graphic design projects.
 
 ---
 

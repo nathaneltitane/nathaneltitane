@@ -2,7 +2,7 @@
 
 $( document ).ready ( function ( ) {
 
-	var logo_array = [
+	var list_logos = [
 		['logo-blue'],
 		['logo-green'],
 		['logo-purple'],
@@ -10,8 +10,8 @@ $( document ).ready ( function ( ) {
 		['logo-teal']
 	];
 
-	var index = Math.floor ( Math.random ( ) * logo_array.length );
+	var index = Math.floor ( Math.random ( ) * list_logos.length );
 
-	$( '.logo' ).css ( 'background-image', 'url("/resources/logo/' + logo_array[index] + '.svg")' );
+	$( '.logo' ).css ( 'background-image', 'url("/resources/logo/' + list_logos[index] + '.svg")' );
 
 } );

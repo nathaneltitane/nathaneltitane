@@ -6,23 +6,23 @@
 
 /* label hovers like the other buttons */
 
-.button-about:hover .about-label {
+.button-about:hover .label-about {
 	color: #f46f2cff;
 	font-weight: bold;
 }
 
-.about-text {
+.paragraph-about {
 	line-height: 1.5;
 	margin: 15px 0px 0px 0px;
 }
 
-.about-motto {
+.motto-about {
 	color: #f46f2cff;
 	font-weight: bold;
 	margin: 20px 0px 5px 0px;
 }
 
-.about-question {
+.heading-about {
 	color: #333333ff;
 	font-weight: bold;
 	margin: 25px 0px 0px 0px;
