@@ -31,3 +31,9 @@
 .navigation-label-color {
 	 color: #00000000;
 }
+
+/* hidden while the gallery scrolls */
+
+.navigation-hide {
+	opacity: 0;
+}
