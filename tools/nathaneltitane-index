@@ -1,0 +1,344 @@
+#!/bin/bash
+
+# dependencies ─────────────────────────────────────────────────────────────────
+
+script="$(basename -- "${BASH_SOURCE[0]}")"
+
+# script arguments for escalation
+
+self_arguments=("${@}")
+
+# load frobulator once
+
+if [ "${frobulator_loaded}" != "true" ]
+then
+	echo
+	echo "[  >  ] Checking..."
+	echo
+
+	# keep the sudo user home
+
+	if [ -n "${SUDO_USER}" ]
+	then
+		USER="${SUDO_USER}"
+		HOME="$(getent passwd "${SUDO_USER}" | cut -d ':' -f 6)"
+	fi
+
+	# local copy and download
+
+	frobulator="${HOME}/.local/bin/frobulator"
+	frobulator_download="$(mktemp)"
+
+	mkdir -p "${HOME}/.local/bin"
+
+	# fetch the latest release
+
+	curl -s -L -o "${frobulator_download}" get.frbltr.app 2> /dev/null ||
+	wget -q -O "${frobulator_download}" get.frbltr.app 2> /dev/null
+
+	# keep only a newer release
+
+	version_online="$(grep -m 1 '^update=' "${frobulator_download}")"
+	version_local="$(grep -m 1 '^update=' "${frobulator}" 2> /dev/null)"
+
+	if [[ "${version_online}" > "${version_local}" ]]
+	then
+		mv -f "${frobulator_download}" "${frobulator}"
+
+		chmod +x "${frobulator}"
+	fi
+
+	# drop the download
+
+	rm -f "${frobulator_download}"
+
+	# stop without frobulator
+
+	if [ ! -f "${frobulator}" ]
+	then
+		echo "[  !  ] Unable to fetch frobulator ── [ get.frbltr.app ]"
+		echo
+
+		exit 1
+	fi
+
+	# load the library
+
+	source "${frobulator}"
+fi
+
+# superuser ────────────────────────────────────────────────────────────────────
+
+frobulator.escalate
+
+# script ───────────────────────────────────────────────────────────────────────
+
+frobulator.script
+
+# version ──────────────────────────────────────────────────────────────────────
+
+version="2026-11-14"
+
+# usage ────────────────────────────────────────────────────────────────────────
+
+while (( $# ))
+do
+	case "${1}"
+	in
+		-h|--help)
+			echo
+			echo -e "Usage: ./${script} -h"
+			echo
+			echo -e "Options:"
+			echo
+			echo -e "-h, --help    Show [h]elp and usage information."
+			echo
+			echo -e "'${script}'   [ Version // ${version} ]"
+			echo
+
+			exit
+		;;
+
+		"")
+			# handle empty argument:
+			# use default values specified in script
+
+			:
+		;;
+
+		*)
+			echo
+			echo -e "Usage: ./${script} -h"
+			echo
+			echo -e "Unknown option: '${script} ${1}':"
+			echo -e "Type './${script} -h' for help and usage information."
+			echo
+
+			exit 1
+
+		;;
+
+		esac
+
+	shift
+
+done
+
+# variables ────────────────────────────────────────────────────────────────────
+
+# script and site folders
+
+frobulator.locate
+
+directory_root="${directory_script%/*}"
+
+# site paths are relative - no path arguments
+
+cd -- "${directory_root}" || exit 1
+
+# site identity
+
+address_site='https://nathaneltitane.com'
+
+# output
+
+file_sitemap='sitemap.xml'
+
+# pages in the sitemap
+
+list_pages=(
+	'./index.html'
+)
+
+# image folders shown on the home page
+
+list_directories_images=(
+	'./industrial/'
+	'./graphic/'
+)
+
+# image types
+
+list_extensions=(
+	jpg
+	png
+	svg
+)
+
+# defaults ─────────────────────────────────────────────────────────────────────
+
+# site address without a trailing slash
+
+url_site="${address_site%/}"
+
+# counters
+
+count_pages=0
+
+count_images=0
+
+# functions ────────────────────────────────────────────────────────────────────
+
+url_prepare () {
+
+	# use to turn a path into url_full
+
+	path_url="${1}"
+
+	# drop index file and slashes
+
+	path_url="${path_url#./}"
+	path_url="${path_url#index.html}"
+	path_url="${path_url%index.html}"
+	path_url="${path_url%/}"
+
+	# site root or folder url
+
+	if [ "${path_url}" = "." ] ||
+	   [ "${path_url}" = ""  ]
+	then
+		path_url="/"
+	else
+		path_url="/${path_url}/"
+	fi
+
+	path_url="${path_url//\/\//\/}"
+
+	url_full="${url_site}${path_url}"
+
+}
+
+images_index () {
+
+	# use to list every portfolio image under a page
+
+	local path_directory
+	local path_image
+	local extension
+	local list_images=()
+
+	for path_directory in "${list_directories_images[@]}"
+	do
+		for extension in "${list_extensions[@]}"
+		do
+			mapfile -t list_images < <(find "${path_directory}" -type f -iname "*.${extension}" | sort)
+
+			for path_image in "${list_images[@]}"
+			do
+				path_image="${path_image#./}"
+
+				# image entry
+
+				cat >> "${file_sitemap}" << IMAGE
+
+		<image:image>
+
+			<image:loc>${url_site}/${path_image}</image:loc>
+
+		</image:image>
+IMAGE
+
+				(( count_images ++ ))
+			done
+		done
+	done
+
+}
+
+url_index () {
+
+	# use to add a page and its images to the sitemap
+
+	url_prepare "${1}"
+
+	path_file="${2}"
+
+	# page date and crawl hints
+
+	date_modified="$(date -u -r "${path_file}" '+%Y-%m-%d')"
+
+	frequency_change="monthly"
+
+	priority="1.00"
+
+	# sitemap entry
+
+	cat >> "${file_sitemap}" << URL
+
+	<url>
+
+		<loc>${url_full}</loc>
+
+		<lastmod>${date_modified}</lastmod>
+
+		<changefreq>${frequency_change}</changefreq>
+
+		<priority>${priority}</priority>
+URL
+
+	images_index
+
+	cat >> "${file_sitemap}" << URL
+
+	</url>
+URL
+
+	(( count_pages ++ ))
+
+}
+
+# initialize ───────────────────────────────────────────────────────────────────
+
+frobulator.inf "Generating sitemap entries"
+
+frobulator.fwd "Writing..."
+
+# write header ─────────────────────────────────────────────────────────────────
+
+cat > "${file_sitemap}" << HEADER
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+HEADER
+
+# pages ────────────────────────────────────────────────────────────────────────
+
+for path_file in "${list_pages[@]}"
+do
+	# skip missing pages
+
+	if [ ! -f "${path_file}" ]
+	then
+		frobulator.err "Page missing" "[ ${path_file} ]"
+
+		continue
+	fi
+
+	url_index "${path_file}" "${path_file}"
+done
+
+# write footer ─────────────────────────────────────────────────────────────────
+
+cat >> "${file_sitemap}" << FOOTER
+
+</urlset>
+FOOTER
+
+# report ───────────────────────────────────────────────────────────────────────
+
+# stop when nothing was found
+
+if [ "${count_pages}" -eq 0 ]
+then
+	frobulator.err "No URLs found" "[ ${url_site} ]"
+
+	exit 1
+else
+	frobulator.inf "Sitemap written" "[ ${file_sitemap} ]"
+
+	frobulator.inf "URL count" "[ ${count_pages} ]"
+
+	frobulator.inf "Image count" "[ ${count_images} ]"
+
+	frobulator.cpt "Complete" "[ Sitemap ]"
+fi

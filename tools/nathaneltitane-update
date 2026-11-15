@@ -77,7 +77,7 @@ frobulator.script
 
 # version ──────────────────────────────────────────────────────────────────────
 
-version="2026-10-04"
+version="2026-11-14"
 
 # usage ────────────────────────────────────────────────────────────────────────
 
@@ -85,12 +85,6 @@ while (( $# ))
 do
 	case "${1}"
 	in
-		-directory)
-			directory="${2}"
-
-			shift
-		;;
-
 		-a|--all)
 			option="all"
 		;;
@@ -103,21 +97,37 @@ do
 			option="graphic"
 		;;
 
+		-d|--drawer)
+			option="drawer"
+		;;
+
+		-o|--social)
+			option="social"
+		;;
+
+		-x|--index)
+			option="index"
+		;;
+
 		-h|--help)
 			echo
-			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
+			echo -e "Usage: ./${script} [OPTION]"
 			echo
 			echo -e "Options:"
 			echo
-			echo -e "Note:               Without an option, every step runs."
+			echo -e "Note:               Without an option, every step runs, then the site is pushed."
 			echo
-			echo -e "-directory          Specify [d]irectory to load models from."
+			echo -e "-a, --all           Update [a]ll: social card, drawer, galleries and sitemap."
 			echo
-			echo -e "-a, --all           Update [a]ll website framework and content."
+			echo -e "-i, --industrial    Update the [i]ndustrial gallery and its home page list."
 			echo
-			echo -e "-i, --industrial    Update [i]ndustrial content."
+			echo -e "-g, --graphic       Update the [g]raphic gallery and its home page list."
 			echo
-			echo -e "-g, --graphic       Update [g]raphic content."
+			echo -e "-d, --drawer        Update the side [d]rawer menu."
+			echo
+			echo -e "-o, --social        Update the s[o]cial sharing card."
+			echo
+			echo -e "-x, --index         Update the search engine inde[x]ing sitemap."
 			echo
 			echo -e "-h, --help          Show [h]elp and usage information."
 			echo
@@ -136,7 +146,7 @@ do
 
 		*)
 			echo
-			echo -e "Usage: ./${script} [EXTENSION] | [OPTION] [PARAMETER]"
+			echo -e "Usage: ./${script} [OPTION]"
 			echo
 			echo -e "Unknown option: '${script} ${1}':"
 			echo -e "Type './${script} -h' for help and usage information."
@@ -157,10 +167,6 @@ done
 frobulator.clear
 
 # variables ────────────────────────────────────────────────────────────────────
-
-# models folder for the tools
-
-export directory="${directory}"
 
 # tools folder
 
@@ -205,7 +211,7 @@ option () {
 
 	frobulator.fwd "Updating..."
 
-	upload "Models update"
+	upload "Code & Features Update"
 
 	list=()
 
@@ -224,6 +230,7 @@ then
 		nathaneltitane-drawer
 		nathaneltitane-industrial
 		nathaneltitane-graphic
+		nathaneltitane-index
 	)
 fi
 
@@ -247,6 +254,20 @@ if [[ "${option}" = "graphic" ]]
 then
 	list+=(
 		nathaneltitane-graphic
+	)
+fi
+
+if [[ "${option}" = "social" ]]
+then
+	list+=(
+		nathaneltitane-social
+	)
+fi
+
+if [[ "${option}" = "index" ]]
+then
+	list+=(
+		nathaneltitane-index
 	)
 fi
 

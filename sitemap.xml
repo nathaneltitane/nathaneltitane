@@ -1,10 +1,1360 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 	<url>
 
 		<loc>https://nathaneltitane.com/</loc>
+
+		<lastmod>2026-11-15</lastmod>
+
+		<changefreq>monthly</changefreq>
+
+		<priority>1.00</priority>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/09.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/10.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/11.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/12.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/13.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/14.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/15.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/axis/16.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/09.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/10.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/11.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/12.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/13.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/14.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/15.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/16.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/17.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/18.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/19.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/20.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/21.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/22.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/muraflex/23.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/05b.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/05c.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/09.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/10.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/11.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/12.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/13.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/14.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/15.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/16.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/17.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/18.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/19.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/20.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/21.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/22.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/23.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/24.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/25.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/26.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/27.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/28.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/29.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/30.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/31.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/32.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/33.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/34.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/35.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/36.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/37.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/38.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/39.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-cel/result.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-logo/panda-logo.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-renders/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-renders/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-renders/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-renders/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-renders/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/09.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/10.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/11.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/panda-sketch/12.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/09.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/prototyping/10.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/09.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/10.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/11.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/12.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-illico/13.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/04.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/05.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/06.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/07.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-showroom/08.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-telescopic-fields/01.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-telescopic-fields/02.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-telescopic-fields/03.jpg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-prototypes/01.svg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-prototypes/02.svg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-prototypes/03.svg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-prototypes/04.svg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-prototypes/05.svg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/industrial/rho-prototypes/06.svg</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/dominique-mosel/bartending-logo.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/duke-badoo/bright-as-diamonds-color.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/dextop.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/frobulator.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/hack.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/l2cu.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/root.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/terminal.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/github/termux.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/haim-moryoussef/ben-porath-yossef-logo-01.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/haim-moryoussef/ben-porath-yossef-logo-02.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/haim-moryoussef/ben-porath-yossef-poster.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/helene-ross/business-card-back.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/helene-ross/business-card-front.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/helene-ross/hells-kitchen-sticker.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/howard-mosel/mosel-logo-concept-01.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/howard-mosel/mosel-logo-concept-02.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/howard-mosel/mosel-logo-concept-03.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/howard-mosel/mosel-logo-concept-04.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/howard-mosel/mosel-logo.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-boom.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-map.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-path.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-primitive-light.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-study-01.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-study-02.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-study-04.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-study-07.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-study-08.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/abstract-study-09.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/aim-for-the-stars-wherever-they-may-be.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/animals-bird-01.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/animals-bird-02.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/animals-bird-03.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/animals-snake.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/dream-design-love-banner.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/dream-design-love-grey.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/dream-design-love-hearts.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/dream-design-love-square.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gatchaman-logo.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gatchaman-white-shadow.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/grendizer-actarus.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/grendizer.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gudetama-bye.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gudetama-futon.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gudetama-muniya.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gudetama-screen.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gudetama-twins.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gudetama-zzz.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gundam-double-x.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gundam-exia.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gundam-impulse.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gundam-wing.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/gundam-wing-zero.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/kaomoji-doo.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/kaomoji-nani.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/kaomoji-sousou.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/kaomoji-suki.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-angel.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-israfel.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-lilith.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-ramiel.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-sachiel.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-sahaquiel.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/neon-genesis-evangelion-tree-of-life.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/owl-face.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/owl-jewel-eyes.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/owl-totem.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/pokemon-pikachu-candy.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/pokemon-pikachu-mad.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/schwarzesmarken.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/thunderbird.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/tux-shadow.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/tux-stencil.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/two-pieces-one-love.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/illustrations/unicorn.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/isaac-oiknine/braco-bracelets-logo.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/maxine-grossman/mgpt-logo-kbell-01.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/maxine-grossman/mgpt-logo-kbell-02.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/personal-branding/personal-branding-logo-01.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/personal-branding/personal-branding-logo-02.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/personal-branding/personal-branding-logo-03.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/personal-branding/personal-branding-logo-04.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/personal-branding/personal-branding-logo-05.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/personal-branding/personal-branding-logo-06.png</image:loc>
+
+		</image:image>
+
+		<image:image>
+
+			<image:loc>https://nathaneltitane.com/graphic/yves-azoulay/av-solutions-logo.png</image:loc>
+
+		</image:image>
 
 	</url>
 
