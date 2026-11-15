@@ -2,12 +2,6 @@
 
 $( function ( ) {
 
-	$.get ( '/resources/modules/head.html', function ( data ) {
-
-		$( 'head' ).append ( data );
-
-	} );
-
 	$.get( '/resources/modules/drawer.html', function ( data ) {
 
 		$( '#drawer' ).append ( data );

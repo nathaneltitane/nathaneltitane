@@ -130,9 +130,157 @@ done
 
 directory_industrial="${PWD}"/industrial
 
+# home page, site address and section
+
+file_index="${PWD}/index.html"
+url_site="https://nathaneltitane.com"
+id_section="industrial"
+name_section="Industrial Design"
+
+# home page block markers
+
+marker_begin="<!-- ${id_section}-begin -->"
+marker_end="<!-- ${id_section}-end -->"
+
+# project title and tools in brackets
+
+pattern_title='^(.*[^ ]) *\[ *(.*[^ ]) *\]$'
+
+# home page entries
+
+list_items=()
+list_schema=()
+
+declare -A list_seen
+
 # defaults ─────────────────────────────────────────────────────────────────────
 
 # functions ────────────────────────────────────────────────────────────────────
+
+html_escape () {
+
+	# use to make text safe in html and json
+
+	local text="${1}"
+
+	text="${text//&/&amp;}"
+	text="${text//</&lt;}"
+	text="${text//>/&gt;}"
+	text="${text//\"/&quot;}"
+	text="${text//\\/&#92;}"
+
+	text_escaped="${text}"
+
+}
+
+project_add () {
+
+	# use to list one project on the home page
+
+	local name_project="${1}"
+	local keywords_project="${2}"
+	local path_project="${3}"
+	local name_escaped
+	local keywords_escaped
+	local text_item
+	local text_keywords
+	local position_project
+
+	html_escape "${name_project}"
+
+	name_escaped="${text_escaped}"
+
+	html_escape "${keywords_project}"
+
+	keywords_escaped="${text_escaped}"
+
+	position_project=$(( ${#list_items[@]} + 1 ))
+
+	# item text and schema keywords
+
+	text_item="${name_escaped}"
+
+	if [ -n "${keywords_escaped}" ]
+	then
+		text_item="${name_escaped} - ${keywords_escaped}"
+		text_keywords=", \"keywords\": \"${keywords_escaped}\""
+	fi
+
+	list_items+=( "					<li><a href=\"/${path_project}\">${text_item}</a></li>" )
+	list_schema+=( "					{ \"@type\": \"ListItem\", \"position\": ${position_project}, \"item\": { \"@type\": \"CreativeWork\", \"name\": \"${name_escaped}\", \"image\": \"${url_site}/${path_project}\"${text_keywords}, \"creator\": { \"@id\": \"${url_site}/#person\" } } }" )
+
+}
+
+index_write () {
+
+	# use to replace the section block on the home page
+
+	local text_index
+	local text_before
+	local text_after
+	local text_items
+	local text_schema
+	local item_schema
+
+	text_index="$(< "${file_index}")"
+
+	# stop when the markers are missing
+
+	if [[ "${text_index}" != *"${marker_begin}"*"${marker_end}"* ]]
+	then
+		frobulator.err "Markers missing" "[ ${file_index} // ${marker_begin} ]"
+
+		return
+	fi
+
+	text_before="${text_index%%"${marker_begin}"*}"
+	text_after="${text_index#*"${marker_end}"}"
+
+	printf -v text_items '%s\n' "${list_items[@]}"
+
+	# schema items joined by commas
+
+	for item_schema in "${list_schema[@]}"
+	do
+		if [ -n "${text_schema}" ]
+		then
+			text_schema+=$',\n'
+		fi
+
+		text_schema+="${item_schema}"
+	done
+
+	cat > "${file_index}" << INDEX-SECTION
+${text_before}${marker_begin}
+
+			<section id="${id_section}">
+
+				<h2>${name_section}</h2>
+
+				<ul>
+${text_items}				</ul>
+
+			</section>
+
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ItemList",
+				"@id": "${url_site}/#${id_section}",
+				"name": "${name_section}",
+				"numberOfItems": ${#list_items[@]},
+				"itemListElement": [
+${text_schema}
+				]
+			}
+			</script>
+
+			${marker_end}${text_after}
+INDEX-SECTION
+
+	frobulator.inf "Home page" "[ ${name_section} // ${#list_items[@]} projects ]"
+
+}
 
 # report progress
 
@@ -205,6 +353,27 @@ do
 
 		title_content=$(cat "${directory_content}"/title)
 
+		# first image of each project on the home page
+
+		if [ -z "${list_seen[${directory_content}]}" ]
+		then
+			list_seen[${directory_content}]=1
+
+			name_project="${title_content}"
+
+			unset keywords_project
+
+			# title and tools in brackets
+
+			if [[ "${title_content}" =~ ${pattern_title} ]]
+			then
+				name_project="${BASH_REMATCH[1]}"
+				keywords_project="${BASH_REMATCH[2]// | /, }"
+			fi
+
+			project_add "${name_project}" "${keywords_project}" "${path_content}"
+		fi
+
 		# keep first container visible
 
 		if [ "${count_entries}" -gt 1 ]
@@ -269,6 +438,10 @@ CONTENT-CONTAINER
 	IFS=''
 
 done
+
+# write the home page section
+
+index_write
 
 # report the result
 
