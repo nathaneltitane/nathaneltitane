@@ -24,14 +24,14 @@ $( document ).ready ( function ( ) {
 
 		}
 
-		// each arrow shows at the far end
+		// arrows show 30% into the scroll from each end
 
-		var reached_top = load.scrollTop <= 0 ;
-		var reached_bottom = load.scrollTop + load.clientHeight >= load.scrollHeight - 1 ;
+		var range_scroll = Math.max ( load.scrollHeight - load.clientHeight, 1 ) ;
+		var progress_scroll = load.scrollTop / range_scroll ;
 
-		arrow_top.toggleClass ( 'scroll-hide', ! reached_bottom ) ;
+		arrow_top.toggleClass ( 'scroll-hide', progress_scroll < 0.3 ) ;
 
-		arrow_bottom.toggleClass ( 'scroll-hide', ! reached_top ) ;
+		arrow_bottom.toggleClass ( 'scroll-hide', progress_scroll > 0.7 ) ;
 
 		navigation.addClass ( 'scroll-hide' ) ;
 
