@@ -8,10 +8,10 @@
 	display: inline;
 }
 
-/* card shaped like the buttons */
+/* card without a background */
 
 .copyright .container {
-	background-color: #fcf1dcff;
+	background-color: #00000000;
 	border-radius: 5px;
 	padding: 10px 10px 10px 10px;
 }
