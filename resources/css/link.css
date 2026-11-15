@@ -1,3 +1,5 @@
+/* plain links */
+
 a {
 	color: #666666;
 	display: block;
@@ -6,6 +8,8 @@ a {
 	outline: none;
 }
 
+/* link states without underline */
+
 a:active,
 a:focus,
 a:link,
@@ -13,6 +17,8 @@ a:visited {
 	text-decoration: none;
 	outline: none;
 }
+
+/* links hover */
 
 a:hover {
 	color: #f46f2cff;
@@ -26,10 +32,14 @@ a:hover {
 	display: inline;
 }
 
+/* drawer links */
+
 .drawer a {
 	margin: 0px 0px 0px 0px;
 	overflow: hidden;
 }
+
+/* gallery links */
 
 .gallery a {
 	flex: 1 1 400px;

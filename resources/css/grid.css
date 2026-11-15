@@ -1,19 +1,29 @@
+/* grid container */
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
 
+/* spans one column */
+
 .grid-1 {
 	grid-column-start: span 1;
 }
+
+/* spans two columns */
 
 .grid-2 {
 	grid-column-start: span 2;
 }
 
+/* spans three columns */
+
 .grid-3 {
 	grid-column-start: span 3;
 }
+
+/* spans four columns */
 
 .grid-4 {
 	grid-column-start: span 4;

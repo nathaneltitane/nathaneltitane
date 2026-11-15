@@ -1,3 +1,5 @@
+/* rounded buttons */
+
 .button {
 	background-color: #ffffffff;
 	border-radius: 5px;
@@ -17,37 +19,55 @@ a.button:hover {
 	border-bottom: 5px solid #800080ff;
 }
 
+/* industrial button hover */
+
 .button.industrial:hover {
 	color: #800080ff;
 }
+
+/* graphic button colour */
 
 .button.graphic {
 	border-bottom: 5px solid #2c89a0ff;
 }
 
+/* graphic button hover */
+
 .button.graphic:hover {
 	color: #2c89a0ff;
 }
+
+/* code button colour */
 
 .button.code {
 	border-bottom: 5px solid #333333ff;
 }
 
+/* code button hover */
+
 .button.code:hover {
 	color: #333333ff;
 }
+
+/* contact button colour */
 
 .button.contact {
 	border-bottom: 5px solid #5aa02cff;
 }
 
+/* contact button hover */
+
 .button.contact:hover {
 	color: #5aa02cff;
 }
 
+/* linkedin button colour */
+
 .button.linkedin {
 	border-bottom: 5px solid #3737c8ff;
 }
+
+/* linkedin button hover */
 
 .button.linkedin:hover {
 	color: #3737c8ff;

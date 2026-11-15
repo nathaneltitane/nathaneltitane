@@ -1,12 +1,17 @@
+/* page scrollbar */
+
 html > ::-webkit-scrollbar {
 	display:  none;
 }
+
+/* page body scrollbar */
 
 body > ::-webkit-scrollbar {
 	display:  none;
 }
 
+/* all scrollbars hidden */
+
 ::-webkit-scrollbar {
 	display: none;
 }
-

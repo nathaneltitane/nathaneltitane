@@ -1,3 +1,5 @@
+/* bottom arrow position */
+
 #bottom {
 	height: 64px;
 	width: 64px;
@@ -6,6 +8,8 @@
 	right: 10px;
 	padding: 10px 10px 10px 10px;
 }
+
+/* bottom arrow offscreen */
 
 .bottom {
 	color: #000000ff;
@@ -17,11 +21,15 @@
 	right: -200px;
 }
 
+/* bottom arrow reveal animation */
+
 @keyframes reveal-bottom {
 	0% {right: -200px;}
 
 	100% {right: 0px;}
 }
+
+/* bottom arrow shown */
 
 .bottom.show {
 	animation-name: reveal-bottom;
@@ -30,11 +38,15 @@
 	animation-fill-mode: forwards;
 }
 
+/* bottom arrow conceal animation */
+
 @keyframes conceal-bottom {
 	0% {right: 0px;}
 
 	100% {right: -200px;}
 }
+
+/* bottom arrow hidden */
 
 .bottom.hide {
 	animation-name: conceal-bottom;

@@ -1,3 +1,5 @@
+/* drawer panel */
+
 #drawer {
 	background: #000000dd;
 	width: 50vw;
@@ -11,6 +13,8 @@
 	z-index: 999;
 }
 
+/* drawer scrolling content */
+
 .drawer {
 	width: 100%;
 	height: 100%;
@@ -18,11 +22,15 @@
 	overflow-y: scroll;
 }
 
+/* drawer reveal animation */
+
 @keyframes reveal-drawer {
 	0% {left: -50vw;}
 
 	100% {left: 0vw;}
 }
+
+/* drawer shown */
 
 #drawer.show {
 	left: 0vw;
@@ -33,11 +41,15 @@
 	animation-fill-mode: forwards;
 }
 
+/* drawer conceal animation */
+
 @keyframes conceal-drawer {
 	0% {left: 0vw;}
 
 	100% {left: -50vw;}
 }
+
+/* drawer hidden */
 
 #drawer.hide {
 	left: -50vw;

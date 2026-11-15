@@ -1,13 +1,19 @@
+/* about paragraph */
+
 .about .paragraph {
 	line-height: 1.5;
 	margin: 15px 0px 0px 0px;
 }
+
+/* about motto */
 
 .about .motto {
 	color: #f46f2cff;
 	font-weight: bold;
 	margin: 20px 0px 5px 0px;
 }
+
+/* about heading */
 
 .about .heading {
 	color: #333333ff;

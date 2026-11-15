@@ -1,3 +1,5 @@
+/* top arrow position */
+
 #top {
 	height: 64px;
 	width: 64px;
@@ -6,6 +8,8 @@
 	right: 10px;
 	padding: 10px 10px 10px 10px;
 }
+
+/* top arrow offscreen */
 
 .top {
 	color: #000000ff;
@@ -17,11 +21,15 @@
 	right: -200px;
 }
 
+/* top arrow reveal animation */
+
 @keyframes reveal-top {
 	0% {right: -200px;}
 
 	100% {right: 0px;}
 }
+
+/* top arrow shown */
 
 .top.show {
 	animation-name: reveal-top;
@@ -30,11 +38,15 @@
 	animation-fill-mode: forwards;
 }
 
+/* top arrow conceal animation */
+
 @keyframes conceal-top {
 	0% {right: 0px;}
 
 	100% {right: -200px;}
 }
+
+/* top arrow hidden */
 
 .top.hide {
 	animation-name: conceal-top;

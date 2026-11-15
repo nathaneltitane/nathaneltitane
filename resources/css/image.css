@@ -1,14 +1,20 @@
+/* fluid images */
+
 img {
 	height: auto;
 	width: 100%;
 	min-width: 256px;
 }
 
+/* fixed width image */
+
 .image {
 	height: auto;
 	width: 25vh;
 	min-width: 256px;
 }
+
+/* container images */
 
 .container img {
 	border-radius: 5px;

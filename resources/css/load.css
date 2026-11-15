@@ -1,3 +1,5 @@
+/* project overlay position */
+
 #load {
 	position: fixed;
 	bottom: 0px;
@@ -8,6 +10,8 @@
 
 	pointer-events: none;
 }
+
+/* project overlay offscreen */
 
 .load {
 	position: fixed;
@@ -20,11 +24,15 @@
 	overflow-y: scroll;
 }
 
+/* project overlay reveal animation */
+
 @keyframes reveal-load {
 	0% {bottom: -100vh;}
 
 	100% {bottom: 0vh;}
 }
+
+/* project overlay shown */
 
 .load.show {
 	bottom: 0vh;
@@ -37,11 +45,15 @@
 	animation-fill-mode: forwards;
 }
 
+/* project overlay conceal animation */
+
 @keyframes conceal-load {
 	0% {bottom: 0vh;}
 
 	100% {bottom: -100vh;}
 }
+
+/* project overlay hidden */
 
 .load.hide {
 	bottom: -100vh;

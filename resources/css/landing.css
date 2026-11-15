@@ -16,12 +16,16 @@
 	transition: opacity 0.5s ease;
 }
 
+/* landing title */
+
 .landing .title {
 	color: #ccccccff;
 	font-size: 20px;
 	font-weight: bold;
 	margin: 0px 0px 5px 0px;
 }
+
+/* landing tagline */
 
 .landing .tagline {
 	font-size: 20px;
@@ -36,6 +40,8 @@
 /* phone texts span the width */
 
 @media (max-width: 520px) {
+
+	/* landing title block */
 
 	.landing {
 		left: 20px;
