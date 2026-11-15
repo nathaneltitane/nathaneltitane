@@ -38,9 +38,17 @@ a.button:hover {
 }
 
 .button-contact {
-	border-bottom: 5px solid #f46f2cff;
+	border-bottom: 5px solid #5aa02cff;
 }
 
 .button-contact:hover {
-	color: #f46f2cff;
+	color: #5aa02cff;
+}
+
+.button-linkedin {
+	border-bottom: 5px solid #3737c8ff;
+}
+
+.button-linkedin:hover {
+	color: #3737c8ff;
 }

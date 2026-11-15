@@ -280,7 +280,7 @@ cat << MODEL-DRAWER-CONTACT ->> "resources/modules/drawer.html"
 
 						<div class="flex-cell">
 
-							<div class="logo-black icon icon-flex"></div>
+							<div class="logo-green icon icon-flex"></div>
 
 						</div>
 
@@ -310,13 +310,13 @@ cat << MODEL-DRAWER-LINKEDIN ->> "resources/modules/drawer.html"
 
 			<div class="flex-cell">
 
-				<a class="button button-contact" href="https://www.linkedin.com/in/nathaneltitane" target="_blank">
+				<a class="button button-linkedin" href="https://www.linkedin.com/in/nathaneltitane" target="_blank">
 
 					<div class="flex flex-middle">
 
 						<div class="flex-cell">
 
-							<div class="logo-black icon icon-flex"></div>
+							<div class="logo-blue icon icon-flex"></div>
 
 						</div>
 
