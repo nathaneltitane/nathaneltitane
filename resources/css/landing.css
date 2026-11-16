@@ -50,12 +50,6 @@
 
 }
 
-/* error pages keep the title shown */
-
-.landing.show {
-	opacity: 1;
-}
-
 /* error pages link back home */
 
 .landing a {
