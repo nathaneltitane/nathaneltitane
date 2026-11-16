@@ -17,14 +17,14 @@ img {
 /* container images */
 
 .container img {
-	border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
 }
 
 /* transparent images on the render backdrop */
 
 .gallery img {
 	background-color: #f0f0f0ff;
-	border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
 	height: 100%;
 	min-width: 0px;
 	display: block;

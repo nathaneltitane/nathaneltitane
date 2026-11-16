@@ -4,6 +4,8 @@ $( document ).ready ( function ( ) {
 
 	var drawer = $( '#drawer' );
 
+    // drawer opens
+
     function drawer_show ( ) {
 
         drawer.removeClass ( 'hide' );
@@ -20,6 +22,8 @@ $( document ).ready ( function ( ) {
 
     };
 
+    // drawer closes
+
     function drawer_hide ( ) {
 
         drawer.removeClass ( 'show' );
@@ -29,6 +33,8 @@ $( document ).ready ( function ( ) {
         $( '#navigation, #top, #bottom' ).removeClass ( 'covered' ) ;
 
     };
+
+    // drawer opens or closes
 
     function drawer_toggle ( ) {
 
@@ -45,6 +51,8 @@ $( document ).ready ( function ( ) {
         }
     };
 
+    // navigation button opens the drawer
+
     $( '.navigation' ).click ( function ( event ) {
 
         drawer_show ( ) ;
@@ -58,6 +66,8 @@ $( document ).ready ( function ( ) {
         drawer_hide ( ) ;
 
     } );
+
+    // gallery click closes the drawer
 
     $( '#load' ).click ( function ( event ) {
 

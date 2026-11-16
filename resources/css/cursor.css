@@ -100,7 +100,7 @@
 	cursor: ne-resize;
 }
 
-/* north east south west resize */
+/* north east south west resize cursor */
 
 .cursor-nesw-resize {
 	cursor: nesw-resize;
@@ -118,7 +118,7 @@
 	cursor: nw-resize;
 }
 
-/* north west south east resize */
+/* north west south east resize cursor */
 
 .cursor-nwse-resize {
 	cursor: nwse-resize;

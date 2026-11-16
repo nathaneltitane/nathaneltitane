@@ -2,7 +2,7 @@
 
 .button {
 	background-color: #ffffffff;
-	border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
 	margin: 10px 0px 10px 0px;
 	padding: 5px 10px 5px 10px;
 }
@@ -25,7 +25,7 @@ a.button:hover {
 	color: #800080ff;
 }
 
-/* graphic button colour */
+/* graphic button color */
 
 .button.graphic {
 	border-bottom: 5px solid #2c89a0ff;
@@ -37,7 +37,7 @@ a.button:hover {
 	color: #2c89a0ff;
 }
 
-/* code button colour */
+/* code button color */
 
 .button.code {
 	border-bottom: 5px solid #333333ff;
@@ -49,7 +49,7 @@ a.button:hover {
 	color: #333333ff;
 }
 
-/* contact button colour */
+/* contact button color */
 
 .button.contact {
 	border-bottom: 5px solid #5aa02cff;
@@ -61,7 +61,7 @@ a.button:hover {
 	color: #5aa02cff;
 }
 
-/* linkedin button colour */
+/* linkedin button color */
 
 .button.linkedin {
 	border-bottom: 5px solid #3737c8ff;

@@ -6,6 +6,8 @@ function page_get ( url_page ) {
 
 }
 
+// page fills the gallery
+
 function page_insert ( html_page ) {
 
 	$( '.load' ).empty ( );
@@ -18,6 +20,8 @@ function page_insert ( html_page ) {
 
 }
 
+// gallery loading
+
 $( document ).ready ( function ( ) {
 
 	var drawer = $( '#drawer' );
@@ -27,6 +31,8 @@ $( document ).ready ( function ( ) {
 	var bottom = $( '.bottom' );
 
 	var top = $( '.top' );
+
+	// gallery opens
 
 	function load_show ( ) {
 
@@ -56,6 +62,8 @@ $( document ).ready ( function ( ) {
 
     };
 
+    // gallery closes
+
     function load_hide ( ) {
 
 		bottom.removeClass ( 'show' );
@@ -78,6 +86,8 @@ $( document ).ready ( function ( ) {
 
 	};
 
+	// gallery opens or closes
+
 	function load_toggle ( ) {
 
         if ( load.hasClass ( 'show' ) ) {
@@ -99,6 +109,8 @@ $( document ).ready ( function ( ) {
         }
 
     };
+
+	// link loads its gallery
 
 	$( '[data-link]' ).click ( function ( event ) {
 

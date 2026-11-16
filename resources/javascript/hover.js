@@ -13,6 +13,8 @@ $( document ).ready ( function ( ) {
 
 	} ) ;
 
+	// leaving hides the text
+
 	trigger_background.on ( 'mouseleave', function ( ) {
 
 		background.removeClass ( 'hover' ) ;

@@ -308,6 +308,8 @@ frobulator.fwd "Writing..."
 cat << 'INDEX-HEADER' -> "industrial/index.html"
 		<script>
 
+			// anchors module loads
+
 			$(function(){
 
 				$.get("/resources/modules/anchors.html", function (data) {

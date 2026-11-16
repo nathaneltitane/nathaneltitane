@@ -5,25 +5,25 @@
 	grid-template-columns: repeat(4, 1fr);
 }
 
-/* spans one column */
+/* cell spanning one column */
 
 .grid-1 {
 	grid-column-start: span 1;
 }
 
-/* spans two columns */
+/* cell spanning two columns */
 
 .grid-2 {
 	grid-column-start: span 2;
 }
 
-/* spans three columns */
+/* cell spanning three columns */
 
 .grid-3 {
 	grid-column-start: span 3;
 }
 
-/* spans four columns */
+/* cell spanning four columns */
 
 .grid-4 {
 	grid-column-start: span 4;

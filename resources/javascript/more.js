@@ -6,6 +6,8 @@ $( document ).ready ( function ( ) {
 
 		var count_more = 0;
 
+		// more button shows projects
+
 		$( '#more' ).on ( 'click', function ( event ) {
 
 			event.preventDefault ( );
