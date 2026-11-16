@@ -56,3 +56,9 @@
 
 	100% {opacity: 1; filter: saturate(1) blur(0px);}
 }
+
+/* error pages show a grey bird */
+
+#background.grey {
+	filter: grayscale(1);
+}

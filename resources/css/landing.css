@@ -49,3 +49,19 @@
 	}
 
 }
+
+/* error pages keep the title shown */
+
+.landing.show {
+	opacity: 1;
+}
+
+/* error pages link back home */
+
+.landing a {
+	color: #ccccccff;
+	display: inline;
+	font-weight: bold;
+
+	pointer-events: auto;
+}
