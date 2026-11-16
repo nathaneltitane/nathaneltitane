@@ -37,6 +37,12 @@
 	opacity: 1;
 }
 
+/* title stays while its link is hovered */
+
+.landing:hover {
+	opacity: 1;
+}
+
 /* phone texts span the width */
 
 @media (max-width: 520px) {
@@ -58,4 +64,17 @@
 	font-weight: bold;
 
 	pointer-events: auto;
+}
+
+/* error pages keep the link up 5s */
+
+.landing:has(a) {
+	transition: opacity 0.5s ease 5s;
+}
+
+/* error pages show the link at once */
+
+#background.hover ~ .landing:has(a),
+.landing:has(a):hover {
+	transition-delay: 0s;
 }
